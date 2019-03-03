@@ -55,12 +55,24 @@
         #event li {
             margin-bottom: .5em;
         }
+
+        :focus {
+            outline-color: transparent;
+            outline-style: none;
+            outline: none !important;
+            -webkit-appearance: none;
+        }
     </style>
 
     <!-- Fonts and icons -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/nucleo-icons.css" rel="stylesheet">
+
+    <!-- Material ScrollTop stylesheet -->
+    <link href="assets/css/material-scrolltop.css" rel="stylesheet" />
+
+    <link href="assets/css/jquery.loadingModal.min.css" rel="stylesheet" />
 
 </head>
 
@@ -69,7 +81,7 @@
         <div class="container">
             <div class="navbar-translate">
                 <div class="navbar-header">
-                    <!-- <a class="navbar-brand" href="index.html">Darkmira Tour PHP 2019</a> -->
+                    <a class="navbar-brand" href="index.html" style="display:none;">FLISOL DF 2019</a>
                 </div>
                 <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler"
                     aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -123,91 +135,20 @@
                         <a class="nav-link" href="index.html#contact-us" data-scroll="true" href="javascript:void(0)">Onde
                             e quando</a>
                     </li>
-                    <!--
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#talk-submission" data-scroll="true" href="javascript:void(0)">Submissão de palestras</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#want-to-collaborate" data-scroll="true" href="javascript:void(0)">Quero colaborar</a>
-                    </li>
-                    -->
-                    <!--
-                    <li class="nav-item">
-                        <a class="nav-link" href="elephpant.html" data-scroll="true">ElePHPant</a>
-                    </li>
-                    -->
-                    <!--
-                    <li class="nav-item">
-                        <a class="nav-link" href="speakers.html" data-scroll="true">Palestrantes</a>
-                    </li>
-                    -->
-                    <!--
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#workshops" data-scroll="true" href="javascript:void(0)">Workshops</a>
-                    </li>
-                    -->
-                    <!--
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://doity.com.br/flisol-df-2019" target="_blank">Inscreva-se</a>
-                    </li>
-                    -->
                     <li class="nav-item">
                         <a href="https://twitter.com/flisoldf" target="_blank" class="btn btn-link btn-neutral" style="padding: 7px 0 7px 10px;"><i
                                 class="fa fa-twitter"></i></a>
                         <a href="https://www.facebook.com/flisoldf" target="_blank" class="btn btn-link btn-neutral"
-                            style="padding: 7px 0;"><i class="fa fa-facebook"></i></a>
+                            style="padding: 7px 0 7px 10px;"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/flisol.df/" target="_blank" class="btn btn-link btn-neutral"
+                            style="padding: 7px 0;"><i class="fa fa-instagram"></i></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="page-header" data-parallax="true" style="background-image: url('assets/img/sections/flisoldf_site_banner_1.jpg');">
-        <!-- <div class="filter"></div> -->
-        <div class="content-center">
-            <div class="container">
-                <div class="motto">
-                    <!--
-                    <object data="assets/img/logo/dm_logo_white.svg" width="300" height="250" type="image/svg+xml">
-                        <img src="assets/img/logo/dm_logo_white.svg">
-                    </object>
-                    -->
-                    <!--
-                    <div style="margin-top:50px; margin-bottom:30px;">
-                        <p style="margin-bottom:0; text-shadow: #333 1px 1px 3px;"><strong>7-9 de Junho 2019,
-                                Fortaleza/CE</strong></p>
-                        <h1 style="font-weight:bold; margin:0; text-shadow: #333 1px 1px 5px;">Darkmira Tour PHP 2019</h1>
-                        <p style="font-size:24px; margin-top: 10px; text-shadow: #000 1px 1px 2px;">O evento imperdível
-                            sobre<br />Segurança e qualidade nos ecossistemas PHP</p>
-                    </div>
-                    <a href="https://www.flickr.com/photos/darkmiratour/" target="_blank" class="btn btn-outline-neutral btn-round">Veja
-                        as fotos</a>
-                    <a href="https://twitter.com/DarkmiraTour" target="_blank" class="btn btn-outline-neutral btn-round">Siga
-                        nós no Twitter</a>
-                    <a href="https://t.me/darkmiratour" target="_blank" class="btn btn-outline-neutral btn-round">Junte-se
-                        a nós no Telegram</a>
-                    -->
-                    <!-- <div style="margin-top:50px; margin-bottom:30px;"></div>
-                    <a href="index.html#talk-submission" data-scroll="true" href="javascript:void(0)" target="_blank"
-                        class="btn btn-outline-neutral btn-round">Submissão de palestras</a>
-                    <a href="index.html#want-to-collaborate" data-scroll="true" href="javascript:void(0)" target="_blank"
-                        class="btn btn-outline-neutral btn-round">Quero ajudar</a>
-                    <a href="index.html#im-a-group" data-scroll="true" href="javascript:void(0)" target="_blank" class="btn btn-outline-neutral btn-round">Sou
-                        um Grupo de Usuários</a> -->
-                    <!--
-                    <div style="margin-top:450px; margin-bottom:30px;"></div>
-                    <a href="index.html#talk-submission" data-scroll="true" href="javascript:void(0)" target="_blank"
-                        class="btn btn-secondary btn-round">Submissão de palestras</a>
-                    <a href="index.html#want-to-collaborate" data-scroll="true" href="javascript:void(0)" target="_blank"
-                        class="btn btn-secondary btn-round">Quero colaborar</a>
-                    <a href="index.html#im-a-group" data-scroll="true" href="javascript:void(0)" target="_blank" class="btn btn-secondary btn-round">Sou
-                        um Grupo de Usuários</a>
-                    -->
-                </div>
-            </div>
-        </div>
-
-    </div>
+    <div class="page-header" data-parallax="true" style="background-image: url('assets/img/sections/flisoldf_site_banner_1.jpg');"></div>
 
     <div class="cd-section section-white" id="event">
         <div class="wrapper">
@@ -216,7 +157,6 @@
                     <div class="row">
                         <div class="col-md-8 ml-auto mr-auto text-center">
                             <h2 class="title">Flisol, o que é ?</h2>
-                            <!-- <h5>Serão 3 dias de muita aprendizagem com as comunidades PHP, descobertas e interações</h5> -->
                         </div>
                     </div>
                     <br /><br />
@@ -228,7 +168,7 @@
                                 primeira edição foi na <a href="http://unb.br/" target="_blank">UnB</a>.</p>
                             <p>O evento tem o propósito de promover o uso de softwares livres e a integração de
                                 comunidades de usuários em todos os paí­ses da América Latina. Brasília entrará nessa
-                                maratona pela 14a vez. Ele ocorrerá no dia no dia 27 de Abril de 2019.</p>
+                                maratona pela 15a vez. Ele ocorrerá no dia no dia 27 de Abril de 2019.</p>
                             <p>O FLISOL busca estreitar e ampliar o contato de usuários de computadores com o mundo do
                                 Software Livre. O evento permite que as pessoas conheçam outros usuários e
                                 desenvolvedores, troquem dúvidas e sugestões. O objetivo maior é promover um
@@ -246,7 +186,8 @@
                                     contato conosco pelo e-mail da ORGANIZAÇÃO do evento <a href="mailto:organizacao@flisoldf.blog.br?subject=CHAMADA+DE+TRABALHO+–+FLISOL-DF+2019">organizacao@flisoldf.blog.br</a>
                                     com o assunto <em>CHAMADA DE TRABALHO – FLISOL-DF 2019</em>.</li>
                                 <li>Como USUÁRIO para assistir e participar das atividades, palestras e mini-cursos.
-                                    Faça sua inscrição para o evento acessando a página de <a href="https://doity.com.br/flisol-df-2019" target="_blank">INSCRIÇÃO DO FLISOL-DF 2019</a>.</li>
+                                    Faça sua inscrição para o evento acessando a página de <a href="https://doity.com.br/flisol-df-2019"
+                                        target="_blank">INSCRIÇÃO DO FLISOL-DF 2019</a>.</li>
                                 <li>Como PATROCINADOR (quer seja pessoa física ou empresa) ou como participante da
                                     ORGANIZAÇÃO DO EVENTO. Entre em contato com a organização pelo e-mail:
                                     <a href="mailto:organizacao@flisoldf.blog.br">organizacao@flisoldf.blog.br</a>.</li>
@@ -261,10 +202,25 @@
                             <p>Traga sua família e amigos tanto para conhecer melhor a respeito do software livre
                                 quanto para trocar experiências do mundo livre, seja você um usuário com qualquer nível
                                 de conhecimento.</p>
-                                <h3>InstallFest – Festa?</h3>
-                                <p>Um <strong>InstallFest</strong> é um evento, geralmente patrocinado por um grupo de usuários Linux, em que pessoas se reúnem para realizar instalações em massa de sistemas operacionais de computador ou software livre, principalmente o sistema operacional Linux e outros softwares de código aberto.</p>
-                                <p>Com esta finalidade, diversas comunidades locais de software livre (em cada país, em cada cidade/localidade), organizam simultaneamente eventos em que se instala gratuitamente e totalmente legal, software livre nos computadores levados pelos participantes, onde iniciantes trazem seus computadores, e usuários experientes os auxiliam a instalar e configurar o sistema. Muitas vezes mídias contendo alguma distribuição de Linux e informativos são distribuídos gratuitamente aos participantes. Este tipo de evento recebe bem todo nível de conhecimento, de iniciantes a usuários avançados.</p>
-                                <p>O InstallFest prioriza não só a instalação de Distribuições de GNU/Linux, mas também a instalação de Software Livres em geral, mesmo em plataforma proprietária, de forma que o usuário possa ter aí o seu primeiro contato com a filosofia do Software Livre e no futuro possa fazer a opção consciente por um Sistema Operacional Livre. A instalação pode ser feita de forma assistida*, ou seja, você mesmo poderá fazer a instalação do Sistema na sua máquina apenas com a supervisão de alguém com mais prática.</p>
+                            <h3>InstallFest – Festa?</h3>
+                            <p>Um <strong>InstallFest</strong> é um evento, geralmente patrocinado por um grupo de
+                                usuários Linux, em que pessoas se reúnem para realizar instalações em massa de sistemas
+                                operacionais de computador ou software livre, principalmente o sistema operacional
+                                Linux e outros softwares de código aberto.</p>
+                            <p>Com esta finalidade, diversas comunidades locais de software livre (em cada país, em
+                                cada cidade/localidade), organizam simultaneamente eventos em que se instala
+                                gratuitamente e totalmente legal, software livre nos computadores levados pelos
+                                participantes, onde iniciantes trazem seus computadores, e usuários experientes os
+                                auxiliam a instalar e configurar o sistema. Muitas vezes mídias contendo alguma
+                                distribuição de Linux e informativos são distribuídos gratuitamente aos participantes.
+                                Este tipo de evento recebe bem todo nível de conhecimento, de iniciantes a usuários
+                                avançados.</p>
+                            <p>O InstallFest prioriza não só a instalação de Distribuições de GNU/Linux, mas também a
+                                instalação de Software Livres em geral, mesmo em plataforma proprietária, de forma que
+                                o usuário possa ter aí o seu primeiro contato com a filosofia do Software Livre e no
+                                futuro possa fazer a opção consciente por um Sistema Operacional Livre. A instalação
+                                pode ser feita de forma assistida*, ou seja, você mesmo poderá fazer a instalação do
+                                Sistema na sua máquina apenas com a supervisão de alguém com mais prática.</p>
                         </div>
                     </div>
                 </div>
@@ -281,7 +237,6 @@
                     <div class="row">
                         <div class="col-md-8 ml-auto mr-auto text-center">
                             <h2 class="title">Submissão de palestras</h2>
-                            <!-- <h5>Serão 3 dias de muita aprendizagem com as comunidades PHP, descobertas e interações</h5> -->
                         </div>
                     </div>
                     <div class="space-top"></div>
@@ -294,7 +249,7 @@
                                     <div class="row">
                                         <div class="col-md-6 form-group">
                                             <label>Nome <span style="color:tomato">*</span></label><br>
-                                            <span class="pl-nome"><input type="text" name="pl-nome" value="" size="40"
+                                            <span class="pl-nome"><input type="text" name="pl-nome" value="" size="80"
                                                     class="form-control" aria-required="true" aria-invalid="false"></span>
                                         </div>
                                         <div class="col-md-6 form-group">
@@ -321,7 +276,7 @@
                                         </div>
                                         <div class="col-md-12 form-group">
                                             <label>URL do Currículo Lattes</label><br>
-                                            <span class="pl-lattes"><input type="url" name="pl-lattes" value="" size="40"
+                                            <span class="pl-lattes"><input type="url" name="pl-lattes" value="" size="100"
                                                     class="form-control" aria-invalid="false" placeholder="http://"></span>
                                         </div>
                                     </div>
@@ -331,7 +286,7 @@
                                     <div class="row">
                                         <div class="col-md-12 form-group">
                                             <label>Título <span style="color:tomato">*</span></label><br>
-                                            <span class="pl-titulo"><input type="text" name="pl-titulo" value="" size="40"
+                                            <span class="pl-titulo"><input type="text" name="pl-titulo" value="" size="80"
                                                     class="form-control" aria-required="true" aria-invalid="false"></span>
                                         </div>
                                         <div class="col-md-12 form-group">
@@ -345,8 +300,8 @@
                                                 <select select name="pl-turno" class="form-control selectpicker"
                                                     aria-required="true" aria-invalid="false" data-live-search="true">
                                                     <option value="">---</option>
-                                                    <option value="Manhã">Manhã</option>
-                                                    <option value="Tarde">Tarde</option>
+                                                    <option value="M">Manhã</option>
+                                                    <option value="A">Tarde</option>
                                                 </select>
                                             </span>
                                         </div>
@@ -356,8 +311,8 @@
                                                 <select select name="pl-tipo" class="form-control selectpicker"
                                                     aria-required="true" aria-invalid="false" data-live-search="true">
                                                     <option value="">---</option>
-                                                    <option value="Palestra (1 hora)">Palestra (1 hora)</option>
-                                                    <option value="Oficina (2 horas)">Oficina (2 horas)</option>
+                                                    <option value="T">Palestra (1 hora)</option>
+                                                    <option value="O">Oficina (2 horas)</option>
                                                 </select>
                                             </span>
                                         </div>
@@ -367,32 +322,25 @@
                                                 <select select name="pl-assunto" class="form-control selectpicker"
                                                     aria-required="true" aria-invalid="false" data-live-search="true">
                                                     <option value="">---</option>
-                                                    <option value="Web">Web</option>
-                                                    <option value="Framework de Desenvolvimento">Framework de
-                                                        Desenvolvimento</option>
-                                                    <option value="Software Público">Software Público</option>
-                                                    <option value="Software Baixo Nível">Software Baixo Nível</option>
-                                                    <option value="Ecossistema de Software Livre">Ecossistema de
-                                                        Software Livre</option>
-                                                    <option value="Gestão de Projetos">Gestão de Projetos</option>
-                                                    <option value="Sistemas Operacionais">Sistemas Operacionais</option>
-                                                    <option value="Educação">Educação</option>
-                                                    <option value="Redes">Redes</option>
-                                                    <option value="Internet das Coisas">Internet das Coisas</option>
-                                                    <option value="Segurança e Privacidade">Segurança e Privacidade</option>
-                                                    <option value="Games">Games</option>
-                                                    <option value="TI Verde (Sustentabilidade)">TI Verde
-                                                        (Sustentabilidade)</option>
-                                                    <option value="Robótica Livre">Robótica Livre</option>
-                                                    <option value="Governança de Dados">Governança de Dados</option>
-                                                    <option value="Acessibilidade Livre (Aplicativos para portadores de necessidades física)">Acessibilidade
-                                                        Livre (Aplicativos para portadores de necessidades física)</option>
-                                                    <option value="Flisolzinho (Oficina voltada para crianças)">Flisolzinho
-                                                        (Oficina voltada para crianças)</option>
-                                                    <option value="Startups e Empreendedorismo">Startups e
-                                                        Empreendedorismo</option>
-                                                    <option value="Design de Imagens, Animações, Áudio e Vídeo">Design
-                                                        de Imagens, Animações, Áudio e Vídeo</option>
+                                                    <option value="1">Acessibilidade Livre (Aplicativos para portadores de necessidades física)</option>
+                                                    <option value="2">Criptotecnologias</option>
+                                                    <option value="3">Desenvolvimento (Programação)</option>
+                                                    <option value="4">Design de Imagens, Animações, Áudio e Vídeo</option>
+                                                    <option value="5">Ecossistema de Software Livre</option>
+                                                    <option value="6">Educação</option>
+                                                    <option value="7">Flisolzinho (Oficina voltada para crianças)</option>
+                                                    <option value="8">Games</option>
+                                                    <option value="9">Gestão de Projetos</option>
+                                                    <option value="10">Governança de Dados</option>
+                                                    <option value="11">Internet das Coisas</option>
+                                                    <option value="12">Redes</option>
+                                                    <option value="13">Robótica Livre</option>
+                                                    <option value="14">Segurança e Privacidade</option>
+                                                    <option value="15">Sistemas Operacionais</option>
+                                                    <option value="16">Software Público</option>
+                                                    <option value="17">Startups e Empreendedorismo</option>
+                                                    <option value="18">TI Verde (Sustentabilidade)</option>
+                                                    <option value="19">Web</option>
                                                 </select>
                                             </span>
                                         </div>
@@ -407,7 +355,7 @@
                                         <div class="col-md-6 form-group">
                                             <label>URL do Slide</label><br>
                                             <span class="pl-slide-url">
-                                                <input type="url" name="pl-slide-url" value="" size="40" class="form-control"
+                                                <input type="url" name="pl-slide-url" value="" size="100" class="form-control"
                                                     aria-invalid="false" placeholder="http://">
                                             </span>
                                         </div>
@@ -424,7 +372,7 @@
         </div>
     </div>
 
-    <hr />
+    <hr style="display:none;" />
 
     <div class="cd-section section-white" id="want-to-collaborate">
         <div class="wrapper">
@@ -433,14 +381,6 @@
                     <div class="row">
                         <div class="col-md-12 ml-auto mr-auto text-center">
                             <h2 class="title">Quero colaborar</h2>
-                            <!-- <h5 class="description" style="color:black;text-align: justify;">A Coordenação do FLISOL-DF
-                                gostaria de contar com seu apoio na organização do evento para este ano. Responda o
-                                questionário abaixo para que possamos dar início ao processo de organização e marcação
-                                de reuniões.</h5>
-                            <h5 class="description" style="color:black;text-align: justify;">Lembre-se que os
-                                colaboradores (equipe de organização) recebem certificado de 30 horas de organização do
-                                evento. A falta em 2 reuniões consecutivas descredenciam o colaborador da equipe de
-                                organização.</h5> -->
                         </div>
                     </div>
                     <div class="space-top"></div>
@@ -458,7 +398,7 @@
                                 <div class="row">
                                     <div class="col-md-6 form-group">
                                         <label>Nome <span style="color:tomato">*</span></label><br>
-                                        <span class="cpc-nome"><input type="text" name="cpc-nome" value="" size="40"
+                                        <span class="cpc-nome"><input type="text" name="cpc-nome" value="" size="80"
                                                 class="form-control" aria-required="true" aria-invalid="false"></span>
                                     </div>
                                     <div class="col-md-6 form-group">
@@ -488,23 +428,23 @@
                                             <select select name="cpc-distribuicao" class="form-control selectpicker"
                                                 aria-required="true" aria-invalid="false" data-live-search="true">
                                                 <option value="">---</option>
-                                                <option value="Não utilizo Linux">Não utilizo Linux</option>
-                                                <option value="Ubuntu/Kubuntu">Ubuntu/Kubuntu</option>
-                                                <option value="Debian">Debian</option>
-                                                <option value="Fedora">Fedora</option>
-                                                <option value="LinuxMint">LinuxMint</option>
-                                                <option value="SlackWare">SlackWare</option>
-                                                <option value="Suse">Suse</option>
-                                                <option value="BigLinux">BigLinux</option>
-                                                <option value="Kali Linux">Kali Linux</option>
-                                                <option value="Tails">Tails</option>
-                                                <option value="Elementary OS">Elementary OS</option>
-                                                <option value="LXLE">LXLE</option>
-                                                <option value="Trisquel">Trisquel</option>
-                                                <option value="Duzeru">Duzeru</option>
-                                                <option value="Kaiana">Kaiana</option>
-                                                <option value="Educatux">Educatux</option>
-                                                <option value="Outra">Outra</option>
+                                                <option value="1">Não utilizo Linux</option>
+                                                <option value="2">BigLinux</option>
+                                                <option value="3">Debian</option>
+                                                <option value="4">Duzeru</option>
+                                                <option value="5">Educatux</option>
+                                                <option value="6">Elementary OS</option>
+                                                <option value="7">Fedora</option>
+                                                <option value="8">Kaiana</option>
+                                                <option value="9">Kali Linux</option>
+                                                <option value="10">LinuxMint</option>
+                                                <option value="11">LXLE</option>
+                                                <option value="12">SlackWare</option>
+                                                <option value="13">Suse</option>
+                                                <option value="14">Tails</option>
+                                                <option value="15">Trisquel</option>
+                                                <option value="16">Ubuntu/Kubuntu</option>
+                                                <option value="17">Outra</option>
                                             </select>
                                         </span>
                                     </div>
@@ -599,7 +539,7 @@
         </div>
     </div>
 
-    <hr />
+    <hr style="display:none;" />
 
     <div class="cd-section section-white" id="im-a-group">
         <div class="wrapper">
@@ -608,10 +548,6 @@
                     <div class="row">
                         <div class="col-md-12 ml-auto mr-auto text-center">
                             <h2 class="title">Sou um grupo de usuários</h2>
-                            <!-- <h5 class="description" style="color:black;text-align: justify;">Disponibilizamos esta área
-                                para os grupos de usuários de tecnologias livres e open source para que possam divulgar
-                                suas iniciativas, trocar experiências com o público visitante e instituições
-                                patrocinadoras do evento. Para participar, cadastre sua comunidade:</h5> -->
                         </div>
                     </div>
                     <div class="space-top"></div>
@@ -718,675 +654,6 @@
         </div>
     </div>
 
-    <!--
-    <div class="project-4 section section-dark">
-        <div class="container">
-            <hr>
-            <div class="row">
-                <div class="col-md-12 ml-auto mr-auto text-center">
-                    <h2 class="title">O <strong>Keynote</strong> da vez!</h2>
-                    <h5 class="description">Um homem que saiu do Brasil, construiu startups, e inovou na França.</h5>
-                </div>
-            </div>
-            <div class="space-top"></div>
-            <div class="row">
-                <div class="col-md-4 ml-auto">
-                    <div class="card" data-background="image" style="background-image: url('assets/img/faces/Jorge-Gomes.jpg')">
-                    </div>
-                </div>
-
-                <div class="col-md-8 mr-auto">
-                    <div class="card card-plain">
-                        <div class="card-header" style="background-color: transparent !important;">
-                            <a href="#jorgeGomes">
-                                <h2 class="card-title mt-1">Jorge Gomes</h2>
-                            </a>
-                            <h6 class="card-category">França / Brasil</h6>
-
-                            <p class="card-description">
-                                De formação Médica em 2007, em pleno boom das startups na França, decidiu mudar de
-                                carreira e investir na criação de uma start-up sobre vinhos na França com dois amigos,
-                                onde fazia papel de CTO. 4 anos depois a empresa foi vendida para duas empresas em
-                                canadá e outra nos Estados Unidos, onde o projeto continua a existir com o nome de
-                                Snooth.
-                                <br>
-                                <br>
-                                A partir deste momento decidiu investir na carreira de informática formando-se em
-                                Estatística no MIT (USA)
-                                onde pode aumentar o seu conhecimento em Algoritmos.
-                                Na França pode acompanhar diversas start-ups como BlaBlaCar, Evaneos, MeilleursAgents,
-                                CommentÇaMarche.net. Onde se mantem como acionário ou membro do conselho de
-                                administração ainda hoje.
-                                Atualmente é CTO e COO e membro do comitê de direção da empresa My Little Paris. Uma
-                                Start-up com 10 anos de existência tendo sua sede em Paris e filiais no Japão e
-                                Alemanha. Tenho uma equipe de 16 engenheiros, hoje Jorge tem a responsabilidade das
-                                operações para as outras 150 pessoas do grupo.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <hr />
-        </div>
-    </div>
-    -->
-
-    <!--
-    <div class="pricing-3 section-white" style="background-color: #eee;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 ml-auto mr-auto text-center">
-                    <h2 class="title">Nossos Patrocinadores</h2>
-                    <h5 class="description">A parceria é forte, o apoio é sensacional e a gratidão é eterna.</h5>
-                </div>
-            </div>
-            <div class="space-top"></div>
-            <div class="row justify-content-md-center">
-                <div class="col-md-4">
-                    <div class="card card-pricing">
-                        <div class="card-body">
-                            <h4 class="card-category"><strong>Patrocínio Ouro</strong></h4>
-                            <div class="card-icon">
-                                <img src="assets/img/sponsors/blackfire.png" alt="Blackfire" style="width: 80%">
-                            </div>
-                            <h3 class="card-title">Blackfire.io</h3>
-                            <p class="card-description">
-                            </p>
-                            <div class="card-footer">
-                                <a href="https://blackfire.io" target="_blank" class="btn btn-success btn-round card-link">Conheça
-                                    a Blackfire</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    -->
-
-    <!--
-    <div class="team-4 ">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 ml-auto mr-auto text-center">
-                    <h2 class="title">Palestrantes Convidados</h2>
-                    <h5 class="description">Conheça nossos ilustres palestrantes convidados, escolhidos a dedo,
-                        pensando na melhor qualidade técnica para vocês</h5>
-                    <br />
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-md-12 ml-auto mr-auto">
-                    <div class="card page-carousel" style="box-shadow: 0 0 0 0;">
-                        <div id="guestSpeakers" class="carousel slide" data-ride="carousel">
-
-                            <div class="carousel-inner" role="listbox">
-                                <div class="carousel-item active">
-                                    <div class="row">
-                                        <div class="col-1"></div>
-                                        <div class="col-5">
-                                            <div class="card card-profile" data-background="color" data-color="dark">
-                                                <div class="row">
-                                                    <div class="col-md-8">
-                                                        <div class="card-img-top">
-                                                            <a href="#">
-                                                                <img class="img card-speaker-avatar" style="" src="assets/img/faces/Thomas-Dutrion.jpg" />
-                                                            </a>
-                                                            <br>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row" style="margin-top: 170px">
-                                                    <div class="col-md-12">
-                                                        <div class="card-body text-center">
-                                                            <h3 class="card-title">Thomas Dutrion</h3> <em>(Borgonha,
-                                                                França)</em>
-                                                            <div class="card-description text-center">
-                                                                <p>
-                                                                    Francês, Desenvolvedor Web, se dedicando a
-                                                                    qualidade do código, está no mercado há mais de
-                                                                    cinco anos (não vamos mentir, ninguém se preocupa
-                                                                    com qualidade no começo!).
-                                                                    Desenvolvedor web sênior e Zend Certified
-                                                                    Architect, Thomas trabalha como CTO na Engineer,
-                                                                    ajudando cerca de 10 desenvolvedores a aprender
-                                                                    mais a cada dia, e também trabalhando como
-                                                                    freelancer principalmente em projetos legados.
-                                                                    É entusiasta da comunidade, e ajuda a organizar a
-                                                                    ScotlandPHP, a AFUP Lorraine e a DijonTech.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-footer">
-                                                            <a href="https://www.linkedin.com/in/tdutrion/" target="_blank"
-                                                                class="btn btn-just-icon btn-linkedin a-link"><i class="fa fa-linkedin"></i></a>
-                                                            <a href="https://www.twitter.com/tdutrion" target="_blank"
-                                                                class="btn btn-just-icon btn-twitter a-link"><i class="fa fa-twitter"></i></a>
-                                                            <a href="https://www.github.com/tdutrion" target="_blank"
-                                                                class="btn btn-just-icon btn-github a-link"><i class="fa fa-github"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-5">
-                                            <div class="card card-profile" data-background="color" data-color="dark">
-                                                <div class="row">
-                                                    <div class="col-md-8">
-                                                        <div class="card-img-top">
-                                                            <a href="#">
-                                                                <img class="img card-speaker-avatar" style="" src="assets/img/faces/Wellington-Silva-square.png" />
-                                                            </a>
-                                                            <br>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row" style="margin-top: 170px">
-                                                    <div class="col-md-12">
-                                                        <div class="card-body text-center">
-                                                            <h3 class="card-title">Wellington F. Silva</h3> <em>(São
-                                                                Paulo, Brasil)</em>
-                                                            <div class="card-description text-center">
-                                                                <p>
-                                                                    Conhecido como senhor boina, como Tom ou como
-                                                                    Wsilva está trabalhando atualmente como DevOps para
-                                                                    Easytaxi/Cabify. Docker Certified Associated,
-                                                                    certificado ZCE PHP 5.3, Docker Community Leader em
-                                                                    São Paulo, Brasil, Devops Days São Paulo
-                                                                    co-organizador e autor do livro “Aprendendo Docker,
-                                                                    Do básico a orquestração”, publicado pelo editor
-                                                                    Novatec no Brasil em 2016.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-footer">
-                                                            <a href="https://www.linkedin.com/in/wfsilva/" target="_blank"
-                                                                class="btn btn-just-icon btn-linkedin a-link"><i class="fa fa-linkedin"></i></a>
-                                                            <a href="https://www.twitter.com/_wsilva" target="_blank"
-                                                                class="btn btn-just-icon btn-twitter a-link"><i class="fa fa-twitter"></i></a>
-                                                            <a href="https://www.github.com/wsilva" target="_blank"
-                                                                class="btn btn-just-icon btn-github a-link"><i class="fa fa-github"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-1"></div>
-                                        <div class="col-5">
-                                            <div class="card card-profile" data-background="color" data-color="dark">
-                                                <div class="row">
-                                                    <div class="col-md-8">
-                                                        <div class="card-img-top">
-                                                            <a href="#">
-                                                                <img class="img card-speaker-avatar" style="" src="assets/img/faces/Evandro-Mohr-square.png" />
-                                                            </a>
-                                                            <br>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row" style="margin-top: 170px">
-                                                    <div class="col-md-12">
-                                                        <div class="card-body text-center">
-                                                            <h3 class="card-title">Evandro Mohr</h3> <em>(Curitiba,
-                                                                Brasil)</em>
-                                                            <div class="card-description text-center">
-                                                                <p>
-                                                                    Evandro Mohr já foi professor na Universidade
-                                                                    Estadual do Vale do Acaraú e já atuou como
-                                                                    Desenvolvedor e Gestor de TI no Governo do Estado
-                                                                    do Ceará por quase uma década.
-                                                                    Atualmente trabalha com desenvolvimento de software
-                                                                    na Objective Solutions em Curitiba e, nas horas
-                                                                    vagas, gosta de pilotar aviões pelo sul do país.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-footer">
-                                                            <a href="https://github.com/EvandroMohr" target="_blank"
-                                                                class="btn btn-just-icon btn-github a-link"><i class="fa fa-github"></i></a>
-                                                            <a href="https://www.linkedin.com/in/evandromohr/" target="_blank"
-                                                                class="btn btn-just-icon btn-linkedin a-link"><i class="fa fa-linkedin"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-5">
-                                            <div class="card card-profile" data-background="color" data-color="dark">
-                                                <div class="row">
-                                                    <div class="col-md-8">
-                                                        <div class="card-img-top">
-                                                            <a href="#">
-                                                                <img class="img card-speaker-avatar" style="" src="assets/img/faces/Gabriela-Davila.png" />
-                                                            </a>
-                                                            <br>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row" style="margin-top: 170px">
-                                                    <div class="col-md-12">
-                                                        <div class="card-body text-center">
-                                                            <h3 class="card-title">Gabriela D'Ávila Ferrara</h3> <em>(Nova
-                                                                York, EUA)</em>
-                                                            <div class="card-description text-center">
-                                                                <p>
-                                                                    Gabi é uma Desenvolvedora de Software apaixonada
-                                                                    pelo que faz, atualmente é Developer Advocate no
-                                                                    Google Cloud. Ela gosta de simplificar sistemas
-                                                                    complexos e acredita que as abstrações são melhores
-                                                                    quando podem ser entendidas em um exemplo do mundo
-                                                                    real . Gabi gosta de ir além da linguagem do DBA
-                                                                    para tornar a tecnologia de banco de dados e
-                                                                    armazenamento cada vez mais acessivel aos
-                                                                    desenvolvedores.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-footer">
-                                                            <a href="https://www.linkedin.com/in/gabidavila/" target="_blank"
-                                                                class="btn btn-just-icon btn-linkedin a-link"><i class="fa fa-linkedin"></i></a>
-                                                            <a href="https://www.twitter.com/gabidavila" target="_blank"
-                                                                class="btn btn-just-icon btn-twitter a-link"><i class="fa fa-twitter"></i></a>
-                                                            <a href="https://www.github.com/gabidavila" target="_blank"
-                                                                class="btn btn-just-icon btn-github a-link"><i class="fa fa-github"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <ol class="carousel-indicators" style="margin-bottom: -20px;">
-                                <li data-target="#guestSpeakers" data-slide-to="0" class="active"></li>
-                                <li data-target="#guestSpeakers" data-slide-to="1"></li>
-                            </ol>
-
-                            <a style="opacity: 1;" class="left carousel-control carousel-control-prev" href="#guestSpeakers"
-                                role="button" data-slide="prev">
-                                <span class="fa fa-angle-left"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a style="opacity: 1;" class="right carousel-control carousel-control-next" href="#guestSpeakers"
-                                role="button" data-slide="next">
-                                <span class="fa fa-angle-right"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    -->
-
-    <!--
-    <div class="cd-section section-white" id="workshops">
-        <div class="team-2 section-image" style="background-image: url('assets/img/sections/pexels-photo-154147.jpg')">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 ml-auto mr-auto text-center">
-                        <h2 class="title">Workshops com Peritos</h2>
-                        <h4 class="text-white">Um dia inteiro (Sexta-feira, 07 de Junho) com 3 workshops simultâneos de
-                            08 horas de duração para você escolher, com os melhores profissionais da comunidade PHP.</h4>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card card-profile card-plain">
-                            <div class="card-img-top card-workshop-avatar">
-                                <a href="#workshops">
-                                    <img class="img" src="assets/img/faces/Wellington-Silva-square.png" />
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title"><strong>Wellington F. Silva</strong></h4>
-                                <h5 class="card-category text-warning"><strong>Docker na Prática sem arrudeio</strong></h5>
-                                <p class="card-description text-center">
-                                    Certificado ZCE PHP, Autor do livro <a class="text-info" href="https://novatec.com.br/livros/aprendendo-docker/">Aprendendo
-                                        Docker, do básico à orquestração de contêineres</a> publicado pela editora
-                                    Novatec. Co-organizador do meetup de Docker em São Paulo, tem background em
-                                    telecomunicações, VoIP e Linux. Tem contribuído com suporte em fóruns, grupos de
-                                    Slack e Telegram, dando palestras para as comunidades PHP, Python e Go.
-                                </p>
-                                <div class="card-footer">
-                                    <a href="https://twitter.com/_wsilva" target="_blank" class="btn btn-link btn-just-icon btn-neutral"><i
-                                            class="fa fa-twitter"></i></a>
-                                    <a href="https://www.linkedin.com/in/wfsilva" target="_blank" class="btn btn-link btn-just-icon btn-neutral"><i
-                                            class="fa fa-linkedin"></i></a>
-                                    <a href="https://www.facebook.com/silva.tom" target="_blank" class="btn btn-link btn-just-icon btn-neutral"><i
-                                            class="fa fa-facebook"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card card-profile card-plain">
-                            <div class="card-img-top card-workshop-avatar">
-                                <a href="#workshops">
-                                    <img class="img" src="assets/img/faces/Junior-Grossi-square.png" />
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title"><strong>Junior Grossi</strong></h4>
-                                <h5 class="card-category text-warning"><strong>Qualidade de Código: Um resumo prático
-                                        do que todo dev precisa saber</strong></h5>
-                                <p class="card-description text-center">
-                                    Organizador do PHPMG e Software Engineer na InterNACHI (EUA). Doutorando em Ciência
-                                    da Informação pela UFMG. Criador do Corcel PHP e colecionador de ElePHPants.
-                                    Entusiasta open-source e defensor do trabalho remoto. Marido e pai dedicado de um
-                                    casal.
-                                </p>
-                                <div class="card-footer">
-                                    <a href="https://twitter.com/junior_grossi" target="_blank" class="btn btn-link btn-just-icon btn-neutral"><i
-                                            class="fa fa-twitter"></i></a>
-                                    <a href="https://www.linkedin.com/in/juniorgrossi/" target="_blank" class="btn btn-link btn-just-icon btn-neutral"><i
-                                            class="fa fa-linkedin"></i></a>
-                                    <a href="https://www.facebook.com/gr0ssi" target="_blank" class="btn btn-link btn-just-icon btn-neutral"><i
-                                            class="fa fa-facebook"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card card-profile card-plain">
-                            <div class="card-img-top card-workshop-avatar">
-                                <a href="#workshops">
-                                    <img class="img" src="assets/img/faces/Evandro-Mohr-square.png" />
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title"><strong>Evandro Mohr</strong></h4>
-                                <h5 class="card-category text-warning"><strong>Segurança na Prática: Hackeando sua
-                                        Aplicação PHP</strong></h5>
-                                <p class="card-description text-center">
-                                    Evandro Mohr já foi professor na Universidade Estadual do Vale do Acaraú e já atuou
-                                    como Desenvolvedor e Gestor de TI no Governo do Estado do Ceará por quase uma
-                                    década.
-                                    Atualmente trabalha com desenvolvimento de software na Objective Solutions em
-                                    Curitiba e, nas horas vagas, gosta de pilotar aviões pelo sul do país.
-                                </p>
-                                <div class="card-footer">
-                                    <a href="https://www.linkedin.com/in/evandromohr/" target="_blank" class="btn btn-link btn-just-icon btn-neutral"><i
-                                            class="fa fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    -->
-
-    <!--
-    <div class="features-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 ml-auto mr-auto text-center">
-                    <h2 class="title">E que tal uma pelúcia elePHPant especial?</h2>
-                    <h5 class="description">Nessa edição de 2019 tudo está sendo muito especial, e prova disso é que
-                        pela primeira vez teremos uma pelúcia ElePHPant exclusiva e especial do Darkmira Tour PHP para
-                        apoiar as ações de diversidade do evento.</h5>
-                    <br />
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card" data-background="image" style="background-image: url('assets/img/sections/elephant-side-right.png')">
-                        <div class="card-body">
-                            <h4 class="card-category">Diversidade</h4>
-                            <div class="card-icon">
-                                <i class="nc-icon nc-world-2"></i>
-                            </div>
-                            <div class="card-footer">
-                                <a href="elephpant.html" class="btn btn-link btn-neutral">
-                                    <i class="fa fa-book" aria-hidden="true"></i> Saiba mais
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card" data-background="image" style="background-image: url('assets/img/sections/elephant-side-front.png')">
-                        <div class="card-body">
-                            <h4 class="card-category">Design Exclusivo</h4>
-                            <div class="card-icon">
-                                <i class="fa fa-pencil"></i>
-                            </div>
-                            <div class="card-footer">
-                                <a href="elephpant.html" class="btn btn-link btn-neutral">
-                                    <i class="fa fa-book" aria-hidden="true"></i> Saiba mais
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card" data-background="image" style="background-image: url('assets/img/sections/elephant-side-left.png')">
-                        <div class="card-body">
-                            <h4 class="card-category">O primeiro do Brasil</h4>
-                            <div class="card-icon">
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="card-footer">
-                                <a href="elephpant.html" class="btn btn-link btn-neutral">
-                                    <i class="fa fa-book" aria-hidden="true"></i> Saiba mais
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    -->
-
-    <!--
-    <div class="pricing-5 section-dark" id="pricing">
-        <div class="">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2 class="title">Garanta já seu ingresso e/ou elePHPant</h2>
-                    <div class="choose-plan">
-                        <ul class="nav nav-pills nav-pills-success justify-content-center" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#ticketSimple" role="tab">Ingresso</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#ticketWorkshop" role="tab">Ingresso +
-                                    Workshop</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#ticketElephpant" role="tab">ElePHPant</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <br />
-                    <p class="description text-gray">Você pode comprar o elePHPant a parte, mas lembre-se, você ou
-                        alguém precisa recebê-lo durante o evento.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="tab-content text-center">
-                        <div class="tab-pane active" id="ticketSimple" role="tabpanel">
-                            <div class="space-top"></div>
-                            <div class="row">
-                                <div class="col-md-2"></div>
-                                <div class="col-md-2">
-                                    <div class="card card-pricing">
-                                        <div class="card-body">
-                                            <h6 class="card-category text-success">Early Bird</h6>
-                                            <h1 class="card-title"><del>R$ 80</del></h1>
-                                            <ul>
-                                                <li><b>Acesso</b> aos 2 dias de palestras</li>
-                                                <li><b>1 Camiseta</b> - edição do evento</li>
-                                                <li><b>Participaçào</b> aos sorteios de brindes</li>
-                                                <li><b>Certificado</b> de participação de 20 horas</li>
-                                                <li><b>Disponibilidade</b> de 12/12/2018 à 31/01/2019</li>
-                                            </ul>
-                                            <button disabled="disabled" class="btn btn-dark btn-round">ENCERRADO</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="card card-pricing" data-color="green">
-                                        <div class="card-body">
-                                            <h6 class="card-category text-success">Lote 1</h6>
-                                            <h1 class="card-title"><strong>R$ 95</strong></h1>
-                                            <ul>
-                                                <li><b>Acesso</b> aos 2 dias de palestras</li>
-                                                <li><b>1 Camiseta</b> - edição do evento</li>
-                                                <li><b>Participaçào</b> aos sorteios de brindes</li>
-                                                <li><b>Certificado</b> de participação de 20 horas</li>
-                                                <li><b>Disponibilidade</b> de 01/02/2019 à 31/03/2019</li>
-                                            </ul>
-                                            <a href="https://www.sympla.com.br/darkmira-tour-php-2019__420712" class="btn btn-dark btn-round">COMPRAR
-                                                AGORA</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="card card-pricing">
-                                        <div class="card-body">
-                                            <h6 class="card-category text-success">Lote 2</h6>
-                                            <h1 class="card-title">R$ 115</h1>
-                                            <ul>
-                                                <li><b>Acesso</b> aos 2 dias de palestras</li>
-                                                <li><b>1 Camiseta</b> - edição do evento</li>
-                                                <li><b>Participaçào</b> aos sorteios de brindes</li>
-                                                <li><b>Certificado</b> de participação de 20 horas</li>
-                                                <li><b>Disponibilidade</b> de 01/04/2019 à 12/05/2019</li>
-                                            </ul>
-                                            <a href="https://www.sympla.com.br/darkmira-tour-php-2019__420712" class="btn btn-dark btn-round">Não
-                                                iniciado</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="card card-pricing">
-                                        <div class="card-body">
-                                            <h6 class="card-category text-success">Lote 3</h6>
-                                            <h1 class="card-title">R$ 150</h1>
-                                            <ul>
-                                                <li><b>Acesso</b> aos 2 dias de palestras</li>
-                                                <li><b>Participaçào</b> aos sorteios de brindes</li>
-                                                <li><b>Certificado</b> de participação de 20 horas</li>
-                                                <li><b>Disponibilidade</b> de 13/05/2019 à 09/06/2019</li>
-                                            </ul>
-                                            <a href="https://www.sympla.com.br/darkmira-tour-php-2019__420712" class="btn btn-dark btn-round">Não
-                                                iniciado</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane" id="ticketWorkshop" role="tabpanel">
-                            <div class="space-top"></div>
-                            <div class="row">
-                                <div class="col-md-3"></div>
-                                <div class="col-md-2">
-                                    <div class="card card-pricing">
-                                        <div class="card-body">
-                                            <h6 class="card-category text-success">Early Bird + 1 Workshop</h6>
-                                            <h1 class="card-title"><del>R$ 240</del></h1>
-                                            <ul>
-                                                <li><b>1 Workshop</b> de 8 horas</li>
-                                                <li><b>Acesso</b> aos 2 dias de palestras</li>
-                                                <li><b>1 Camiseta</b> - edição do evento</li>
-                                                <li><b>Participaçào</b> aos sorteios de brindes</li>
-                                                <li><b>Certificado</b> de participação de 20 horas</li>
-                                                <li><b>Disponibilidade</b> de 17/12/2018 à 31/01/2019</li>
-                                            </ul>
-                                            <button disabled class="btn btn-dark btn-round">ENCERRADO</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="card card-pricing" data-color="green">
-                                        <div class="card-body">
-                                            <h6 class="card-category text-success">Lote 1 + 1 Workshop</h6>
-                                            <h1 class="card-title"><strong>R$ 275</strong></h1>
-                                            <ul>
-                                                <li><b>1 Workshop</b> de 8 horas</li>
-                                                <li><b>Acesso</b> aos 2 dias de palestras</li>
-                                                <li><b>1 Camiseta</b> - edição do evento</li>
-                                                <li><b>Participaçào</b> aos sorteios de brindes</li>
-                                                <li><b>Certificado</b> de participação de 20 horas</li>
-                                                <li><b>Disponibilidade</b> de 01/02/2019 à 31/03/2019</li>
-                                            </ul>
-                                            <a href="https://www.sympla.com.br/darkmira-tour-php-2019__420712" class="btn btn-dark btn-round">COMPRAR
-                                                AGORA</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="card card-pricing">
-                                        <div class="card-body">
-                                            <h6 class="card-category text-success">Lote 2 + 1 Workshop</h6>
-                                            <h1 class="card-title">R$ 315</h1>
-                                            <ul>
-                                                <li><b>1 Workshop</b> de 8 horas</li>
-                                                <li><b>Acesso</b> aos 2 dias de palestras</li>
-                                                <li><b>1 Camiseta</b> - edição do evento</li>
-                                                <li><b>Participaçào</b> aos sorteios de brindes</li>
-                                                <li><b>Certificado</b> de participação de 20 horas</li>
-                                                <li><b>Disponibilidade</b> de 01/04/2019 à 12/05/2019</li>
-                                            </ul>
-                                            <a href="https://www.sympla.com.br/darkmira-tour-php-2019__420712" class="btn btn-dark btn-round">Não
-                                                iniciado</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane" id="ticketElephpant" role="tabpanel">
-                            <div class="space-top"></div>
-                            <div class="row">
-                                <div class="col-md-5"></div>
-                                <div class="col-md-2">
-                                    <div class="card card-pricing">
-                                        <div class="card-body">
-                                            <h6 class="card-category text-success">Pelúcia ElePHPant</h6>
-                                            <h1 class="card-title">R$ 100</h1>
-                                            <ul>
-                                                <li><b>1</b> Pelúcia ElePHPant</li>
-                                                <li><b>Retirada</b> apenas no dia do evento</li>
-                                                <li><b>Não</b> dá acesso ao evento</li>
-                                            </ul>
-                                            <a href="https://www.sympla.com.br/darkmira-tour-php-2019__420712" class="btn btn-success btn-round">Comprar
-                                                Agora</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    -->
-
     <div class="cd-section" id="contact-us">
         <div class="contactus-2" id="onde" style="padding:0; height:500px;">
             <div id="contactUsMap2" class="big-map"></div>
@@ -1439,7 +706,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 ml-auto mr-auto">
-                        <h2 class="title">Siga nos e compartilhe com o <a class="text-success" href="https://twitter.com/search?q=%23FlisolDF&src=typd"
+                        <h2 class="title">Siga nos e compartilhe com o <a class="text-info" href="https://twitter.com/search?q=%23FlisolDF&src=typd"
                                 target="_blank">#FlisolDF</a></h2>
                     </div>
                     <br />
@@ -1451,6 +718,8 @@
                                     class="fa fa-twitter"></i></a>
                             <a href="https://www.facebook.com/flisoldf/" target="_blank" class="btn btn-just-icon btn-facebook"><i
                                     class="fa fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/flisol.df/" target="_blank" class="btn btn-just-icon btn-instagram"><i
+                                    class="fa fa-instagram"></i></a>
                         </p>
                     </div>
                 </div>
@@ -1474,6 +743,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- material-scrolltop button -->
+    <button class="material-scrolltop" type="button"></button>
 </body>
 
 <!-- Core JS Files -->
@@ -1494,10 +766,36 @@
 <!--  Plugins for Map -->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfQnvmEyR79sLYapgptpme-I2c9n-vf1Q&language=pt-br"></script>
 
+<!-- material-scrolltop plugin -->
+<script src="assets/js/material-scrolltop.js"></script>
+
+<script src="assets/js/jquery.loadingModal.min.js"></script>
+
 <script type="text/javascript">
     $().ready(function () {
-        demo.initContactUsMap2()
+        demo.verticalDots();
+        demo.initContactUsMap2();
+        $('body').materialScrollTop();
+
+        // $('body').loadingModal({
+        //     position: 'auto',
+        //     text: 'Enviando...',
+        //     color: '#fff',
+        //     opacity: '0.7',
+        //     backgroundColor: 'rgb(0,0,0)',
+        //     animation: 'doubleBounce'
+        // });
     });
+
+    window.onscroll = () => {
+        const brand = document.querySelector('.navbar-brand');
+
+        if (this.scrollY <= 500) {
+            $(brand).hide();
+        } else {
+            $(brand).show();
+        }
+    };
 </script>
 
 </html>
