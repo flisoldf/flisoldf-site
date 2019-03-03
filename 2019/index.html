@@ -33,6 +33,28 @@
             text-decoration: none;
             background-color: #66615B;
         }
+
+        .navbar-transparent .navbar-nav .nav-item .nav-link:not(.btn),
+        [class*="bg"] .navbar-nav .nav-item .nav-link:not(.btn) {
+            color: black;
+            border-color: #fff;
+        }
+
+        .navbar .navbar-nav .nav-item .btn i {
+            color: black;
+        }
+
+        #event p {
+            margin-bottom: .5em;
+        }
+
+        #event h3 {
+            margin-bottom: .5em;
+        }
+
+        #event li {
+            margin-bottom: .5em;
+        }
     </style>
 
     <!-- Fonts and icons -->
@@ -43,7 +65,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-transparent nav-down" color-on-scroll="500" style="display: none;">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-transparent nav-down" color-on-scroll="500">
         <div class="container">
             <div class="navbar-translate">
                 <div class="navbar-header">
@@ -82,15 +104,33 @@
                                 2010</a>
                         </ul>
                     </li>
-                    <!--
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#evento" data-scroll="true" href="javascript:void(0)">Evento</a>
+                        <a class="nav-link" href="index.html#event" data-scroll="true" href="javascript:void(0)">Flisol?</a>
                     </li>
-                    -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">Participe</a>
+                        <ul class="dropdown-menu dropdown-menu-right dropdown-danger" style="margin-top: -1em;">
+                            <a class="dropdown-item" href="https://doity.com.br/flisol-df-2019" target="_blank">Inscreva-se</a>
+                            <a class="dropdown-item" href="index.html#talk-submission" data-scroll="true" href="javascript:void(0)">Submissão
+                                de palestras</a>
+                            <a class="dropdown-item" href="index.html#want-to-collaborate" data-scroll="true" href="javascript:void(0)">Quero
+                                colaborar</a>
+                            <a class="dropdown-item" href="index.html#im-a-group" data-scroll="true" href="javascript:void(0)">Sou
+                                um grupo de usuários</a>
+                        </ul>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#contact-us" data-scroll="true" href="javascript:void(0)">Onde
                             e quando</a>
                     </li>
+                    <!--
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#talk-submission" data-scroll="true" href="javascript:void(0)">Submissão de palestras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#want-to-collaborate" data-scroll="true" href="javascript:void(0)">Quero colaborar</a>
+                    </li>
+                    -->
                     <!--
                     <li class="nav-item">
                         <a class="nav-link" href="elephpant.html" data-scroll="true">ElePHPant</a>
@@ -106,10 +146,11 @@
                         <a class="nav-link" href="index.html#workshops" data-scroll="true" href="javascript:void(0)">Workshops</a>
                     </li>
                     -->
+                    <!--
                     <li class="nav-item">
-                        <!-- <a class="nav-link" href="index.html#tickets" data-scroll="true" href="javascript:void(0)">Inscreva-se</a> -->
                         <a class="nav-link" href="https://doity.com.br/flisol-df-2019" target="_blank">Inscreva-se</a>
                     </li>
+                    -->
                     <li class="nav-item">
                         <a href="https://twitter.com/flisoldf" target="_blank" class="btn btn-link btn-neutral" style="padding: 7px 0 7px 10px;"><i
                                 class="fa fa-twitter"></i></a>
@@ -121,7 +162,7 @@
         </div>
     </nav>
 
-    <div class="page-header" data-parallax="true" style="background-image: url('assets/img/sections/manutencao_site.jpg');">
+    <div class="page-header" data-parallax="true" style="background-image: url('assets/img/sections/flisoldf_site_banner_1.jpg');">
         <!-- <div class="filter"></div> -->
         <div class="content-center">
             <div class="container">
@@ -153,6 +194,7 @@
                         class="btn btn-outline-neutral btn-round">Quero ajudar</a>
                     <a href="index.html#im-a-group" data-scroll="true" href="javascript:void(0)" target="_blank" class="btn btn-outline-neutral btn-round">Sou
                         um Grupo de Usuários</a> -->
+                    <!--
                     <div style="margin-top:450px; margin-bottom:30px;"></div>
                     <a href="index.html#talk-submission" data-scroll="true" href="javascript:void(0)" target="_blank"
                         class="btn btn-secondary btn-round">Submissão de palestras</a>
@@ -160,72 +202,77 @@
                         class="btn btn-secondary btn-round">Quero colaborar</a>
                     <a href="index.html#im-a-group" data-scroll="true" href="javascript:void(0)" target="_blank" class="btn btn-secondary btn-round">Sou
                         um Grupo de Usuários</a>
-
+                    -->
                 </div>
             </div>
         </div>
 
     </div>
 
-    <!--
-    <div class="cd-section section-white" id="evento">
+    <div class="cd-section section-white" id="event">
         <div class="wrapper">
-            <div class="section text-center landing-section">
+            <div class="section landing-section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8 ml-auto mr-auto">
-                            <h2 class="title">PARTICIPE CONOSCO</h2>
-                            <h5>Serão 3 dias de muita aprendizagem com as comunidades PHP, descobertas e interações</h5>
+                        <div class="col-md-8 ml-auto mr-auto text-center">
+                            <h2 class="title">Flisol, o que é ?</h2>
+                            <!-- <h5>Serão 3 dias de muita aprendizagem com as comunidades PHP, descobertas e interações</h5> -->
                         </div>
                     </div>
                     <br /><br />
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="info">
-                                <div class="icon icon-success">
-                                    <i class="nc-icon nc-bulb-63"></i>
-                                </div>
-                                <div class="description">
-                                    <h4 class="info-title">Descobertas</h4>
-                                    <p class="description">Venha descobrir as últimas novidades do ecossistema PHP,
-                                        boas práticas, ferramentas e metodologias durante esses 3 dias com mais de 30
-                                        palestras onde palestrantes internacionais e nacionais compartilharão os seus
-                                        conhecimentos.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="info">
-                                <div class="icon icon-success">
-                                    <i class="nc-icon nc-chat-33"></i>
-                                </div>
-                                <div class="description">
-                                    <h4 class="info-title">Interação</h4>
-                                    <p>Interaja com os 400 participantes durante os vários coffee breaks, demonstrações
-                                        e networking nos 2 espaços business e comunidades. Compartilhe seu conhecimento
-                                        através da área de desconferencias onde todos poderão submeter um assunto.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="info">
-                                <div class="icon icon-success">
-                                    <i class="nc-icon nc-money-coins"></i>
-                                </div>
-                                <div class="description">
-                                    <h4 class="info-title">Novidade!!</h4>
-                                    <p>Após 3 edições em Brasília, o evento se muda e vai para a capital cearense,
-                                        PHPraia, calor e sol para reunir todas as comunidades PHP do Brasil. </p>
-                                </div>
-                            </div>
+                        <div class="col-md-12">
+                            <p>O Festival Latino Americano de Instalação de Software Livre é um festival anual de
+                                instalação de software livre, gratuito e aberto a toda a comunidade, realizado desde
+                                2005 em diversos países da América Latina, inclusive no Brasil. O local de nossa
+                                primeira edição foi na <a href="http://unb.br/" target="_blank">UnB</a>.</p>
+                            <p>O evento tem o propósito de promover o uso de softwares livres e a integração de
+                                comunidades de usuários em todos os paí­ses da América Latina. Brasília entrará nessa
+                                maratona pela 14a vez. Ele ocorrerá no dia no dia 27 de Abril de 2019.</p>
+                            <p>O FLISOL busca estreitar e ampliar o contato de usuários de computadores com o mundo do
+                                Software Livre. O evento permite que as pessoas conheçam outros usuários e
+                                desenvolvedores, troquem dúvidas e sugestões. O objetivo maior é promover um
+                                intercâmbio de conhecimentos bastante sadio e aumentar a colaboração entre os
+                                participantes do evento.</p>
+                            <p>Participe dos mini-cursos e palestras e inicie a sua jornada no mundo Livre. Estamos
+                                programando uma série de atividades para a realização do Flisol em Brasília-DF. Estas
+                                atividades envolvem a preparação do material, divulgação e organização das equipes para
+                                o Installfest e para as palestras.</p>
+                            <h3>Como participar?</h3>
+                            <p>Você pode participar de três formas:</p>
+                            <ul>
+                                <li>Como PALESTRANTE e/ou INSTRUTOR de MINI-CURSOS do evento. Submeta sua PROPOSTA DE
+                                    TRABALHO com a sua idéia de palestra ou mini-curso. Se tiver alguma dúvida entre em
+                                    contato conosco pelo e-mail da ORGANIZAÇÃO do evento <a href="mailto:organizacao@flisoldf.blog.br?subject=CHAMADA+DE+TRABALHO+–+FLISOL-DF+2019">organizacao@flisoldf.blog.br</a>
+                                    com o assunto <em>CHAMADA DE TRABALHO – FLISOL-DF 2019</em>.</li>
+                                <li>Como USUÁRIO para assistir e participar das atividades, palestras e mini-cursos.
+                                    Faça sua inscrição para o evento acessando a página de <a href="https://doity.com.br/flisol-df-2019" target="_blank">INSCRIÇÃO DO FLISOL-DF 2019</a>.</li>
+                                <li>Como PATROCINADOR (quer seja pessoa física ou empresa) ou como participante da
+                                    ORGANIZAÇÃO DO EVENTO. Entre em contato com a organização pelo e-mail:
+                                    <a href="mailto:organizacao@flisoldf.blog.br">organizacao@flisoldf.blog.br</a>.</li>
+                            </ul>
+                            <p>A participação no FLISOL 2019 em Brasília é totalmente gratuita e será certificada. Para
+                                participar basta se dirigir até o local do evento no dia 27 de Abril, a partir das 08h
+                                até as 18h. Se desejar, com seu computador para instalarmos software livre durante todo
+                                o dia do evento.</p>
+                            <p>Se não quiser levar seu computador para instalar software livre, mesmo assim poderá
+                                participar assistindo a palestras, mini-cursos e interagindo com outros visitantes e
+                                usuários de software livre.</p>
+                            <p>Traga sua família e amigos tanto para conhecer melhor a respeito do software livre
+                                quanto para trocar experiências do mundo livre, seja você um usuário com qualquer nível
+                                de conhecimento.</p>
+                                <h3>InstallFest – Festa?</h3>
+                                <p>Um <strong>InstallFest</strong> é um evento, geralmente patrocinado por um grupo de usuários Linux, em que pessoas se reúnem para realizar instalações em massa de sistemas operacionais de computador ou software livre, principalmente o sistema operacional Linux e outros softwares de código aberto.</p>
+                                <p>Com esta finalidade, diversas comunidades locais de software livre (em cada país, em cada cidade/localidade), organizam simultaneamente eventos em que se instala gratuitamente e totalmente legal, software livre nos computadores levados pelos participantes, onde iniciantes trazem seus computadores, e usuários experientes os auxiliam a instalar e configurar o sistema. Muitas vezes mídias contendo alguma distribuição de Linux e informativos são distribuídos gratuitamente aos participantes. Este tipo de evento recebe bem todo nível de conhecimento, de iniciantes a usuários avançados.</p>
+                                <p>O InstallFest prioriza não só a instalação de Distribuições de GNU/Linux, mas também a instalação de Software Livres em geral, mesmo em plataforma proprietária, de forma que o usuário possa ter aí o seu primeiro contato com a filosofia do Software Livre e no futuro possa fazer a opção consciente por um Sistema Operacional Livre. A instalação pode ser feita de forma assistida*, ou seja, você mesmo poderá fazer a instalação do Sistema na sua máquina apenas com a supervisão de alguém com mais prática.</p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
-    -->
+
+    <hr />
 
     <div class="cd-section section-white" id="talk-submission">
         <div class="wrapper">
@@ -386,19 +433,26 @@
                     <div class="row">
                         <div class="col-md-12 ml-auto mr-auto text-center">
                             <h2 class="title">Quero colaborar</h2>
-                            <h5 class="description" style="color:black;text-align: justify;">A Coordenação do FLISOL-DF
+                            <!-- <h5 class="description" style="color:black;text-align: justify;">A Coordenação do FLISOL-DF
                                 gostaria de contar com seu apoio na organização do evento para este ano. Responda o
                                 questionário abaixo para que possamos dar início ao processo de organização e marcação
                                 de reuniões.</h5>
                             <h5 class="description" style="color:black;text-align: justify;">Lembre-se que os
                                 colaboradores (equipe de organização) recebem certificado de 30 horas de organização do
                                 evento. A falta em 2 reuniões consecutivas descredenciam o colaborador da equipe de
-                                organização.</h5>
+                                organização.</h5> -->
                         </div>
                     </div>
                     <div class="space-top"></div>
                     <div class="row">
                         <div class="col-md-12">
+                            <p>A Coordenação do FLISOL-DF gostaria de contar com seu apoio na organização do evento
+                                para este ano. Responda o questionário abaixo para que possamos dar início ao processo
+                                de organização e marcação de reuniões.</p>
+                            <p>Lembre-se que os colaboradores (equipe de organização) recebem certificado de 30 horas
+                                de organização do evento. A falta em 2 reuniões consecutivas descredenciam o
+                                colaborador da equipe de organização.</p>
+                            <br />
                             <form action="/2017/divulgacao/chamada-publica-de-colaboradores/#wpcf7-f673-p335-o1" method="post"
                                 novalidate="novalidate">
                                 <div class="row">
@@ -554,15 +608,20 @@
                     <div class="row">
                         <div class="col-md-12 ml-auto mr-auto text-center">
                             <h2 class="title">Sou um grupo de usuários</h2>
-                            <h5 class="description" style="color:black;text-align: justify;">Disponibilizamos esta área
+                            <!-- <h5 class="description" style="color:black;text-align: justify;">Disponibilizamos esta área
                                 para os grupos de usuários de tecnologias livres e open source para que possam divulgar
                                 suas iniciativas, trocar experiências com o público visitante e instituições
-                                patrocinadoras do evento. Para participar, cadastre sua comunidade:</h5>
+                                patrocinadoras do evento. Para participar, cadastre sua comunidade:</h5> -->
                         </div>
                     </div>
                     <div class="space-top"></div>
                     <div class="row">
                         <div class="col-md-12">
+                            <p>Disponibilizamos esta área para os grupos de usuários de tecnologias livres e open
+                                source para que possam divulgar suas iniciativas, trocar experiências com o público
+                                visitante e instituições patrocinadoras do evento. Para participar, cadastre sua
+                                comunidade:</p>
+                            <br />
                             <form action="/2017/divulgacao/grupos-de-usuarios-gus/#wpcf7-f654-p324-o1" method="post"
                                 enctype="multipart/form-data" novalidate="novalidate">
                                 <div class="row">
@@ -594,10 +653,10 @@
                                     </div>
                                 </div>
                                 <h3>Representantes</h3>
-                                <p style="text-align:justify;margin-bottom:1.5em">Indicar no mínimo 2 representantes
-                                    que estarão presentes no evento como participantes ou palestrantes. Ter
-                                    disponibilidade e responsabilidade pelo espaço durante o evento. Os representantes
-                                    serão informados por e-mail quando a inscrição for confirmada.</p>
+                                <p style="margin-bottom:1.5em">Indicar no mínimo 2 representantes que estarão presentes
+                                    no evento como participantes ou palestrantes. Ter disponibilidade e
+                                    responsabilidade pelo espaço durante o evento. Os representantes serão informados
+                                    por e-mail quando a inscrição for confirmada.</p>
                                 <fieldset style="margin-bottom:1.5em">
                                     <legend>Representante 01</legend>
                                     <div class="row">
