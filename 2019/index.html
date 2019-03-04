@@ -132,10 +132,10 @@
                             <a class="dropdown-item" href="https://doity.com.br/flisol-df-2019" target="_blank">Inscreva-se</a>
                             <a class="dropdown-item" href="index.html#talk-submission" data-scroll="true" href="javascript:void(0)">Submissão
                                 de palestras</a>
-                            <a class="dropdown-item" href="index.html#want-to-collaborate" data-scroll="true" href="javascript:void(0)">Quero
-                                colaborar</a>
-                            <a class="dropdown-item" href="index.html#im-a-group" data-scroll="true" href="javascript:void(0)">Sou
-                                um grupo de usuários</a>
+                            <!-- <a class="dropdown-item" href="index.html#want-to-collaborate" data-scroll="true" href="javascript:void(0)">Quero
+                                colaborar</a> -->
+                            <!-- <a class="dropdown-item" href="index.html#im-a-group" data-scroll="true" href="javascript:void(0)">Sou
+                                um grupo de usuários</a> -->
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -381,9 +381,9 @@
         </div>
     </div>
 
-    <hr />
+    <hr style="display:none;" />
 
-    <div class="cd-section section-white" id="want-to-collaborate">
+    <div class="cd-section section-white" id="want-to-collaborate" style="display:none;">
         <div class="wrapper">
             <div class="section landing-section">
                 <div class="container">
@@ -537,9 +537,9 @@
         </div>
     </div>
 
-    <hr />
+    <hr style="display:none;" />
 
-    <div class="cd-section section-white" id="im-a-group">
+    <div class="cd-section section-white" id="im-a-group" style="display:none;">
         <div class="wrapper">
             <div class="section landing-section">
                 <div class="container">
@@ -772,78 +772,6 @@
 <script src="assets/js/jquery.loadingModal.min.js"></script>
 <script src="assets/js/bootbox.all.min.js"></script>
 
-<script type="text/javascript">
-    $().ready(function () {
-        demo.verticalDots();
-        demo.initContactUsMap2();
-        $('body').materialScrollTop();
-
-        $('#pl-submit').click(function (event) {
-            // Stop submit the form, we will post it manually.
-            event.preventDefault();
-
-            // Display a loading modal
-            $('body').loadingModal({
-                position: 'auto',
-                text: 'Submetendo a palestra...',
-                color: '#fff',
-                opacity: '0.7',
-                backgroundColor: 'rgb(0,0,0)',
-                animation: 'doubleBounce'
-            });
-
-            // Get form
-            var form = $('#pl-form')[0];
-
-            // Create an FormData object 
-            var data = new FormData(form);
-
-            // If you want to add an extra field for the FormData
-            // data.append("CustomField", "This is some extra data, testing");
-
-            // disabled the submit button
-            $('#pl-form').prop('disabled', true);
-
-            $.ajax({
-                type: 'POST',
-                enctype: 'multipart/form-data',
-                url: 'http://api.flisoldf.blog.local/talk',
-                data: data,
-                processData: false,
-                contentType: false,
-                cache: false,
-                timeout: 600000,
-                success: function (data) {
-                    // Hide and destroy the loading modal
-                    $('body').loadingModal('hide');
-                    $('body').loadingModal('destroy');
-
-                    console.log('SUCCESS : ', data);
-                    $('#pl-form').prop('disabled', false);
-                    bootbox.alert(data.message);
-                },
-                error: function (e) {
-                    // Hide and destroy the loading modal
-                    $('body').loadingModal('hide');
-                    $('body').loadingModal('destroy');
-
-                    console.log('ERROR : ', e);
-                    $('#pl-form').prop('disabled', false);
-                    bootbox.alert(e.responseJSON.message);
-                }
-            });
-        });
-    });
-
-    window.onscroll = () => {
-        const brand = document.querySelector('.navbar-brand');
-
-        if (this.scrollY <= 500) {
-            $(brand).hide();
-        } else {
-            $(brand).show();
-        }
-    };
-</script>
+<script src="assets/js/main.js"></script>
 
 </html>
