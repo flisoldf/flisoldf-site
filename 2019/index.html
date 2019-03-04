@@ -62,6 +62,13 @@
             outline: none !important;
             -webkit-appearance: none;
         }
+
+        @media screen and (max-width: 991px) {
+            .navbar-collapse::after {
+                background-image: none;
+                background-color: #fff !important;
+            }
+        }
     </style>
 
     <!-- Fonts and icons -->
@@ -141,7 +148,9 @@
                         <a href="https://www.facebook.com/flisoldf" target="_blank" class="btn btn-link btn-neutral"
                             style="padding: 7px 0 7px 10px;"><i class="fa fa-facebook"></i></a>
                         <a href="https://www.instagram.com/flisol.df/" target="_blank" class="btn btn-link btn-neutral"
-                            style="padding: 7px 0;"><i class="fa fa-instagram"></i></a>
+                            style="padding: 7px 0 7px 10px;"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/groups/12211146/" target="_blank" class="btn btn-link btn-neutral"
+                            style="padding: 7px 0;"><i class="fa fa-linkedin"></i></a>
                     </li>
                 </ul>
             </div>
@@ -242,8 +251,7 @@
                     <div class="space-top"></div>
                     <div class="row">
                         <div class="col-md-12">
-                            <form action="/2017/divulgacao/submissao-de-palestras/#wpcf7-f667-p876-o1" method="post"
-                                enctype="multipart/form-data" novalidate="novalidate">
+                            <form id="pl-form" method="post" enctype="multipart/form-data" novalidate="novalidate">
                                 <fieldset>
                                     <legend>Dados do Palestrante</legend>
                                     <div class="row">
@@ -275,8 +283,8 @@
                                                     rows="10" class="form-control" aria-required="true" aria-invalid="false"></textarea></span>
                                         </div>
                                         <div class="col-md-12 form-group">
-                                            <label>URL do Currículo Lattes</label><br>
-                                            <span class="pl-lattes"><input type="url" name="pl-lattes" value="" size="100"
+                                            <label>Site (ou endereço do Currículo Lattes)</label><br>
+                                            <span class="pl-site"><input type="url" name="pl-site" value="" size="100"
                                                     class="form-control" aria-invalid="false" placeholder="http://"></span>
                                         </div>
                                     </div>
@@ -322,7 +330,8 @@
                                                 <select select name="pl-assunto" class="form-control selectpicker"
                                                     aria-required="true" aria-invalid="false" data-live-search="true">
                                                     <option value="">---</option>
-                                                    <option value="1">Acessibilidade Livre (Aplicativos para portadores de necessidades física)</option>
+                                                    <option value="1">Acessibilidade Livre (Aplicativos para portadores
+                                                        de necessidades física)</option>
                                                     <option value="2">Criptotecnologias</option>
                                                     <option value="3">Desenvolvimento (Programação)</option>
                                                     <option value="4">Design de Imagens, Animações, Áudio e Vídeo</option>
@@ -353,7 +362,7 @@
                                             <p class="help-block">Formatos permitidos: PDF, ODP ou PPT/X.</p>
                                         </div>
                                         <div class="col-md-6 form-group">
-                                            <label>URL do Slide</label><br>
+                                            <label>Endereço do Slide</label><br>
                                             <span class="pl-slide-url">
                                                 <input type="url" name="pl-slide-url" value="" size="100" class="form-control"
                                                     aria-invalid="false" placeholder="http://">
@@ -362,7 +371,7 @@
                                     </div>
                                 </fieldset>
                                 <p class="text-right">
-                                    <input type="submit" value="Submeter Palestra" class="btn btn-primary btn-lg">
+                                    <input id="pl-submit" type="submit" value="Submeter Palestra" class="btn btn-primary btn-lg">
                                 </p>
                             </form>
                         </div>
@@ -372,7 +381,7 @@
         </div>
     </div>
 
-    <hr style="display:none;" />
+    <hr />
 
     <div class="cd-section section-white" id="want-to-collaborate">
         <div class="wrapper">
@@ -456,24 +465,20 @@
                                             <select select name="cpc-estudante" class="form-control selectpicker"
                                                 aria-required="true" aria-invalid="false" data-live-search="true">
                                                 <option value="">---</option>
-                                                <option value="Sim, no ensino superior">Sim, no ensino superior</option>
-                                                <option value="Sim, no ensino médio">Sim, no ensino médio</option>
-                                                <option value="Sim, no ensino médio técnico">Sim, no ensino médio
-                                                    técnico</option>
-                                                <option value="Não, já terminei o ensino superior">Não, já terminei o
-                                                    ensino superior</option>
-                                                <option value="Não, estou apenas trabalhando">Não, estou apenas
-                                                    trabalhando</option>
-                                                <option value="Não estou estudando, nem trabalhando">Não estou
-                                                    estudando, nem trabalhando</option>
-                                                <option value="Não, sou professor">Não, sou professor</option>
+                                                <option value="1">Sim, no ensino médio</option>
+                                                <option value="2">Sim, no ensino médio técnico</option>
+                                                <option value="3">Sim, no ensino superior</option>
+                                                <option value="4">Não, já terminei o ensino superior</option>
+                                                <option value="5">Não, estou apenas trabalhando</option>
+                                                <option value="6">Não estou estudando, nem trabalhando</option>
+                                                <option value="7">Não, sou professor</option>
                                             </select>
                                         </span>
                                     </div>
                                     <div class="col-md-8 form-group">
                                         <label>Onde você estuda ou trabalha? <span style="color:tomato">*</span></label><br>
                                         <span class="cpc-local-estudo-trabalho"><input type="text" name="cpc-local-estudo-trabalho"
-                                                value="" size="40" class="form-control" aria-required="true"
+                                                value="" size="100" class="form-control" aria-required="true"
                                                 aria-invalid="false"></span>
                                     </div>
                                 </div>
@@ -484,11 +489,12 @@
                                             <select select name="cpc-disponibilidade" class="form-control selectpicker"
                                                 aria-required="true" aria-invalid="false" data-live-search="true"
                                                 multiple>
-                                                <option value="Manhã - Todos os dias">Manhã - Todos os dias</option>
-                                                <option value="Tarde - Todos os dias">Tarde - Todos os dias</option>
-                                                <option value="Noite - Todos os dias">Noite - Todos os dias</option>
-                                                <option value="Sábado pela manhã">Sábado pela manhã</option>
-                                                <option value="Sábado pela manhã">Sábado pela tarde</option>
+                                                <option value="">---</option>
+                                                <option value="1">Manhã - Todos os dias</option>
+                                                <option value="2">Tarde - Todos os dias</option>
+                                                <option value="3">Noite - Todos os dias</option>
+                                                <option value="4">Sábado pela manhã</option>
+                                                <option value="5">Sábado pela tarde</option>
                                             </select>
                                         </span>
                                     </div>
@@ -498,33 +504,25 @@
                                             <select select name="cpc-area-colaboracao" class="form-control selectpicker"
                                                 aria-required="true" aria-invalid="false" data-live-search="true"
                                                 multiple>
-                                                <option value="Grupo 1 – Na busca por patrocínio e apoio">Grupo 1 – Na
-                                                    busca por patrocínio e apoio</option>
-                                                <option value="Grupo 2 – Na publicidade e divulgação (redes sociais)">Grupo
-                                                    2 – Na publicidade e divulgação (redes sociais)</option>
-                                                <option value="Grupo 3 – Na organização do blog (site)">Grupo 3 – Na
-                                                    organização do blog (site)</option>
-                                                <option value="Grupo 4 – No controle de inscrição (participantes e palestrantes), certificados e controle das atividades">Grupo
-                                                    4 – No controle de inscrição (participantes e palestrantes),
-                                                    certificados e controle das atividades</option>
-                                                <option value="Grupo 5 – Na infra-estrutura tecnológica (rede local e wifi, servidores e repositórios)">Grupo
-                                                    5 – Na infra-estrutura tecnológica (rede local e wifi, servidores e
-                                                    repositórios)</option>
-                                                <option value="Grupo 6 – Na oficina de instalação (Installfest) e gravação de imagens de CDs">Grupo
-                                                    6 – Na oficina de instalação (Installfest) e gravação de imagens de
-                                                    CDs</option>
-                                                <option value="Grupo 7 – Temário (Outras palestras, Oficinas e Mini-cursos)">Grupo
-                                                    7 – Temário (Outras palestras, Oficinas e Mini-cursos)</option>
-                                                <option value="Grupo 8 - Sistema de inscrição (WordPress, PHP e MySQL)">Grupo
-                                                    8 - Sistema de inscrição (WordPress, PHP e MySQL)</option>
-                                                <option value="Grupo 9 - Organização de salas">Grupo 9 - Organização de
-                                                    salas</option>
-                                                <option value="Grupo 10 - Visita e divulgação em outras IES e escolas">Grupo
-                                                    10 - Visita e divulgação em outras IES e escolas</option>
-                                                <option value="Grupo 11 - Filmagem, fotografia e documentário do evento">Grupo
-                                                    11 - Filmagem, fotografia e documentário do evento</option>
-                                                <option value="Grupo 12 - Arte Gráfica e material gráfico">Grupo 12 -
-                                                    Arte Gráfica e material gráfico</option>
+                                                <option value="1">Grupo 1 – Na busca por patrocínio e apoio</option>
+                                                <option value="2">Grupo 2 – Na publicidade e divulgação (redes sociais)</option>
+                                                <option value="3">Grupo 3 – Na organização do blog (site)</option>
+                                                <option value="4">Grupo 4 – No controle de inscrição (participantes e
+                                                    palestrantes), certificados e controle das atividades</option>
+                                                <option value="5">Grupo 5 – Na infra-estrutura tecnológica (rede local
+                                                    e wifi, servidores e repositórios)</option>
+                                                <option value="6">Grupo 6 – Na oficina de instalação (InstallFest) e
+                                                    gravação de imagens em mídias</option>
+                                                <option value="7">Grupo 7 – Temário (Outras palestras, Oficinas e
+                                                    Mini-cursos)</option>
+                                                <option value="8">Grupo 8 - Sistema de inscrição (WordPress, PHP e
+                                                    MySQL)</option>
+                                                <option value="9">Grupo 9 - Organização de salas</option>
+                                                <option value="10">Grupo 10 - Visita e divulgação em outras IES e
+                                                    escolas</option>
+                                                <option value="11">Grupo 11 - Filmagem, fotografia e documentário do
+                                                    evento</option>
+                                                <option value="12">Grupo 12 - Arte Gráfica e material gráfico</option>
                                             </select>
                                     </div>
                                 </div>
@@ -539,7 +537,7 @@
         </div>
     </div>
 
-    <hr style="display:none;" />
+    <hr />
 
     <div class="cd-section section-white" id="im-a-group">
         <div class="wrapper">
@@ -563,12 +561,12 @@
                                 <div class="row">
                                     <div class="col-md-6 form-group">
                                         <label>Nome da sua comunidade <span style="color:tomato">*</span></label><br>
-                                        <span class="gu-nome"><input type="text" name="gu-nome" value="" size="40"
+                                        <span class="gu-nome"><input type="text" name="gu-nome" value="" size="80"
                                                 class="form-control" aria-required="true" aria-invalid="false"></span>
                                     </div>
                                     <div class="col-md-6 form-group">
-                                        <label>Website</label><br>
-                                        <span class="gu-website"><input type="url" name="gu-website" value="" size="40"
+                                        <label>Site</label><br>
+                                        <span class="gu-site"><input type="url" name="gu-website" value="" size="100"
                                                 class="form-control" aria-invalid="false" placeholder="http://"></span>
                                     </div>
                                     <div class="col-md-6 form-group">
@@ -599,7 +597,7 @@
                                         <div class="col-md-6 form-group">
                                             <label>Nome <span style="color:tomato">*</span></label><br>
                                             <span class="gu-representante1-nome"><input type="text" name="gu-representante1-nome"
-                                                    value="" size="40" class="form-control" aria-required="true"
+                                                    value="" size="80" class="form-control" aria-required="true"
                                                     aria-invalid="false"></span>
                                         </div>
                                         <div class="col-md-6">
@@ -624,7 +622,7 @@
                                         <div class="col-md-6 form-group">
                                             <label>Nome <span style="color:tomato">*</span></label><br>
                                             <span class="gu-representante2-nome"><input type="text" name="gu-representante2-nome"
-                                                    value="" size="40" class="form-control" aria-required="true"
+                                                    value="" size="80" class="form-control" aria-required="true"
                                                     aria-invalid="false"></span>
                                         </div>
                                         <div class="col-md-6">
@@ -720,6 +718,8 @@
                                     class="fa fa-facebook"></i></a>
                             <a href="https://www.instagram.com/flisol.df/" target="_blank" class="btn btn-just-icon btn-instagram"><i
                                     class="fa fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/groups/12211146/" target="_blank" class="btn btn-just-icon btn-linkedin"><i
+                                    class="fa fa-linkedin"></i></a>
                         </p>
                     </div>
                 </div>
@@ -770,6 +770,7 @@
 <script src="assets/js/material-scrolltop.js"></script>
 
 <script src="assets/js/jquery.loadingModal.min.js"></script>
+<script src="assets/js/bootbox.all.min.js"></script>
 
 <script type="text/javascript">
     $().ready(function () {
@@ -777,14 +778,61 @@
         demo.initContactUsMap2();
         $('body').materialScrollTop();
 
-        // $('body').loadingModal({
-        //     position: 'auto',
-        //     text: 'Enviando...',
-        //     color: '#fff',
-        //     opacity: '0.7',
-        //     backgroundColor: 'rgb(0,0,0)',
-        //     animation: 'doubleBounce'
-        // });
+        $('#pl-submit').click(function (event) {
+            // Stop submit the form, we will post it manually.
+            event.preventDefault();
+
+            // Display a loading modal
+            $('body').loadingModal({
+                position: 'auto',
+                text: 'Submetendo a palestra...',
+                color: '#fff',
+                opacity: '0.7',
+                backgroundColor: 'rgb(0,0,0)',
+                animation: 'doubleBounce'
+            });
+
+            // Get form
+            var form = $('#pl-form')[0];
+
+            // Create an FormData object 
+            var data = new FormData(form);
+
+            // If you want to add an extra field for the FormData
+            // data.append("CustomField", "This is some extra data, testing");
+
+            // disabled the submit button
+            $('#pl-form').prop('disabled', true);
+
+            $.ajax({
+                type: 'POST',
+                enctype: 'multipart/form-data',
+                url: 'http://api.flisoldf.blog.local/talk',
+                data: data,
+                processData: false,
+                contentType: false,
+                cache: false,
+                timeout: 600000,
+                success: function (data) {
+                    // Hide and destroy the loading modal
+                    $('body').loadingModal('hide');
+                    $('body').loadingModal('destroy');
+
+                    console.log('SUCCESS : ', data);
+                    $('#pl-form').prop('disabled', false);
+                    bootbox.alert(data.message);
+                },
+                error: function (e) {
+                    // Hide and destroy the loading modal
+                    $('body').loadingModal('hide');
+                    $('body').loadingModal('destroy');
+
+                    console.log('ERROR : ', e);
+                    $('#pl-form').prop('disabled', false);
+                    bootbox.alert(e.responseJSON.message);
+                }
+            });
+        });
     });
 
     window.onscroll = () => {
