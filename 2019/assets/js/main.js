@@ -5,7 +5,15 @@ $().ready(function () {
     demo.initContactUsMap2();
     $('body').materialScrollTop();
 
-    prepareFormSubmit('#pl-form', '/talk', 'Submetendo a palestra...');
+    prepareFormSubmit('#pl-form', '/talk', 'Submetendo a palestra...', (formId, targetUrl, waitingMessage) => {
+        $('#pl-success').show();
+        $('#pl-area').hide();
+        $(formId)[0].reset();
+    });
+    $('#pl-success a').click(() => {
+        $('#pl-success').hide();
+        $('#pl-area').show();
+    });
 });
 
 window.onscroll = () => {
@@ -24,8 +32,9 @@ window.onscroll = () => {
  * @param {*} formId Form identification.
  * @param {*} targetUrl URL of target.
  * @param {*} waitingMessage Message show then user is waiting.
+ * @param {*} afterAction Action to do after all.
  */
-function prepareFormSubmit(formId, targetUrl, waitingMessage) {
+function prepareFormSubmit(formId, targetUrl, waitingMessage, afterAction) {
     var form = $(formId);
     var submit = $('input[type="submit"]', form);
 
@@ -69,6 +78,10 @@ function prepareFormSubmit(formId, targetUrl, waitingMessage) {
                 // console.log('SUCCESS : ', data);
                 submit.prop('disabled', false);
                 bootbox.alert(data.message);
+
+                if (afterAction) {
+                    afterAction(formId, targetUrl, waitingMessage);
+                }
             },
             error: function (e) {
                 // Hide and destroy the loading modal
