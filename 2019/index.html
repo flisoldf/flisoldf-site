@@ -146,8 +146,8 @@
                             <a class="dropdown-item" href="https://doity.com.br/flisol-df-2019" target="_blank">Inscreva-se</a>
                             <a class="dropdown-item" href="index.html#talk-submission" data-scroll="true" href="javascript:void(0)">Submissão
                                 de palestras</a>
-                            <!-- <a class="dropdown-item" href="index.html#want-to-collaborate" data-scroll="true" href="javascript:void(0)">Quero
-                                colaborar</a> -->
+                            <a class="dropdown-item" href="index.html#want-to-collaborate" data-scroll="true" href="javascript:void(0)">Quero
+                                colaborar</a>
                             <!-- <a class="dropdown-item" href="index.html#im-a-group" data-scroll="true" href="javascript:void(0)">Sou
                                 um grupo de usuários</a> -->
                         </ul>
@@ -391,7 +391,7 @@
                                     </div>
                                 </fieldset>
                                 <p class="text-right">
-                                    <input id="pl-submit" type="submit" value="Submeter Palestra" class="btn btn-primary btn-lg">
+                                    <input type="submit" value="Submeter Palestra" class="btn btn-primary btn-lg">
                                 </p>
                             </form>
                         </div>
@@ -401,9 +401,9 @@
         </div>
     </div>
 
-    <hr style="display:none;" />
+    <hr />
 
-    <div class="cd-section section-white" id="want-to-collaborate" style="display:none;">
+    <div class="cd-section section-white" id="want-to-collaborate">
         <div class="wrapper">
             <div class="section landing-section">
                 <div class="container">
@@ -412,8 +412,13 @@
                             <h2 class="title">Quero colaborar</h2>
                         </div>
                     </div>
-                    <div class="space-top"></div>
-                    <div class="row">
+                    <div class="row" id="cpc-success" style="display:none;">
+                        <div class="col-md-12 text-center">
+                            <h5>Pedido enviado. Muito obrigado!</h5>
+                            <p><a href="#">Enviar novo pedido</a></p>
+                        </div>
+                    </div>
+                    <div class="row" id="cpc-area">
                         <div class="col-md-12">
                             <p>A Coordenação do FLISOL-DF gostaria de contar com seu apoio na organização do evento
                                 para este ano. Responda o questionário abaixo para que possamos dar início ao processo
@@ -422,8 +427,7 @@
                                 de organização do evento. A falta em 2 reuniões consecutivas descredenciam o
                                 colaborador da equipe de organização.</p>
                             <br />
-                            <form action="/2017/divulgacao/chamada-publica-de-colaboradores/#wpcf7-f673-p335-o1" method="post"
-                                novalidate="novalidate">
+                            <form id="cpc-form" method="post" enctype="multipart/form-data" novalidate="novalidate">
                                 <div class="row">
                                     <div class="col-md-6 form-group">
                                         <label>Nome <span style="color:tomato">*</span></label><br>
@@ -446,8 +450,8 @@
                                             <select select name="cpc-usa-software-livre" class="form-control selectpicker"
                                                 aria-required="true" aria-invalid="false">
                                                 <option value="">---</option>
-                                                <option value="Sim">Sim</option>
-                                                <option value="Não">Não</option>
+                                                <option value="1">Sim</option>
+                                                <option value="0">Não</option>
                                             </select>
                                         </span>
                                     </div>
@@ -506,7 +510,7 @@
                                     <div class="col-md-4 form-group">
                                         <label>Qual a sua disponibilidade de tempo? <span style="color:tomato">*</span></label><br>
                                         <span class="cpc-disponibilidade">
-                                            <select select name="cpc-disponibilidade" class="form-control selectpicker"
+                                            <select select name="cpc-disponibilidade[]" class="form-control selectpicker"
                                                 aria-required="true" aria-invalid="false" data-live-search="true"
                                                 multiple>
                                                 <option value="">---</option>
@@ -521,7 +525,7 @@
                                     <div class="col-md-8 form-group">
                                         <label>Onde deseja colaborar? <span style="color:tomato">*</span></label><br>
                                         <span class="cpc-area-colaboracao">
-                                            <select select name="cpc-area-colaboracao" class="form-control selectpicker"
+                                            <select select name="cpc-area-colaboracao[]" class="form-control selectpicker"
                                                 aria-required="true" aria-invalid="false" data-live-search="true"
                                                 multiple>
                                                 <option value="1">Grupo 1 – Na busca por patrocínio e apoio</option>

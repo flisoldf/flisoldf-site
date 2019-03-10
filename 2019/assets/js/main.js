@@ -5,7 +5,7 @@ $().ready(function () {
     demo.initContactUsMap2();
     $('body').materialScrollTop();
 
-    prepareFormSubmit('#pl-form', '/talk', 'Submetendo a palestra...', (formId, targetUrl, waitingMessage) => {
+    prepareFormSubmit('#pl-form', '/talks', 'Submetendo a palestra...', (formId, targetUrl, waitingMessage) => {
         $('#pl-success').show();
         $('#pl-area').hide();
         $(formId)[0].reset();
@@ -13,6 +13,16 @@ $().ready(function () {
     $('#pl-success a').click(() => {
         $('#pl-success').hide();
         $('#pl-area').show();
+    });
+
+    prepareFormSubmit('#cpc-form', '/collaborators', 'Enviando o pedido...', (formId, targetUrl, waitingMessage) => {
+        $('#cpc-success').show();
+        $('#cpc-area').hide();
+        $(formId)[0].reset();
+    });
+    $('#cpc-success a').click(() => {
+        $('#cpc-success').hide();
+        $('#cpc-area').show();
     });
 });
 
