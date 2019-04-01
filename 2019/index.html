@@ -6,26 +6,31 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76042043-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
         gtag('config', 'UA-76042043-1');
     </script>
 
     <!-- <base href="https://flisoldf.blog.br/2019/" /> -->
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <link rel="icon" type="image/png" href="assets/img/favicon.ico">
     <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
     <title>FLISOL DF 2019 - Festival Latinoamericano de Instalação de Software Livre em Brasília/DF</title>
 
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-    <meta name="viewport" content="width=device-width" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+    <meta name="viewport" content="width=device-width"/>
 
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/paper-kit.css?v=2.1.20" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.5/css/bootstrap-select.min.css" rel="stylesheet" />
-    <link href="assets/css/demo.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="assets/css/paper-kit.css?v=2.1.20" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.5/css/bootstrap-select.min.css"
+          rel="stylesheet"/>
+    <link href="assets/css/demo.css" rel="stylesheet"/>
     <style>
         .dropdown-item.active,
         .dropdown-item:active {
@@ -77,281 +82,516 @@
     <link href="assets/css/nucleo-icons.css" rel="stylesheet">
 
     <!-- Material ScrollTop stylesheet -->
-    <link href="assets/css/material-scrolltop.css" rel="stylesheet" />
+    <link href="assets/css/material-scrolltop.css" rel="stylesheet"/>
 
-    <link href="assets/css/jquery.loadingModal.min.css" rel="stylesheet" />
+    <link href="assets/css/jquery.loadingModal.min.css" rel="stylesheet"/>
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-transparent nav-down" color-on-scroll="500">
-        <div class="container">
-            <div class="navbar-translate">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html" style="display:none;">FLISOL DF 2019</a>
-                </div>
-                <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler"
+<nav class="navbar navbar-expand-lg fixed-top navbar-transparent nav-down" color-on-scroll="500">
+    <div class="container">
+        <div class="navbar-translate">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html" style="display:none;">FLISOL DF 2019</a>
+            </div>
+            <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse"
+                    data-target="#navbarToggler"
                     aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-bar"></span>
-                    <span class="navbar-toggler-bar"></span>
-                    <span class="navbar-toggler-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" style="color:white;font-weight:900;opacity:1;">Doações</a>
-                        <ul class="dropdown-menu dropdown-menu-right dropdown-danger" style="margin-top: -1em;">
-                            <a class="dropdown-item" href="https://www.kickante.com.br/campanhas/flisoldf-2019-0"
-                                target="_blank"><i class="nc-icon nc-satisfied"></i>&nbsp;
-                                Kickante</a>
-                            <a class="dropdown-item" href="http://vaka.me/495385" target="_blank"><i class="nc-icon nc-satisfied"></i>&nbsp;
-                                Vaquinha</a>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">Edições
-                            passadas</a>
-                        <ul class="dropdown-menu dropdown-menu-right dropdown-danger" style="margin-top: -1em;">
-                            <a class="dropdown-item" href="https://flisoldf.blog.br/2018" target="_blank"><i class="nc-icon nc-tile-56"></i>&nbsp;
-                                2018</a>
-                            <a class="dropdown-item" href="https://flisoldf.blog.br/2017" target="_blank"><i class="nc-icon nc-tile-56"></i>&nbsp;
-                                2017</a>
-                            <a class="dropdown-item" href="https://flisoldf.blog.br/2016" target="_blank"><i class="nc-icon nc-tile-56"></i>&nbsp;
-                                2016</a>
-                            <a class="dropdown-item" href="https://flisoldf.blog.br/2015" target="_blank"><i class="nc-icon nc-tile-56"></i>&nbsp;
-                                2015</a>
-                            <a class="dropdown-item" href="https://flisoldf.blog.br/2014" target="_blank"><i class="nc-icon nc-tile-56"></i>&nbsp;
-                                2014</a>
-                            <a class="dropdown-item" href="https://flisoldf.blog.br/2013" target="_blank"><i class="nc-icon nc-tile-56"></i>&nbsp;
-                                2013</a>
-                            <a class="dropdown-item" href="https://flisoldf.blog.br/2012" target="_blank"><i class="nc-icon nc-tile-56"></i>&nbsp;
-                                2012</a>
-                            <a class="dropdown-item" href="https://flisoldf.blog.br/2011" target="_blank"><i class="nc-icon nc-tile-56"></i>&nbsp;
-                                2011</a>
-                            <a class="dropdown-item" href="https://flisoldf.blog.br/2010" target="_blank"><i class="nc-icon nc-tile-56"></i>&nbsp;
-                                2010</a>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#event" data-scroll="true" href="javascript:void(0)">Flisol?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://flisol.info/FLISOL2019/Brasil/Bras%C3%ADlia" target="_blank">Brasília
-                            no FLISOL</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">Participe</a>
-                        <ul class="dropdown-menu dropdown-menu-right dropdown-danger" style="margin-top: -1em;">
-                            <a class="dropdown-item" href="https://doity.com.br/flisol-df-2019" target="_blank">Inscreva-se</a>
-                            <a class="dropdown-item" href="index.html#talk-submission" data-scroll="true" href="javascript:void(0)">Submissão
-                                de palestras</a>
-                            <a class="dropdown-item" href="index.html#want-to-collaborate" data-scroll="true" href="javascript:void(0)">Quero
-                                colaborar</a>
-                            <!-- <a class="dropdown-item" href="index.html#im-a-group" data-scroll="true" href="javascript:void(0)">Sou
-                                um grupo de usuários</a> -->
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#contact-us" data-scroll="true" href="javascript:void(0)">Onde
-                            e quando</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://twitter.com/flisoldf" target="_blank" class="btn btn-link btn-neutral" style="padding: 7px 0 7px 10px;"><i
-                                class="fa fa-twitter"></i></a>
-                        <a href="https://www.facebook.com/flisoldf" target="_blank" class="btn btn-link btn-neutral"
-                            style="padding: 7px 0 7px 10px;"><i class="fa fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/flisol.df/" target="_blank" class="btn btn-link btn-neutral"
-                            style="padding: 7px 0 7px 10px;"><i class="fa fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/groups/12211146/" target="_blank" class="btn btn-link btn-neutral"
-                            style="padding: 7px 0;"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                </ul>
-            </div>
+                <span class="navbar-toggler-bar"></span>
+                <span class="navbar-toggler-bar"></span>
+                <span class="navbar-toggler-bar"></span>
+            </button>
         </div>
-    </nav>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">FLISOL?</a>
+                    <ul class="dropdown-menu dropdown-menu-right dropdown-danger" style="margin-top: -1em;">
+                        <a class="dropdown-item" href="index.html#event" data-scroll="true" href="javascript:void(0)">Sobre</a>
+                        <a class="dropdown-item" href="https://flisol.info/FLISOL2019/Brasil/Bras%C3%ADlia"
+                           target="_blank">Brasília no FLISOL</a>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#talks" data-scroll="true" href="javascript:void(0)">Palestras/Oficinas</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">Participe</a>
+                    <ul class="dropdown-menu dropdown-menu-right dropdown-danger" style="margin-top: -1em;">
+                        <a class="dropdown-item" href="https://doity.com.br/flisol-df-2019"
+                           target="_blank">Inscreva-se</a>
+                        <a class="dropdown-item" href="index.html#talk-submission" data-scroll="true"
+                           href="javascript:void(0)">Submissão de palestras</a>
+                        <a class="dropdown-item" href="index.html#want-to-collaborate" data-scroll="true"
+                           href="javascript:void(0)">Quero colaborar</a>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact-us" data-scroll="true" href="javascript:void(0)">Data e
+                        local</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.kickante.com.br/campanhas/flisoldf-2019-0" target="_blank"
+                       style="color:white;font-weight:900;opacity:1;">Faça uma doação</a>
+                </li>
+                <!--
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">Edições
+                        passadas</a>
+                    <ul class="dropdown-menu dropdown-menu-right dropdown-danger" style="margin-top: -1em;">
+                        <a class="dropdown-item" href="https://flisoldf.blog.br/2018" target="_blank"><i class="nc-icon nc-tile-56"></i>&nbsp;
+                            2018</a>
+                        <a class="dropdown-item" href="https://flisoldf.blog.br/2017" target="_blank"><i class="nc-icon nc-tile-56"></i>&nbsp;
+                            2017</a>
+                        <a class="dropdown-item" href="https://flisoldf.blog.br/2016" target="_blank"><i class="nc-icon nc-tile-56"></i>&nbsp;
+                            2016</a>
+                        <a class="dropdown-item" href="https://flisoldf.blog.br/2015" target="_blank"><i class="nc-icon nc-tile-56"></i>&nbsp;
+                            2015</a>
+                        <a class="dropdown-item" href="https://flisoldf.blog.br/2014" target="_blank"><i class="nc-icon nc-tile-56"></i>&nbsp;
+                            2014</a>
+                        <a class="dropdown-item" href="https://flisoldf.blog.br/2013" target="_blank"><i class="nc-icon nc-tile-56"></i>&nbsp;
+                            2013</a>
+                        <a class="dropdown-item" href="https://flisoldf.blog.br/2012" target="_blank"><i class="nc-icon nc-tile-56"></i>&nbsp;
+                            2012</a>
+                        <a class="dropdown-item" href="https://flisoldf.blog.br/2011" target="_blank"><i class="nc-icon nc-tile-56"></i>&nbsp;
+                            2011</a>
+                        <a class="dropdown-item" href="https://flisoldf.blog.br/2010" target="_blank"><i class="nc-icon nc-tile-56"></i>&nbsp;
+                            2010</a>
+                    </ul>
+                </li>
+                -->
+                <li class="nav-item">
+                    <a href="https://twitter.com/flisoldf" target="_blank" class="btn btn-link btn-neutral"
+                       style="padding: 7px 0 7px 10px;"><i
+                            class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/flisoldf" target="_blank" class="btn btn-link btn-neutral"
+                       style="padding: 7px 0 7px 10px;"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/flisol.df/" target="_blank" class="btn btn-link btn-neutral"
+                       style="padding: 7px 0 7px 10px;"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/groups/12211146/" target="_blank" class="btn btn-link btn-neutral"
+                       style="padding: 7px 0;"><i class="fa fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-    <div class="page-header" data-parallax="true" style="background-image: url('assets/img/sections/flisoldf_site_banner_1.jpg');"></div>
+<div class="page-header" data-parallax="true"
+     style="background-image: url('assets/img/sections/flisoldf_site_banner_2.jpg');"></div>
 
-    <div class="cd-section section-white" id="event">
-        <div class="wrapper">
-            <div class="section landing-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 ml-auto mr-auto text-center">
-                            <h2 class="title">Flisol, o que é ?</h2>
-                        </div>
+<div class="cd-section section-white" id="event">
+    <div class="wrapper">
+        <div class="section landing-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto text-center">
+                        <h2 class="title">Flisol, o que é ?</h2>
                     </div>
-                    <br /><br />
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p>O Festival Latino Americano de Instalação de Software Livre é um festival anual de
-                                instalação de software livre, gratuito e aberto a toda a comunidade, realizado desde
-                                2005 em diversos países da América Latina, inclusive no Brasil. O local de nossa
-                                primeira edição foi na <a href="http://unb.br/" target="_blank">UnB</a>.</p>
-                            <p>O evento tem o propósito de promover o uso de softwares livres e a integração de
-                                comunidades de usuários em todos os paí­ses da América Latina. Brasília entrará nessa
-                                maratona pela 15a vez. Ele ocorrerá no dia no dia 27 de Abril de 2019.</p>
-                            <p>O FLISOL busca estreitar e ampliar o contato de usuários de computadores com o mundo do
-                                Software Livre. O evento permite que as pessoas conheçam outros usuários e
-                                desenvolvedores, troquem dúvidas e sugestões. O objetivo maior é promover um
-                                intercâmbio de conhecimentos bastante sadio e aumentar a colaboração entre os
-                                participantes do evento.</p>
-                            <p>Participe dos mini-cursos e palestras e inicie a sua jornada no mundo Livre. Estamos
-                                programando uma série de atividades para a realização do Flisol em Brasília-DF. Estas
-                                atividades envolvem a preparação do material, divulgação e organização das equipes para
-                                o Installfest e para as palestras.</p>
-                            <h3>Como participar?</h3>
-                            <p>Você pode participar de três formas:</p>
-                            <ul>
-                                <li>Como PALESTRANTE e/ou INSTRUTOR de MINI-CURSOS do evento. Submeta sua PROPOSTA DE
-                                    TRABALHO com a sua idéia de palestra ou mini-curso. Se tiver alguma dúvida entre em
-                                    contato conosco pelo e-mail da ORGANIZAÇÃO do evento <a href="mailto:organizacao@flisoldf.blog.br?subject=CHAMADA+DE+TRABALHO+–+FLISOL-DF+2019">organizacao@flisoldf.blog.br</a>
-                                    com o assunto <em>CHAMADA DE TRABALHO – FLISOL-DF 2019</em>.</li>
-                                <li>Como USUÁRIO para assistir e participar das atividades, palestras e mini-cursos.
-                                    Faça sua inscrição para o evento acessando a página de <a href="https://doity.com.br/flisol-df-2019"
-                                        target="_blank">INSCRIÇÃO DO FLISOL-DF 2019</a>.</li>
-                                <li>Como PATROCINADOR (quer seja pessoa física ou empresa) ou como participante da
-                                    ORGANIZAÇÃO DO EVENTO. Entre em contato com a organização pelo e-mail:
-                                    <a href="mailto:organizacao@flisoldf.blog.br">organizacao@flisoldf.blog.br</a>.</li>
-                            </ul>
-                            <p>A participação no FLISOL 2019 em Brasília é totalmente gratuita e será certificada. Para
-                                participar basta se dirigir até o local do evento no dia 27 de Abril, a partir das 08h
-                                até as 18h. Se desejar, com seu computador para instalarmos software livre durante todo
-                                o dia do evento.</p>
-                            <p>Se não quiser levar seu computador para instalar software livre, mesmo assim poderá
-                                participar assistindo a palestras, mini-cursos e interagindo com outros visitantes e
-                                usuários de software livre.</p>
-                            <p>Traga sua família e amigos tanto para conhecer melhor a respeito do software livre
-                                quanto para trocar experiências do mundo livre, seja você um usuário com qualquer nível
-                                de conhecimento.</p>
-                            <h3>InstallFest – Festa?</h3>
-                            <p>Um <strong>InstallFest</strong> é um evento, geralmente patrocinado por um grupo de
-                                usuários Linux, em que pessoas se reúnem para realizar instalações em massa de sistemas
-                                operacionais de computador ou software livre, principalmente o sistema operacional
-                                Linux e outros softwares de código aberto.</p>
-                            <p>Com esta finalidade, diversas comunidades locais de software livre (em cada país, em
-                                cada cidade/localidade), organizam simultaneamente eventos em que se instala
-                                gratuitamente e totalmente legal, software livre nos computadores levados pelos
-                                participantes, onde iniciantes trazem seus computadores, e usuários experientes os
-                                auxiliam a instalar e configurar o sistema. Muitas vezes mídias contendo alguma
-                                distribuição de Linux e informativos são distribuídos gratuitamente aos participantes.
-                                Este tipo de evento recebe bem todo nível de conhecimento, de iniciantes a usuários
-                                avançados.</p>
-                            <p>O InstallFest prioriza não só a instalação de Distribuições de GNU/Linux, mas também a
-                                instalação de Software Livres em geral, mesmo em plataforma proprietária, de forma que
-                                o usuário possa ter aí o seu primeiro contato com a filosofia do Software Livre e no
-                                futuro possa fazer a opção consciente por um Sistema Operacional Livre. A instalação
-                                pode ser feita de forma assistida*, ou seja, você mesmo poderá fazer a instalação do
-                                Sistema na sua máquina apenas com a supervisão de alguém com mais prática.</p>
-                        </div>
+                </div>
+                <br/><br/>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>O Festival Latino Americano de Instalação de Software Livre é um festival anual de
+                            instalação de software livre, gratuito e aberto a toda a comunidade, realizado desde
+                            2005 em diversos países da América Latina, inclusive no Brasil. O local de nossa
+                            primeira edição foi na <a href="http://unb.br/" target="_blank">UnB</a>.</p>
+                        <p>O evento tem o propósito de promover o uso de softwares livres e a integração de
+                            comunidades de usuários em todos os paí­ses da América Latina. Brasília entrará nessa
+                            maratona pela 15a vez. Ele ocorrerá no dia no dia 27 de Abril de 2019.</p>
+                        <p>O FLISOL busca estreitar e ampliar o contato de usuários de computadores com o mundo do
+                            Software Livre. O evento permite que as pessoas conheçam outros usuários e
+                            desenvolvedores, troquem dúvidas e sugestões. O objetivo maior é promover um
+                            intercâmbio de conhecimentos bastante sadio e aumentar a colaboração entre os
+                            participantes do evento.</p>
+                        <p>Participe dos mini-cursos e palestras e inicie a sua jornada no mundo Livre. Estamos
+                            programando uma série de atividades para a realização do Flisol em Brasília-DF. Estas
+                            atividades envolvem a preparação do material, divulgação e organização das equipes para o
+                            Installfest e para as palestras.</p>
+                        <h3>Como participar?</h3>
+                        <p>Você pode participar de três formas:</p>
+                        <ul>
+                            <li>Como PALESTRANTE e/ou INSTRUTOR de MINI-CURSOS do evento. Submeta sua PROPOSTA DE
+                                TRABALHO com a sua idéia de palestra ou mini-curso. Se tiver alguma dúvida entre em
+                                contato conosco pelo e-mail da ORGANIZAÇÃO do evento <a
+                                        href="mailto:organizacao@flisoldf.blog.br?subject=CHAMADA+DE+TRABALHO+–+FLISOL-DF+2019">organizacao@flisoldf.blog.br</a>
+                                com o assunto <em>CHAMADA DE TRABALHO – FLISOL-DF 2019</em>.
+                            </li>
+                            <li>Como USUÁRIO para assistir e participar das atividades, palestras e mini-cursos. Faça
+                                sua inscrição para o evento acessando a página de <a
+                                        href="https://doity.com.br/flisol-df-2019" target="_blank">INSCRIÇÃO DO
+                                    FLISOL-DF 2019</a>.
+                            </li>
+                            <li>Como PATROCINADOR (quer seja pessoa física ou empresa) ou como participante da
+                                ORGANIZAÇÃO DO EVENTO. Entre em contato com a organização pelo e-mail: <a
+                                        href="mailto:organizacao@flisoldf.blog.br">organizacao@flisoldf.blog.br</a>.
+                            </li>
+                        </ul>
+                        <p>A participação no FLISOL 2019 em Brasília é totalmente gratuita e será certificada. Para
+                            participar basta se dirigir até o local do evento no dia 27 de Abril, a partir das 08h até
+                            as 18h. Se desejar, com seu computador para instalarmos software livre durante todo o dia do
+                            evento.</p>
+                        <p>Se não quiser levar seu computador para instalar software livre, mesmo assim poderá
+                            participar assistindo a palestras, mini-cursos e interagindo com outros visitantes e
+                            usuários de software livre.</p>
+                        <p>Traga sua família e amigos tanto para conhecer melhor a respeito do software livre quanto
+                            para trocar experiências do mundo livre, seja você um usuário com qualquer nível de
+                            conhecimento.</p>
+                        <h3>InstallFest – Festa?</h3>
+                        <p>Um <strong>InstallFest</strong> é um evento, geralmente patrocinado por um grupo de usuários
+                            Linux, em que pessoas se reúnem para realizar instalações em massa de sistemas operacionais
+                            de computador ou software livre, principalmente o sistema operacional Linux e outros
+                            softwares de código aberto.</p>
+                        <p>Com esta finalidade, diversas comunidades locais de software livre (em cada país, em cada
+                            cidade/localidade), organizam simultaneamente eventos em que se instala gratuitamente e
+                            totalmente legal, software livre nos computadores levados pelos participantes, onde
+                            iniciantes trazem seus computadores, e usuários experientes os auxiliam a instalar e
+                            configurar o sistema. Muitas vezes mídias contendo alguma distribuição de Linux e
+                            informativos são distribuídos gratuitamente aos participantes. Este tipo de evento recebe
+                            bem todo nível de conhecimento, de iniciantes a usuários avançados.</p>
+                        <p>O InstallFest prioriza não só a instalação de Distribuições de GNU/Linux, mas também a
+                            instalação de Software Livres em geral, mesmo em plataforma proprietária, de forma que o
+                            usuário possa ter aí o seu primeiro contato com a filosofia do Software Livre e no futuro
+                            possa fazer a opção consciente por um Sistema Operacional Livre. A instalação pode ser feita
+                            de forma assistida*, ou seja, você mesmo poderá fazer a instalação do Sistema na sua máquina
+                            apenas com a supervisão de alguém com mais prática.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <hr />
+<hr/>
 
-    <div class="cd-section section-white" id="talk-submission">
-        <div class="wrapper">
-            <div class="section landing-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 ml-auto mr-auto text-center">
-                            <h2 class="title">Submissão de palestras</h2>
-                        </div>
-                    </div>
-                    <div class="space-top"></div>
-                    <div class="row" id="pl-success" style="display:none;">
-                        <div class="col-md-12 text-center">
-                            <h5>Palestra submetida. Muito obrigado!</h5>
-                            <p><a href="#">Enviar nova palestra</a></p>
-                        </div>
-                    </div>
-                    <div class="row" id="pl-area">
-                        <div class="col-md-12">
-                            <form id="pl-form" method="post" enctype="multipart/form-data" novalidate="novalidate">
-                                <fieldset>
-                                    <legend>Dados do Palestrante</legend>
-                                    <div class="row">
-                                        <div class="col-md-6 form-group">
-                                            <label>Nome <span style="color:tomato">*</span></label><br>
-                                            <span class="pl-nome"><input type="text" name="pl-nome" value="" size="80"
-                                                    class="form-control" aria-required="true" aria-invalid="false"></span>
-                                        </div>
-                                        <div class="col-md-6 form-group">
-                                            <label>E-mail <span style="color:tomato">*</span></label><br>
-                                            <span class="pl-email"><input type="email" name="pl-email" value="" size="40"
-                                                    class="form-control" aria-required="true" aria-invalid="false"></span>
-                                        </div>
-                                        <div class="col-md-6 form-group">
-                                            <label>Telefone <span style="color:tomato">*</span></label><br>
-                                            <span class="pl-telefone"><input type="tel" name="pl-telefone" value=""
-                                                    size="40" class="form-control" aria-required="true" aria-invalid="false"></span>
-                                        </div>
-                                        <div class="col-md-6 form-group">
-                                            <label for="entradaFoto">Foto <span style="color:tomato">*</span></label><br>
-                                            <span class="pl-foto"><input type="file" name="pl-foto" size="40" class="form-control"
-                                                    id="entradaFoto" accept=".png,.jpg" aria-required="true"
-                                                    aria-invalid="false"></span>
-                                            <p class="help-block">Formatos permitidos: PNG ou JPG.</p>
-                                        </div>
-                                        <div class="col-md-12 form-group">
-                                            <label>Minicurrículo <span style="color:tomato">*</span></label><br>
-                                            <span class="pl-minicurriculo"><textarea name="pl-minicurriculo" cols="40"
-                                                    rows="10" class="form-control" aria-required="true" aria-invalid="false"></textarea></span>
-                                        </div>
-                                        <div class="col-md-12 form-group">
-                                            <label>Site (ou endereço do Currículo Lattes)</label><br>
-                                            <span class="pl-site"><input type="url" name="pl-site" value="" size="100"
-                                                    class="form-control" aria-invalid="false" placeholder="http://"></span>
+<div class="team-4" id="talks">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 ml-auto mr-auto text-center">
+                <h2 class="title">Palestras Confirmadas</h2>
+                <h5 class="description">Conheça nossas palestras, escolhidas a dedo, pensando na melhor qualidade
+                    técnica para vocês</h5>
+                <br>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12 ml-auto mr-auto">
+                <div class="card page-carousel" style="box-shadow: 0 0 0 0;">
+                    <div id="guestSpeakers" class="carousel slide" data-ride="carousel">
+
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-1"></div>
+                                    <div class="col-5">
+                                        <div class="card card-profile" data-background="color" data-color="dark">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <div class="card-img-top">
+                                                        <a href="#">
+                                                            <img class="img card-speaker-avatar"
+                                                                 src="assets/img/speakers/1.jpg">
+                                                        </a>
+                                                        <br>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row" style="margin-top: 170px">
+                                                <div class="col-md-12">
+                                                    <div class="card-body text-center">
+                                                        <h3 class="card-title">Modelagem e impressão 3D</h3> <em>(Jailson
+                                                        Silva)</em>
+                                                        <div class="card-description text-center">
+                                                            <p>Jailson Silva, aluno do curso de Licenciatura em
+                                                                Computação e doutorando também em Computação, vem nos
+                                                                presentear com uma <strong>oficina de 2 horas
+                                                                    (!!!)</strong> com uma introdução à modelagem 3D.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!--
+                                                    <div class="card-footer">
+                                                        <a href="https://www.linkedin.com/in/tdutrion/" target="_blank"
+                                                            class="btn btn-just-icon btn-linkedin a-link"><i class="fa fa-linkedin"></i></a>
+                                                        <a href="https://www.twitter.com/tdutrion" target="_blank"
+                                                            class="btn btn-just-icon btn-twitter a-link"><i class="fa fa-twitter"></i></a>
+                                                        <a href="https://www.github.com/tdutrion" target="_blank"
+                                                            class="btn btn-just-icon btn-github a-link"><i class="fa fa-github"></i></a>
+                                                    </div>
+                                                    -->
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </fieldset>
-                                <fieldset>
-                                    <legend>Dados da Palestra/Oficina</legend>
-                                    <div class="row">
-                                        <div class="col-md-12 form-group">
-                                            <label>Título <span style="color:tomato">*</span></label><br>
-                                            <span class="pl-titulo"><input type="text" name="pl-titulo" value="" size="80"
-                                                    class="form-control" aria-required="true" aria-invalid="false"></span>
+                                    <div class="col-5">
+                                        <div class="card card-profile" data-background="color" data-color="dark">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <div class="card-img-top">
+                                                        <a href="#">
+                                                            <img class="img card-speaker-avatar"
+                                                                 src="assets/img/speakers/2.jpg">
+                                                        </a>
+                                                        <br>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row" style="margin-top: 170px">
+                                                <div class="col-md-12">
+                                                    <div class="card-body text-center">
+                                                        <h3 class="card-title">Flisolzinho</h3> <em>(Guilherme Carvalho
+                                                        Rodrigues)</em>
+                                                        <div class="card-description text-center">
+                                                            <p>Como não curtir quem gosta de Star Wars?!<br/><em>Luke,
+                                                                eu sou seu pai.</em><br/><br/>O tio Guilherme, que é
+                                                                professor e coordenador do Curso de Pensamento
+                                                                Computacional no LabKids, nos apresenta uma divertida
+                                                                Oficina de Pensamento Computacional Desplugado.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!--
+                                                    <div class="card-footer">
+                                                        <a href="https://www.linkedin.com/in/wfsilva/" target="_blank"
+                                                            class="btn btn-just-icon btn-linkedin a-link"><i class="fa fa-linkedin"></i></a>
+                                                        <a href="https://www.twitter.com/_wsilva" target="_blank"
+                                                            class="btn btn-just-icon btn-twitter a-link"><i class="fa fa-twitter"></i></a>
+                                                        <a href="https://www.github.com/wsilva" target="_blank"
+                                                            class="btn btn-just-icon btn-github a-link"><i class="fa fa-github"></i></a>
+                                                    </div>
+                                                    -->
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-md-12 form-group">
-                                            <label>Descrição <span style="color:tomato">*</span></label><br>
-                                            <span class="pl-descricao"><textarea name="pl-descricao" cols="40" rows="10"
-                                                    class="form-control" aria-required="true" aria-invalid="false"></textarea></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-1"></div>
+                                    <div class="col-5">
+                                        <div class="card card-profile" data-background="color" data-color="dark">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <div class="card-img-top">
+                                                        <a href="#">
+                                                            <img class="img card-speaker-avatar"
+                                                                 src="assets/img/speakers/3.jpg">
+                                                        </a>
+                                                        <br>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row" style="margin-top: 170px">
+                                                <div class="col-md-12">
+                                                    <div class="card-body text-center">
+                                                        <h3 class="card-title">Conceitos e arquitetura da plataforma
+                                                            Java EE</h3> <em>(Tadeu Espíndola Palermo)</em>
+                                                        <div class="card-description text-center">
+                                                            <p>Java não é um bicho de 7 cabeças! De forma simples,
+                                                                intuitiva e objetiva o Tadeu irá demonstrar os conceitos
+                                                                e arquitetura da plataforma Java EE.<br/><br/>Alguns
+                                                                assuntos polêmicos do Java serão desmitificados: suas
+                                                                ramificações, o que possui de componentes, camadas,
+                                                                containers e como fazer suas entregas!</p>
+                                                        </div>
+                                                    </div>
+                                                    <!--
+                                                    <div class="card-footer">
+                                                        <a href="https://github.com/EvandroMohr" target="_blank"
+                                                            class="btn btn-just-icon btn-github a-link"><i class="fa fa-github"></i></a>
+                                                        <a href="https://www.linkedin.com/in/evandromohr/" target="_blank"
+                                                            class="btn btn-just-icon btn-linkedin a-link"><i class="fa fa-linkedin"></i></a>
+                                                    </div>
+                                                    -->
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-md-4 form-group">
-                                            <label>Preferência de turno <span style="color:tomato">*</span></label><br>
-                                            <span class="pl-turno">
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="card card-profile" data-background="color" data-color="dark">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <div class="card-img-top">
+                                                        <a href="#">
+                                                            <img class="img card-speaker-avatar"
+                                                                 src="assets/img/speakers/4.jpg">
+                                                        </a>
+                                                        <br>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row" style="margin-top: 170px">
+                                                <div class="col-md-12">
+                                                    <div class="card-body text-center">
+                                                        <h3 class="card-title">Mídias Negras: Cultura Negra,
+                                                            Tecnologias e Inovações</h3> <em>(Denys Resende)</em>
+                                                        <div class="card-description text-center">
+                                                            <p>O <strong>comNEGRA</strong> é um movimento de busca para
+                                                                uma representação articulada e consciente, consiste na
+                                                                auto organização coletiva de comunicadores sociais
+                                                                negros, que em diversas formas de expressão e meios de
+                                                                comunicação, com maior intensidade no uso de plataformas
+                                                                virtuais e Tecnologias da Informação, se estruturando
+                                                                como formadores de opinião pública, buscando
+                                                                principalmente desmitificar os aspectos da cultura
+                                                                negra.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!--
+                                                    <div class="card-footer">
+                                                        <a href="https://www.linkedin.com/in/gabidavila/" target="_blank"
+                                                            class="btn btn-just-icon btn-linkedin a-link"><i class="fa fa-linkedin"></i></a>
+                                                        <a href="https://www.twitter.com/gabidavila" target="_blank"
+                                                            class="btn btn-just-icon btn-twitter a-link"><i class="fa fa-twitter"></i></a>
+                                                        <a href="https://www.github.com/gabidavila" target="_blank"
+                                                            class="btn btn-just-icon btn-github a-link"><i class="fa fa-github"></i></a>
+                                                    </div>
+                                                    -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ol class="carousel-indicators" style="margin-bottom: -20px;">
+                            <li data-target="#guestSpeakers" data-slide-to="0" class="active"></li>
+                            <li data-target="#guestSpeakers" data-slide-to="1" class=""></li>
+                        </ol>
+
+                        <a style="opacity: 1;" class="left carousel-control carousel-control-prev" href="#guestSpeakers"
+                           role="button" data-slide="prev">
+                            <span class="fa fa-angle-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a style="opacity: 1;" class="right carousel-control carousel-control-next"
+                           href="#guestSpeakers" role="button" data-slide="next">
+                            <span class="fa fa-angle-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="cd-section section-white" id="talk-submission">
+    <div class="wrapper">
+        <div class="section landing-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto text-center">
+                        <h2 class="title">Submissão de palestras</h2>
+                    </div>
+                </div>
+                <div class="space-top"></div>
+                <div class="row" id="pl-success" style="display:none;">
+                    <div class="col-md-12 text-center">
+                        <h5>Palestra submetida. Muito obrigado!</h5>
+                        <p><a href="#">Enviar nova palestra</a></p>
+                    </div>
+                </div>
+                <div class="row" id="pl-area">
+                    <div class="col-md-12">
+                        <form id="pl-form" method="post" enctype="multipart/form-data" novalidate="novalidate">
+                            <fieldset>
+                                <legend>Dados do Palestrante</legend>
+                                <div class="row">
+                                    <div class="col-md-6 form-group">
+                                        <label>Nome <span style="color:tomato">*</span></label><br>
+                                        <span class="pl-nome"><input type="text" name="pl-nome" value="" size="80"
+                                                                     class="form-control" aria-required="true"
+                                                                     aria-invalid="false"></span>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <label>E-mail <span style="color:tomato">*</span></label><br>
+                                        <span class="pl-email"><input type="email" name="pl-email" value="" size="40"
+                                                                      class="form-control" aria-required="true"
+                                                                      aria-invalid="false"></span>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <label>Telefone <span style="color:tomato">*</span></label><br>
+                                        <span class="pl-telefone"><input type="tel" name="pl-telefone" value=""
+                                                                         size="40" class="form-control"
+                                                                         aria-required="true"
+                                                                         aria-invalid="false"></span>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <label for="entradaFoto">Foto <span style="color:tomato">*</span></label><br>
+                                        <span class="pl-foto"><input type="file" name="pl-foto" size="40"
+                                                                     class="form-control" id="entradaFoto"
+                                                                     accept=".png,.jpg" aria-required="true"
+                                                                     aria-invalid="false"></span>
+                                        <p class="help-block">Formatos permitidos: PNG ou JPG.</p>
+                                    </div>
+                                    <div class="col-md-12 form-group">
+                                        <label>Minicurrículo <span style="color:tomato">*</span></label><br>
+                                        <span class="pl-minicurriculo"><textarea name="pl-minicurriculo" cols="40"
+                                                                                 rows="10" class="form-control"
+                                                                                 aria-required="true"
+                                                                                 aria-invalid="false"></textarea></span>
+                                    </div>
+                                    <div class="col-md-12 form-group">
+                                        <label>Site (ou endereço do Currículo Lattes)</label><br>
+                                        <span class="pl-site"><input type="url" name="pl-site" value="" size="100"
+                                                                     class="form-control" aria-invalid="false"
+                                                                     placeholder="http://"></span>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Dados da Palestra/Oficina</legend>
+                                <div class="row">
+                                    <div class="col-md-12 form-group">
+                                        <label>Título <span style="color:tomato">*</span></label><br>
+                                        <span class="pl-titulo"><input type="text" name="pl-titulo" value="" size="80"
+                                                                       class="form-control" aria-required="true"
+                                                                       aria-invalid="false"></span>
+                                    </div>
+                                    <div class="col-md-12 form-group">
+                                        <label>Descrição <span style="color:tomato">*</span></label><br>
+                                        <span class="pl-descricao"><textarea name="pl-descricao" cols="40" rows="10"
+                                                                             class="form-control" aria-required="true"
+                                                                             aria-invalid="false"></textarea></span>
+                                    </div>
+                                    <div class="col-md-4 form-group">
+                                        <label>Preferência de turno <span style="color:tomato">*</span></label><br>
+                                        <span class="pl-turno">
                                                 <select select name="pl-turno" class="form-control selectpicker"
-                                                    aria-required="true" aria-invalid="false" data-live-search="true">
+                                                        aria-required="true" aria-invalid="false"
+                                                        data-live-search="true">
                                                     <option value="">---</option>
                                                     <option value="M">Manhã</option>
                                                     <option value="A">Tarde</option>
-                                                </select>
-                                            </span>
-                                        </div>
-                                        <div class="col-md-4 form-group">
-                                            <label>Tipo de atividade <span style="color:tomato">*</span></label><br>
-                                            <span class="pl-tipo">
+                                                </select></span>
+                                    </div>
+                                    <div class="col-md-4 form-group">
+                                        <label>Tipo de atividade <span style="color:tomato">*</span></label><br>
+                                        <span class="pl-tipo">
                                                 <select select name="pl-tipo" class="form-control selectpicker"
-                                                    aria-required="true" aria-invalid="false" data-live-search="true">
+                                                        aria-required="true" aria-invalid="false"
+                                                        data-live-search="true">
                                                     <option value="">---</option>
                                                     <option value="T">Palestra (1 hora)</option>
                                                     <option value="O">Oficina (2 horas)</option>
-                                                </select>
-                                            </span>
-                                        </div>
-                                        <div class="col-md-4 form-group">
-                                            <label>Assunto (Tema) <span style="color:tomato">*</span></label><br>
-                                            <span class="pl-assunto">
+                                                </select></span>
+                                    </div>
+                                    <div class="col-md-4 form-group">
+                                        <label>Assunto (Tema) <span style="color:tomato">*</span></label><br>
+                                        <span class="pl-assunto">
                                                 <select select name="pl-assunto" class="form-control selectpicker"
-                                                    aria-required="true" aria-invalid="false" data-live-search="true">
+                                                        aria-required="true" aria-invalid="false"
+                                                        data-live-search="true">
                                                     <option value="">---</option>
-                                                    <option value="1">Acessibilidade Livre (Aplicativos para portadores
-                                                        de necessidades física)</option>
+                                                    <option value="1">Acessibilidade Livre (Aplicativos para portadores de necessidades física)</option>
                                                     <option value="2">Criptotecnologias</option>
                                                     <option value="3">Desenvolvimento (Programação)</option>
                                                     <option value="4">Design de Imagens, Animações, Áudio e Vídeo</option>
@@ -370,96 +610,100 @@
                                                     <option value="17">Startups e Empreendedorismo</option>
                                                     <option value="18">TI Verde (Sustentabilidade)</option>
                                                     <option value="19">Web</option>
-                                                </select>
-                                            </span>
-                                        </div>
-                                        <div class="col-md-6 form-group">
-                                            <label for="entradaSlide">Anexar slide</label><br>
-                                            <span class="pl-slide">
-                                                <input type="file" name="pl-slide" size="40" class="form-control" id="entradaSlide"
-                                                    accept=".pdf,.odp,.ppt,.pptx" aria-invalid="false">
-                                            </span>
-                                            <p class="help-block">Formatos permitidos: PDF, ODP ou PPT/X.</p>
-                                        </div>
-                                        <div class="col-md-6 form-group">
-                                            <label>Endereço do Slide</label><br>
-                                            <span class="pl-slide-url">
-                                                <input type="url" name="pl-slide-url" value="" size="100" class="form-control"
-                                                    aria-invalid="false" placeholder="http://">
-                                            </span>
-                                        </div>
+                                                </select></span>
                                     </div>
-                                </fieldset>
-                                <p class="text-right">
-                                    <input type="submit" value="Submeter Palestra" class="btn btn-primary btn-lg">
-                                </p>
-                            </form>
-                        </div>
+                                    <div class="col-md-6 form-group">
+                                        <label for="entradaSlide">Anexar slide</label><br>
+                                        <span class="pl-slide"><input type="file" name="pl-slide" size="40"
+                                                                      class="form-control" id="entradaSlide"
+                                                                      accept=".pdf,.odp,.ppt,.pptx"
+                                                                      aria-invalid="false"></span>
+                                        <p class="help-block">Formatos permitidos: PDF, ODP ou PPT/X.</p>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <label>Endereço do Slide</label><br>
+                                        <span class="pl-slide-url"><input type="url" name="pl-slide-url" value=""
+                                                                          size="100" class="form-control"
+                                                                          aria-invalid="false"
+                                                                          placeholder="http://"></span>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <p class="text-right">
+                                <input type="submit" value="Submeter Palestra" class="btn btn-primary btn-lg">
+                            </p>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <hr />
+<hr/>
 
-    <div class="cd-section section-white" id="want-to-collaborate">
-        <div class="wrapper">
-            <div class="section landing-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 ml-auto mr-auto text-center">
-                            <h2 class="title">Quero colaborar</h2>
-                        </div>
+<div class="cd-section section-white" id="want-to-collaborate">
+    <div class="wrapper">
+        <div class="section landing-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 ml-auto mr-auto text-center">
+                        <h2 class="title">Quero colaborar</h2>
                     </div>
-                    <div class="row" id="cpc-success" style="display:none;">
-                        <div class="col-md-12 text-center">
-                            <h5>Pedido enviado. Muito obrigado!</h5>
-                            <p><a href="#">Enviar novo pedido</a></p>
-                        </div>
+                </div>
+                <div class="row" id="cpc-success" style="display:none;">
+                    <div class="col-md-12 text-center">
+                        <h5>Pedido enviado. Muito obrigado!</h5>
+                        <p><a href="#">Enviar novo pedido</a></p>
                     </div>
-                    <div class="row" id="cpc-area">
-                        <div class="col-md-12">
-                            <p>A Coordenação do FLISOL-DF gostaria de contar com seu apoio na organização do evento
-                                para este ano. Responda o questionário abaixo para que possamos dar início ao processo
-                                de organização e marcação de reuniões.</p>
-                            <p>Lembre-se que os colaboradores (equipe de organização) recebem certificado de 30 horas
-                                de organização do evento. A falta em 2 reuniões consecutivas descredenciam o
-                                colaborador da equipe de organização.</p>
-                            <br />
-                            <form id="cpc-form" method="post" enctype="multipart/form-data" novalidate="novalidate">
-                                <div class="row">
-                                    <div class="col-md-6 form-group">
-                                        <label>Nome <span style="color:tomato">*</span></label><br>
-                                        <span class="cpc-nome"><input type="text" name="cpc-nome" value="" size="80"
-                                                class="form-control" aria-required="true" aria-invalid="false"></span>
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                        <label>E-mail <span style="color:tomato">*</span></label><br>
-                                        <span class="cpc-email"><input type="email" name="cpc-email" value="" size="40"
-                                                class="form-control" aria-required="true" aria-invalid="false"></span>
-                                    </div>
-                                    <div class="col-md-2 form-group">
-                                        <label>Telefone <span style="color:tomato">*</span></label><br>
-                                        <span class="cpc-telefone"><input type="tel" name="cpc-telefone" value="" size="40"
-                                                class="form-control" aria-required="true" aria-invalid="false"></span>
-                                    </div>
-                                    <div class="col-md-2 form-group">
-                                        <label>Usa Software Livre? <span style="color:tomato">*</span></label><br>
-                                        <span class="cpc-usa-software-livre">
-                                            <select select name="cpc-usa-software-livre" class="form-control selectpicker"
-                                                aria-required="true" aria-invalid="false">
+                </div>
+                <div class="row" id="cpc-area">
+                    <div class="col-md-12">
+                        <p>A Coordenação do FLISOL-DF gostaria de contar com seu apoio na organização do evento para
+                            este ano. Responda o questionário abaixo para que possamos dar início ao processo de
+                            organização e marcação de reuniões.</p>
+                        <p>Lembre-se que os colaboradores (equipe de organização) recebem certificado de 30 horas de
+                            organização do evento. A falta em 2 reuniões consecutivas descredenciam o colaborador da
+                            equipe de organização.</p>
+                        <br/>
+                        <form id="cpc-form" method="post" enctype="multipart/form-data" novalidate="novalidate">
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label>Nome <span style="color:tomato">*</span></label><br>
+                                    <span class="cpc-nome"><input type="text" name="cpc-nome" value="" size="80"
+                                                                  class="form-control" aria-required="true"
+                                                                  aria-invalid="false"></span>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <label>E-mail <span style="color:tomato">*</span></label><br>
+                                    <span class="cpc-email"><input type="email" name="cpc-email" value="" size="40"
+                                                                   class="form-control" aria-required="true"
+                                                                   aria-invalid="false"></span>
+                                </div>
+                                <div class="col-md-2 form-group">
+                                    <label>Telefone <span style="color:tomato">*</span></label><br>
+                                    <span class="cpc-telefone"><input type="tel" name="cpc-telefone" value="" size="40"
+                                                                      class="form-control" aria-required="true"
+                                                                      aria-invalid="false"></span>
+                                </div>
+                                <div class="col-md-2 form-group">
+                                    <label>Usa Software Livre? <span style="color:tomato">*</span></label><br>
+                                    <span class="cpc-usa-software-livre">
+                                            <select select name="cpc-usa-software-livre"
+                                                    class="form-control selectpicker"
+                                                    aria-required="true" aria-invalid="false">
                                                 <option value="">---</option>
                                                 <option value="1">Sim</option>
                                                 <option value="0">Não</option>
                                             </select>
                                         </span>
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                        <label>Qual distribuição GNU/Linux você usa? <span style="color:tomato">*</span></label><br>
-                                        <span class="cpc-distribuicao">
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <label>Qual distribuição GNU/Linux você usa? <span
+                                            style="color:tomato">*</span></label><br>
+                                    <span class="cpc-distribuicao">
                                             <select select name="cpc-distribuicao" class="form-control selectpicker"
-                                                aria-required="true" aria-invalid="false" data-live-search="true">
+                                                    aria-required="true" aria-invalid="false" data-live-search="true">
                                                 <option value="">---</option>
                                                 <option value="1">Não utilizo Linux</option>
                                                 <option value="2">BigLinux</option>
@@ -480,14 +724,14 @@
                                                 <option value="17">Outra</option>
                                             </select>
                                         </span>
-                                    </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-4 form-group">
-                                        <label>Você é estudante? <span style="color:tomato">*</span></label><br>
-                                        <span class="cpc-estudante">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 form-group">
+                                    <label>Você é estudante? <span style="color:tomato">*</span></label><br>
+                                    <span class="cpc-estudante">
                                             <select select name="cpc-estudante" class="form-control selectpicker"
-                                                aria-required="true" aria-invalid="false" data-live-search="true">
+                                                    aria-required="true" aria-invalid="false" data-live-search="true">
                                                 <option value="">---</option>
                                                 <option value="1">Sim, no ensino médio</option>
                                                 <option value="2">Sim, no ensino médio técnico</option>
@@ -498,21 +742,26 @@
                                                 <option value="7">Não, sou professor</option>
                                             </select>
                                         </span>
-                                    </div>
-                                    <div class="col-md-8 form-group">
-                                        <label>Onde você estuda ou trabalha? <span style="color:tomato">*</span></label><br>
-                                        <span class="cpc-local-estudo-trabalho"><input type="text" name="cpc-local-estudo-trabalho"
-                                                value="" size="100" class="form-control" aria-required="true"
-                                                aria-invalid="false"></span>
-                                    </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-4 form-group">
-                                        <label>Qual a sua disponibilidade de tempo? <span style="color:tomato">*</span></label><br>
-                                        <span class="cpc-disponibilidade">
-                                            <select select name="cpc-disponibilidade[]" class="form-control selectpicker"
-                                                aria-required="true" aria-invalid="false" data-live-search="true"
-                                                multiple>
+                                <div class="col-md-8 form-group">
+                                    <label>Onde você estuda ou trabalha? <span style="color:tomato">*</span></label><br>
+                                    <span class="cpc-local-estudo-trabalho"><input type="text"
+                                                                                   name="cpc-local-estudo-trabalho"
+                                                                                   value="" size="100"
+                                                                                   class="form-control"
+                                                                                   aria-required="true"
+                                                                                   aria-invalid="false"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 form-group">
+                                    <label>Qual a sua disponibilidade de tempo? <span
+                                            style="color:tomato">*</span></label><br>
+                                    <span class="cpc-disponibilidade">
+                                            <select select name="cpc-disponibilidade[]"
+                                                    class="form-control selectpicker"
+                                                    aria-required="true" aria-invalid="false" data-live-search="true"
+                                                    multiple>
                                                 <option value="">---</option>
                                                 <option value="1">Manhã - Todos os dias</option>
                                                 <option value="2">Tarde - Todos os dias</option>
@@ -521,13 +770,14 @@
                                                 <option value="5">Sábado pela tarde</option>
                                             </select>
                                         </span>
-                                    </div>
-                                    <div class="col-md-8 form-group">
-                                        <label>Onde deseja colaborar? <span style="color:tomato">*</span></label><br>
-                                        <span class="cpc-area-colaboracao">
-                                            <select select name="cpc-area-colaboracao[]" class="form-control selectpicker"
-                                                aria-required="true" aria-invalid="false" data-live-search="true"
-                                                multiple>
+                                </div>
+                                <div class="col-md-8 form-group">
+                                    <label>Onde deseja colaborar? <span style="color:tomato">*</span></label><br>
+                                    <span class="cpc-area-colaboracao">
+                                            <select select name="cpc-area-colaboracao[]"
+                                                    class="form-control selectpicker"
+                                                    aria-required="true" aria-invalid="false" data-live-search="true"
+                                                    multiple>
                                                 <option value="1">Grupo 1 – Na busca por patrocínio e apoio</option>
                                                 <option value="2">Grupo 2 – Na publicidade e divulgação (redes sociais)</option>
                                                 <option value="3">Grupo 3 – Na organização do blog</option>
@@ -541,229 +791,115 @@
                                                 <option value="11">Grupo 11 - Filmagem, fotografia e documentário do evento</option>
                                                 <option value="12">Grupo 12 - Arte Gráfica e material gráfico</option>
                                                 <option value="13">Grupo 13 - Comunicação colaborativa (divulgação em tempo real nas redes sociais)</option>
-                                            </select>
-                                    </div>
-                                </div>
-                                <p class="text-right">
-                                    <input type="submit" value="Quero colaborar!" class="btn btn-primary btn-lg">
-                                </p>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <hr style="display:none;" />
-
-    <div class="cd-section section-white" id="im-a-group" style="display:none;">
-        <div class="wrapper">
-            <div class="section landing-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 ml-auto mr-auto text-center">
-                            <h2 class="title">Sou um grupo de usuários</h2>
-                        </div>
-                    </div>
-                    <div class="space-top"></div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p>Disponibilizamos esta área para os grupos de usuários de tecnologias livres e open
-                                source para que possam divulgar suas iniciativas, trocar experiências com o público
-                                visitante e instituições patrocinadoras do evento. Para participar, cadastre sua
-                                comunidade:</p>
-                            <br />
-                            <form action="/2017/divulgacao/grupos-de-usuarios-gus/#wpcf7-f654-p324-o1" method="post"
-                                enctype="multipart/form-data" novalidate="novalidate">
-                                <div class="row">
-                                    <div class="col-md-6 form-group">
-                                        <label>Nome da sua comunidade <span style="color:tomato">*</span></label><br>
-                                        <span class="gu-nome"><input type="text" name="gu-nome" value="" size="80"
-                                                class="form-control" aria-required="true" aria-invalid="false"></span>
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                        <label>Site</label><br>
-                                        <span class="gu-site"><input type="url" name="gu-website" value="" size="100"
-                                                class="form-control" aria-invalid="false" placeholder="http://"></span>
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                        <label>E-mail</label><br>
-                                        <span class="gu-email"><input type="email" name="gu-email" value="" size="40"
-                                                class="form-control" aria-invalid="false"></span>
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                        <label>Lista da Comunidade</label><br>
-                                        <span class="gu-lista"><input type="email" name="gu-lista" value="" size="40"
-                                                class="form-control" aria-invalid="false"></span>
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                        <label for="entradaLogoDoGrupo">Logo do Grupo</label><br>
-                                        <span class="gu-logo"><input type="file" name="gu-logo" size="40" class="form-control"
-                                                id="entradaLogoDoGrupo" accept=".png,.jpg" aria-invalid="false"></span>
-                                        <p class="help-block">Formatos permitidos: PNG ou JPG.</p>
-                                    </div>
-                                </div>
-                                <h3>Representantes</h3>
-                                <p style="margin-bottom:1.5em">Indicar no mínimo 2 representantes que estarão presentes
-                                    no evento como participantes ou palestrantes. Ter disponibilidade e
-                                    responsabilidade pelo espaço durante o evento. Os representantes serão informados
-                                    por e-mail quando a inscrição for confirmada.</p>
-                                <fieldset style="margin-bottom:1.5em">
-                                    <legend>Representante 01</legend>
-                                    <div class="row">
-                                        <div class="col-md-6 form-group">
-                                            <label>Nome <span style="color:tomato">*</span></label><br>
-                                            <span class="gu-representante1-nome"><input type="text" name="gu-representante1-nome"
-                                                    value="" size="80" class="form-control" aria-required="true"
-                                                    aria-invalid="false"></span>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label>E-mail <span style="color:tomato">*</span></label><br>
-                                            <span class="gu-representante1-email"><input type="email" name="gu-representante1-email"
-                                                    value="" size="40" class="form-control" aria-required="true"
-                                                    aria-invalid="false"></span>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-2 form-group">
-                                            <label>Telefone <span style="color:tomato">*</span></label><br>
-                                            <span class="gu-representante1-telefone"><input type="tel" name="gu-representante1-telefone"
-                                                    value="" size="40" class="form-control" aria-required="true"
-                                                    aria-invalid="false"></span>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                                <fieldset style="margin-bottom:1.5em">
-                                    <legend>Representante 02</legend>
-                                    <div class="row">
-                                        <div class="col-md-6 form-group">
-                                            <label>Nome <span style="color:tomato">*</span></label><br>
-                                            <span class="gu-representante2-nome"><input type="text" name="gu-representante2-nome"
-                                                    value="" size="80" class="form-control" aria-required="true"
-                                                    aria-invalid="false"></span>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label>E-mail <span style="color:tomato">*</span></label><br>
-                                            <span class="gu-representante2-email"><input type="email" name="gu-representante2-email"
-                                                    value="" size="40" class="form-control" aria-required="true"
-                                                    aria-invalid="false"></span>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-2 form-group">
-                                            <label>Telefone <span style="color:tomato">*</span></label><br>
-                                            <span class="gu-representante2-telefone"><input type="tel" name="gu-representante2-telefone"
-                                                    value="" size="40" class="form-control" aria-required="true"
-                                                    aria-invalid="false"></span>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                                <p class="text-right">
-                                    <input type="submit" value="Quero participar!" class="btn btn-primary btn-lg">
-                                </p>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="cd-section" id="contact-us">
-        <div class="contactus-2" id="onde" style="padding:0; height:500px;">
-            <div id="contactUsMap2" class="big-map"></div>
-
-            <div class="container">
-                <div class="col-md-6">
-                    <div class="card card-contact card-raised">
-                        <div class="card-header header-raised header-primary text-center">
-                            <h4 class="card-title">Onde e quando ocorrerá o evento</h4>
-                        </div>
-                        <form role="form" id="contact-form" method="post">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="info info-horizontal">
-                                            <div class="icon icon-danger">
-                                                <i class="nc-icon nc-pin-3" aria-hidden="true"></i>
-                                            </div>
-                                            <div class="description">
-                                                <h5 class="info-title"><strong>IFB Campus Ceilândia</strong></h5>
-                                                <p>72220-260, Quadra QNN 26 Área Especial, Ceilândia Sul - Brasília/DF,
-                                                    Brasil</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="info info-horizontal">
-                                            <div class="icon icon-success">
-                                                <i class="nc-icon nc-time-alarm" aria-hidden="true"></i>
-                                            </div>
-                                            <div class="description">
-                                                <h5 class="info-title"><strong>27 de Abril 2019</strong></h5>
-                                                <p><strong>Sábado 8:00 até 18:00</strong></p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                            </select></span>
                                 </div>
                             </div>
+                            <p class="text-right">
+                                <input type="submit" value="Quero colaborar!" class="btn btn-primary btn-lg">
+                            </p>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="cd-section" id="sociais">
-        <div class="section section-dark text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 ml-auto mr-auto">
-                        <h2 class="title">Siga nos e compartilhe com o <a class="text-info" href="https://twitter.com/search?q=%23FlisolDF&src=typd"
-                                target="_blank">#FlisolDF</a></h2>
+<div class="cd-section" id="contact-us">
+    <div class="contactus-2" id="onde" style="padding:0; height:500px;">
+        <div id="contactUsMap2" class="big-map"></div>
+        <div class="container">
+            <div class="col-md-6">
+                <div class="card card-contact card-raised">
+                    <div class="card-header header-raised header-primary text-center">
+                        <h4 class="card-title">Onde e quando ocorrerá o evento</h4>
                     </div>
-                    <br />
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>
-                            <a href="https://twitter.com/flisoldf/" target="_blank" class="btn btn-just-icon btn-twitter"><i
-                                    class="fa fa-twitter"></i></a>
-                            <a href="https://www.facebook.com/flisoldf/" target="_blank" class="btn btn-just-icon btn-facebook"><i
-                                    class="fa fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/flisol.df/" target="_blank" class="btn btn-just-icon btn-instagram"><i
-                                    class="fa fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/groups/12211146/" target="_blank" class="btn btn-just-icon btn-linkedin"><i
-                                    class="fa fa-linkedin"></i></a>
-                        </p>
-                    </div>
+                    <form role="form" id="contact-form" method="post">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="info info-horizontal">
+                                        <div class="icon icon-danger">
+                                            <i class="nc-icon nc-pin-3" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="description">
+                                            <h5 class="info-title"><strong>IFB Campus Ceilândia</strong></h5>
+                                            <p>72220-260, Quadra QNN 26 Área Especial, Ceilândia Sul - Brasília/DF,
+                                                Brasil</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="info info-horizontal">
+                                        <div class="icon icon-success">
+                                            <i class="nc-icon nc-time-alarm" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="description">
+                                            <h5 class="info-title"><strong>27 de Abril 2019</strong></h5>
+                                            <p><strong>Sábado 8:00 até 18:00</strong></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <footer class="footer section-dark">
+<div class="cd-section" id="sociais">
+    <div class="section section-dark text-center">
         <div class="container">
             <div class="row">
-                <nav class="footer-nav">
-                    <ul>
-                        <li><a href="index.html">FLISOL DF 2019</a></li>
-                    </ul>
-                </nav>
-                <div class="credits ml-auto">
-                    <span class="copyright">
-                        Made with <i class="fa fa-heart heart"></i> with Paper Kit 2 Pro
-                    </span>
+                <div class="col-md-8 ml-auto mr-auto">
+                    <h2 class="title">Siga nos e compartilhe com o <a class="text-info"
+                                                                      href="https://twitter.com/search?q=%23FlisolDF&src=typd"
+                                                                      target="_blank">#FlisolDF</a></h2>
+                </div>
+                <br/>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        <a href="https://twitter.com/flisoldf/" target="_blank" class="btn btn-just-icon btn-twitter"><i
+                                class="fa fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/flisoldf/" target="_blank"
+                           class="btn btn-just-icon btn-facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/flisol.df/" target="_blank"
+                           class="btn btn-just-icon btn-instagram"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/groups/12211146/" target="_blank"
+                           class="btn btn-just-icon btn-linkedin"><i class="fa fa-linkedin"></i></a>
+                    </p>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</div>
 
-    <!-- material-scrolltop button -->
-    <button class="material-scrolltop" type="button"></button>
+<footer class="footer section-dark">
+    <div class="container">
+        <div class="row">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">FLISOL DF 2019</a></li>
+                </ul>
+            </nav>
+            <div class="credits ml-auto">
+                    <span class="copyright">
+                        Made with <i class="fa fa-heart heart"></i> with Paper Kit 2 Pro
+                    </span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- material-scrolltop button -->
+<button class="material-scrolltop" type="button"></button>
+
 </body>
 
 <!-- Core JS Files -->
@@ -782,7 +918,8 @@
 <script src="assets/js/demo.js"></script>
 
 <!--  Plugins for Map -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfQnvmEyR79sLYapgptpme-I2c9n-vf1Q&language=pt-br"></script>
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfQnvmEyR79sLYapgptpme-I2c9n-vf1Q&language=pt-br"></script>
 
 <!-- material-scrolltop plugin -->
 <script src="assets/js/material-scrolltop.js"></script>
