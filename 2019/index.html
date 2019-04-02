@@ -30,7 +30,6 @@
     <link href="assets/css/paper-kit.css?v=2.1.20" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.5/css/bootstrap-select.min.css"
           rel="stylesheet"/>
-    <link href="assets/css/demo.css" rel="stylesheet"/>
     <style>
         .dropdown-item.active,
         .dropdown-item:active {
@@ -74,7 +73,46 @@
                 background-color: #fff !important;
             }
         }
+
+        #talks-kind-selector .btn-outline-secondary {
+            color: #868e96;
+        }
+
+        #clockdiv {
+            font-family: sans-serif;
+            color: white;
+            display: inline-block;
+            font-weight: 100;
+            text-align: center;
+            font-size: 18px;
+            position: absolute;
+            left: 35px;
+            top: 560px;
+        }
+
+        #clockdiv > div {
+            padding: 5px;
+            border-radius: 3px;
+            /*background: #00BF96;*/
+            color: #999;
+            background: white;
+            display: inline-block;
+        }
+
+        #clockdiv div > span {
+            padding: 15px;
+            border-radius: 3px;
+            /*background: #00816A;*/
+            border: 1px solid #999;
+            display: inline-block;
+        }
+
+        .smalltext {
+            padding-top: 5px;
+            font-size: 12px;
+        }
     </style>
+    <link href="assets/css/demo.css" rel="stylesheet"/>
 
     <!-- Fonts and icons -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
@@ -91,6 +129,26 @@
 <body>
 <nav class="navbar navbar-expand-lg fixed-top navbar-transparent nav-down" color-on-scroll="500">
     <div class="container">
+
+        <div id="clockdiv" style="display:none;">
+            <div>
+                <span class="days"></span>
+                <div class="smalltext">Dias</div>
+            </div>
+            <div>
+                <span class="hours"></span>
+                <div class="smalltext">Horas</div>
+            </div>
+            <div>
+                <span class="minutes"></span>
+                <div class="smalltext">Minutos</div>
+            </div>
+            <div>
+                <span class="seconds"></span>
+                <div class="smalltext">Segundos</div>
+            </div>
+        </div>
+
         <div class="navbar-translate">
             <div class="navbar-header">
                 <a class="navbar-brand" href="index.html" style="display:none;">FLISOL DF 2019</a>
@@ -272,6 +330,14 @@
                 <h5 class="description">Conheça nossas palestras, escolhidas a dedo, pensando na melhor qualidade
                     técnica para vocês</h5>
                 <br>
+
+                <div id="talks-kind-selector" style="display: none;">
+                    <button type="button" class="btn btn-secondary">Todos</button>
+                    <button type="button" class="btn btn-outline-secondary">Tecnologia</button>
+                    <button type="button" class="btn btn-outline-secondary">Experiência</button>
+                    <button type="button" class="btn btn-outline-secondary">Futuro</button>
+                    <button type="button" class="btn btn-outline-secondary">Planejamento</button>
+                </div>
             </div>
         </div>
         <br>
@@ -281,7 +347,98 @@
                     <div id="guestSpeakers" class="carousel slide" data-ride="carousel">
 
                         <div class="carousel-inner" role="listbox">
+
                             <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-1"></div>
+                                    <div class="col-5">
+                                        <div class="card card-profile" data-background="color" data-color="dark">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <div class="card-img-top">
+                                                        <a href="#">
+                                                            <img class="img card-speaker-avatar"
+                                                                 src="assets/img/speakers/5.jpg">
+                                                        </a>
+                                                        <br>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-top: 170px">
+                                                <div class="col-md-12">
+                                                    <div class="card-body text-center">
+                                                        <h3 class="card-title">CUIDADO: "Estou Conectado!"</h3> <em>(Marcelo
+                                                        Pinto de Assis)</em>
+                                                        <div class="card-description text-center">
+                                                            <p>O Infância Digital busca orientar pais, responsáveis,
+                                                                professores e outros interessados sobre o crescimento de
+                                                                nossas crianças e jovens em meio ao mundo digital.
+                                                                Queremos mostrar que a utilização de computadores,
+                                                                internet, dispositivos móveis, vídeo games e outras
+                                                                tecnologias, pelas crianças e adolescentes (e porque não
+                                                                pelos adultos?), precisa ser acompanhada com atenção e
+                                                                cuidado. Vantagens existem, mas o uso excessivo e sem
+                                                                orientação pode trazer riscos à saúde física e mental.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!--
+                                                    <div class="card-footer">
+                                                        <a href="https://www.linkedin.com/in/tdutrion/" target="_blank"
+                                                            class="btn btn-just-icon btn-linkedin a-link"><i class="fa fa-linkedin"></i></a>
+                                                        <a href="https://www.twitter.com/tdutrion" target="_blank"
+                                                            class="btn btn-just-icon btn-twitter a-link"><i class="fa fa-twitter"></i></a>
+                                                        <a href="https://www.github.com/tdutrion" target="_blank"
+                                                            class="btn btn-just-icon btn-github a-link"><i class="fa fa-github"></i></a>
+                                                    </div>
+                                                    -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="card card-profile" data-background="color" data-color="dark">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <div class="card-img-top">
+                                                        <a href="#">
+                                                            <img class="img card-speaker-avatar"
+                                                                 src="assets/img/speakers/6.jpg">
+                                                        </a>
+                                                        <br>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-top: 170px">
+                                                <div class="col-md-12">
+                                                    <div class="card-body text-center">
+                                                        <h3 class="card-title">Rastreamento de vôos em tempo real com
+                                                            Raspbian embarcado em Raspberry</h3> <em>(Janilson Pereira
+                                                        do Nascimento)</em>
+                                                        <div class="card-description text-center">
+                                                            <p>Um modelo de negócio no qual usuários espalhados no mundo
+                                                                inteiro alimentam um site rastreamento de vôos em tempo
+                                                                real!</p>
+                                                        </div>
+                                                    </div>
+                                                    <!--
+                                                    <div class="card-footer">
+                                                        <a href="https://www.linkedin.com/in/tdutrion/" target="_blank"
+                                                            class="btn btn-just-icon btn-linkedin a-link"><i class="fa fa-linkedin"></i></a>
+                                                        <a href="https://www.twitter.com/tdutrion" target="_blank"
+                                                            class="btn btn-just-icon btn-twitter a-link"><i class="fa fa-twitter"></i></a>
+                                                        <a href="https://www.github.com/tdutrion" target="_blank"
+                                                            class="btn btn-just-icon btn-github a-link"><i class="fa fa-github"></i></a>
+                                                    </div>
+                                                    -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
                                 <div class="row">
                                     <div class="col-1"></div>
                                     <div class="col-5">
@@ -297,7 +454,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-
                                             <div class="row" style="margin-top: 170px">
                                                 <div class="col-md-12">
                                                     <div class="card-body text-center">
@@ -338,7 +494,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-
                                             <div class="row" style="margin-top: 170px">
                                                 <div class="col-md-12">
                                                     <div class="card-body text-center">
@@ -385,7 +540,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-
                                             <div class="row" style="margin-top: 170px">
                                                 <div class="col-md-12">
                                                     <div class="card-body text-center">
@@ -425,7 +579,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-
                                             <div class="row" style="margin-top: 170px">
                                                 <div class="col-md-12">
                                                     <div class="card-body text-center">
@@ -464,6 +617,7 @@
                         <ol class="carousel-indicators" style="margin-bottom: -20px;">
                             <li data-target="#guestSpeakers" data-slide-to="0" class="active"></li>
                             <li data-target="#guestSpeakers" data-slide-to="1" class=""></li>
+                            <li data-target="#guestSpeakers" data-slide-to="2" class=""></li>
                         </ol>
 
                         <a style="opacity: 1;" class="left carousel-control carousel-control-prev" href="#guestSpeakers"
