@@ -16,20 +16,20 @@
     </script>
 
     <!-- <base href="https://flisoldf.blog.br/2019/" /> -->
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="assets/img/favicon.ico">
     <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <title>FLISOL DF 2019 - Festival Latinoamericano de Instalação de Software Livre em Brasília/DF</title>
 
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
-    <meta name="viewport" content="width=device-width"/>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
 
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="assets/css/paper-kit.css?v=2.1.20" rel="stylesheet"/>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/paper-kit.css?v=2.1.20" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.5/css/bootstrap-select.min.css"
-          rel="stylesheet"/>
+        rel="stylesheet" />
     <style>
         .dropdown-item.active,
         .dropdown-item:active {
@@ -90,7 +90,7 @@
             top: 560px;
         }
 
-        #clockdiv > div {
+        #clockdiv>div {
             padding: 5px;
             border-radius: 3px;
             /*background: #00BF96;*/
@@ -99,7 +99,7 @@
             display: inline-block;
         }
 
-        #clockdiv div > span {
+        #clockdiv div>span {
             padding: 15px;
             border-radius: 3px;
             /*background: #00816A;*/
@@ -112,7 +112,7 @@
             font-size: 12px;
         }
     </style>
-    <link href="assets/css/demo.css" rel="stylesheet"/>
+    <link href="assets/css/demo.css" rel="stylesheet" />
 
     <!-- Fonts and icons -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
@@ -120,80 +120,667 @@
     <link href="assets/css/nucleo-icons.css" rel="stylesheet">
 
     <!-- Material ScrollTop stylesheet -->
-    <link href="assets/css/material-scrolltop.css" rel="stylesheet"/>
+    <link href="assets/css/material-scrolltop.css" rel="stylesheet" />
 
-    <link href="assets/css/jquery.loadingModal.min.css" rel="stylesheet"/>
+    <link href="assets/css/jquery.loadingModal.min.css" rel="stylesheet" />
 
+    <!-- Grade de Palestras -->
+    <style type="text/css">
+        .ritz .waffle a {
+            color: inherit;
+        }
+
+        .ritz .waffle .s23 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #a4c2f4;
+            text-align: center;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s25 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #f5c0c1;
+            text-align: center;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s8 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #a7d6f4;
+            text-align: center;
+            font-weight: bold;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s28 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #8afff4;
+            text-align: center;
+            font-weight: bold;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s31 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #3c78d8;
+            text-align: center;
+            font-weight: bold;
+            color: #ffffff;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s27 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #8afff4;
+            text-align: center;
+            font-weight: bold;
+            color: #000000;
+            font-family: 'docs-sans-serif', Arial;
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s9 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #a7d6f4;
+            text-align: center;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s26 {
+            border-bottom: 1px SOLID #000000;
+            background-color: #f5c0c1;
+            text-align: center;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s17 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #e06666;
+            text-align: center;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s18 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #fff2cc;
+            text-align: center;
+            font-weight: bold;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s30 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #3c78d8;
+            text-align: center;
+            font-weight: bold;
+            color: #ffffff;
+            font-family: 'docs-sans-serif', Arial;
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s11 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #daf0f6;
+            text-align: center;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s29 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #8afff4;
+            text-align: center;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s24 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #f5c0c1;
+            text-align: center;
+            font-weight: bold;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s15 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #fff491;
+            text-align: center;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s4 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #f3f3f3;
+            text-align: left;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s16 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #e06666;
+            text-align: center;
+            font-weight: bold;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s21 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #ffd966;
+            text-align: center;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s32 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #3c78d8;
+            text-align: center;
+            color: #ffffff;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s1 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #ffffff;
+            text-align: center;
+            font-weight: bold;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: nowrap;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s6 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #f3f3f3;
+            text-align: left;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: bottom;
+            white-space: nowrap;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s20 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #ffd966;
+            text-align: center;
+            font-weight: bold;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s10 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #a7d6f4;
+            text-align: center;
+            color: #000000;
+            font-family: 'docs-sans-serif', Arial;
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s13 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #80f487;
+            text-align: center;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s5 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #f3f3f3;
+            text-align: left;
+            color: #000000;
+            font-family: 'arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s12 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #80f487;
+            text-align: center;
+            font-weight: bold;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s0 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #d9d9d9;
+            text-align: center;
+            font-weight: bold;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: nowrap;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s7 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #f3f3f3;
+            text-align: center;
+            font-weight: bold;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: bottom;
+            white-space: nowrap;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s19 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #fff2cc;
+            text-align: center;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s3 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #f3f3f3;
+            text-align: center;
+            font-weight: bold;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s2 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #efefef;
+            text-align: center;
+            font-weight: bold;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: nowrap;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s22 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #a4c2f4;
+            text-align: center;
+            font-weight: bold;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s34 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #fff2cc;
+            text-align: center;
+            font-weight: bold;
+            color: #000000;
+            font-family: 'docs-sans-serif', Arial;
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s14 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #fff491;
+            text-align: center;
+            font-weight: bold;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s33 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #80f487;
+            text-align: center;
+            font-weight: bold;
+            color: #000000;
+            font-family: 'docs-sans-serif', Arial;
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .waffle th,
+        .grid-fixed-table th {
+            height: 0;
+        }
+
+        .ritz {
+            border: 1px solid #333;
+        }
+    </style>
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg fixed-top navbar-transparent nav-down" color-on-scroll="500">
-    <div class="container">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-transparent nav-down" color-on-scroll="500">
+        <div class="container">
 
-        <div id="clockdiv" style="display:none;">
-            <div>
-                <span class="days"></span>
-                <div class="smalltext">Dias</div>
+            <div id="clockdiv" style="display:none;">
+                <div>
+                    <span class="days"></span>
+                    <div class="smalltext">Dias</div>
+                </div>
+                <div>
+                    <span class="hours"></span>
+                    <div class="smalltext">Horas</div>
+                </div>
+                <div>
+                    <span class="minutes"></span>
+                    <div class="smalltext">Minutos</div>
+                </div>
+                <div>
+                    <span class="seconds"></span>
+                    <div class="smalltext">Segundos</div>
+                </div>
             </div>
-            <div>
-                <span class="hours"></span>
-                <div class="smalltext">Horas</div>
-            </div>
-            <div>
-                <span class="minutes"></span>
-                <div class="smalltext">Minutos</div>
-            </div>
-            <div>
-                <span class="seconds"></span>
-                <div class="smalltext">Segundos</div>
-            </div>
-        </div>
 
-        <div class="navbar-translate">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.html" style="display:none;">FLISOL DF 2019</a>
+            <div class="navbar-translate">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html" style="display:none;">FLISOL DF 2019</a>
+                </div>
+                <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse"
+                    data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                </button>
             </div>
-            <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse"
-                    data-target="#navbarToggler"
-                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-bar"></span>
-                <span class="navbar-toggler-bar"></span>
-                <span class="navbar-toggler-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">FLISOL?</a>
-                    <ul class="dropdown-menu dropdown-menu-right dropdown-danger" style="margin-top: -1em;">
-                        <a class="dropdown-item" href="index.html#event" data-scroll="true" href="javascript:void(0)">Sobre</a>
-                        <a class="dropdown-item" href="https://flisol.info/FLISOL2019/Brasil/Bras%C3%ADlia"
-                           target="_blank">Brasília no FLISOL</a>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html#talks" data-scroll="true" href="javascript:void(0)">Palestras/Oficinas</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">Participe</a>
-                    <ul class="dropdown-menu dropdown-menu-right dropdown-danger" style="margin-top: -1em;">
-                        <a class="dropdown-item" href="https://doity.com.br/flisol-df-2019"
-                           target="_blank">Inscreva-se</a>
-                        <a class="dropdown-item" href="index.html#talk-submission" data-scroll="true"
-                           href="javascript:void(0)">Submissão de palestras</a>
-                        <a class="dropdown-item" href="index.html#want-to-collaborate" data-scroll="true"
-                           href="javascript:void(0)">Quero colaborar</a>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html#contact-us" data-scroll="true" href="javascript:void(0)">Data e
-                        local</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.kickante.com.br/campanhas/flisoldf-2019-0" target="_blank"
-                       style="color:white;font-weight:900;opacity:1;">Faça uma doação</a>
-                </li>
-                <!--
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">FLISOL?</a>
+                        <ul class="dropdown-menu dropdown-menu-right dropdown-danger" style="margin-top: -1em;">
+                            <a class="dropdown-item" href="index.html#event" data-scroll="true"
+                                href="javascript:void(0)">Sobre</a>
+                            <a class="dropdown-item" href="https://flisol.info/FLISOL2019/Brasil/Bras%C3%ADlia"
+                                target="_blank">Brasília no FLISOL</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#talks" data-scroll="true"
+                            href="javascript:void(0)">Palestras/Oficinas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)"
+                            data-toggle="dropdown">Participe</a>
+                        <ul class="dropdown-menu dropdown-menu-right dropdown-danger" style="margin-top: -1em;">
+                            <a class="dropdown-item" href="https://doity.com.br/flisol-df-2019"
+                                target="_blank">Inscreva-se</a>
+                            <a class="dropdown-item" href="index.html#talk-submission" data-scroll="true"
+                                href="javascript:void(0)">Submissão de palestras</a>
+                            <a class="dropdown-item" href="index.html#want-to-collaborate" data-scroll="true"
+                                href="javascript:void(0)">Quero colaborar</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact-us" data-scroll="true"
+                            href="javascript:void(0)">Data e
+                            local</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.kickante.com.br/campanhas/flisoldf-2019-0" target="_blank"
+                            style="color:white;font-weight:900;opacity:1;">Faça uma doação</a>
+                    </li>
+                    <!--
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">Edições
                         passadas</a>
@@ -219,170 +806,387 @@
                     </ul>
                 </li>
                 -->
-                <li class="nav-item">
-                    <a href="https://twitter.com/flisoldf" target="_blank" class="btn btn-link btn-neutral"
-                       style="padding: 7px 0 7px 10px;"><i
-                            class="fa fa-twitter"></i></a>
-                    <a href="https://www.facebook.com/flisoldf" target="_blank" class="btn btn-link btn-neutral"
-                       style="padding: 7px 0 7px 10px;"><i class="fa fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/flisol.df/" target="_blank" class="btn btn-link btn-neutral"
-                       style="padding: 7px 0 7px 10px;"><i class="fa fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/groups/12211146/" target="_blank" class="btn btn-link btn-neutral"
-                       style="padding: 7px 0;"><i class="fa fa-linkedin"></i></a>
-                </li>
-            </ul>
+                    <li class="nav-item">
+                        <a href="https://twitter.com/flisoldf" target="_blank" class="btn btn-link btn-neutral"
+                            style="padding: 7px 0 7px 10px;"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/flisoldf" target="_blank" class="btn btn-link btn-neutral"
+                            style="padding: 7px 0 7px 10px;"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/flisol.df/" target="_blank" class="btn btn-link btn-neutral"
+                            style="padding: 7px 0 7px 10px;"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/groups/12211146/" target="_blank"
+                            class="btn btn-link btn-neutral" style="padding: 7px 0;"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<div class="page-header" data-parallax="true"
-     style="background-image: url('assets/img/sections/flisoldf_site_banner_2.jpg');"></div>
+    <div class="page-header" data-parallax="true"
+        style="background-image: url('assets/img/sections/flisoldf_site_banner_2.jpg');"></div>
 
-<div class="cd-section section-white" id="event">
-    <div class="wrapper">
-        <div class="section landing-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 ml-auto mr-auto text-center">
-                        <h2 class="title">Flisol, o que é ?</h2>
+    <div class="cd-section section-white" id="event">
+        <div class="wrapper">
+            <div class="section landing-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 ml-auto mr-auto text-center">
+                            <h2 class="title">Flisol, o que é ?</h2>
+                        </div>
                     </div>
-                </div>
-                <br/><br/>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>O Festival Latino Americano de Instalação de Software Livre é um festival anual de
-                            instalação de software livre, gratuito e aberto a toda a comunidade, realizado desde
-                            2005 em diversos países da América Latina, inclusive no Brasil. O local de nossa
-                            primeira edição foi na <a href="http://unb.br/" target="_blank">UnB</a>.</p>
-                        <p>O evento tem o propósito de promover o uso de softwares livres e a integração de
-                            comunidades de usuários em todos os paí­ses da América Latina. Brasília entrará nessa
-                            maratona pela 15a vez. Ele ocorrerá no dia no dia 27 de Abril de 2019.</p>
-                        <p>O FLISOL busca estreitar e ampliar o contato de usuários de computadores com o mundo do
-                            Software Livre. O evento permite que as pessoas conheçam outros usuários e
-                            desenvolvedores, troquem dúvidas e sugestões. O objetivo maior é promover um
-                            intercâmbio de conhecimentos bastante sadio e aumentar a colaboração entre os
-                            participantes do evento.</p>
-                        <p>Participe dos mini-cursos e palestras e inicie a sua jornada no mundo Livre. Estamos
-                            programando uma série de atividades para a realização do Flisol em Brasília-DF. Estas
-                            atividades envolvem a preparação do material, divulgação e organização das equipes para o
-                            Installfest e para as palestras.</p>
-                        <h3>Como participar?</h3>
-                        <p>Você pode participar de três formas:</p>
-                        <ul>
-                            <li>Como PALESTRANTE e/ou INSTRUTOR de MINI-CURSOS do evento. Submeta sua PROPOSTA DE
-                                TRABALHO com a sua idéia de palestra ou mini-curso. Se tiver alguma dúvida entre em
-                                contato conosco pelo e-mail da ORGANIZAÇÃO do evento <a
+                    <br /><br />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>O Festival Latino Americano de Instalação de Software Livre é um festival anual de
+                                instalação de software livre, gratuito e aberto a toda a comunidade, realizado desde
+                                2005 em diversos países da América Latina, inclusive no Brasil. O local de nossa
+                                primeira edição foi na <a href="http://unb.br/" target="_blank">UnB</a>.</p>
+                            <p>O evento tem o propósito de promover o uso de softwares livres e a integração de
+                                comunidades de usuários em todos os paí­ses da América Latina. Brasília entrará nessa
+                                maratona pela 15a vez. Ele ocorrerá no dia no dia 27 de Abril de 2019.</p>
+                            <p>O FLISOL busca estreitar e ampliar o contato de usuários de computadores com o mundo do
+                                Software Livre. O evento permite que as pessoas conheçam outros usuários e
+                                desenvolvedores, troquem dúvidas e sugestões. O objetivo maior é promover um
+                                intercâmbio de conhecimentos bastante sadio e aumentar a colaboração entre os
+                                participantes do evento.</p>
+                            <p>Participe dos mini-cursos e palestras e inicie a sua jornada no mundo Livre. Estamos
+                                programando uma série de atividades para a realização do Flisol em Brasília-DF. Estas
+                                atividades envolvem a preparação do material, divulgação e organização das equipes para
+                                o
+                                Installfest e para as palestras.</p>
+                            <h3>Como participar?</h3>
+                            <p>Você pode participar de três formas:</p>
+                            <ul>
+                                <li>Como PALESTRANTE e/ou INSTRUTOR de MINI-CURSOS do evento. Submeta sua PROPOSTA DE
+                                    TRABALHO com a sua idéia de palestra ou mini-curso. Se tiver alguma dúvida entre em
+                                    contato conosco pelo e-mail da ORGANIZAÇÃO do evento <a
                                         href="mailto:organizacao@flisoldf.blog.br?subject=CHAMADA+DE+TRABALHO+–+FLISOL-DF+2019">organizacao@flisoldf.blog.br</a>
-                                com o assunto <em>CHAMADA DE TRABALHO – FLISOL-DF 2019</em>.
-                            </li>
-                            <li>Como USUÁRIO para assistir e participar das atividades, palestras e mini-cursos. Faça
-                                sua inscrição para o evento acessando a página de <a
+                                    com o assunto <em>CHAMADA DE TRABALHO – FLISOL-DF 2019</em>.
+                                </li>
+                                <li>Como USUÁRIO para assistir e participar das atividades, palestras e mini-cursos.
+                                    Faça
+                                    sua inscrição para o evento acessando a página de <a
                                         href="https://doity.com.br/flisol-df-2019" target="_blank">INSCRIÇÃO DO
-                                    FLISOL-DF 2019</a>.
-                            </li>
-                            <li>Como PATROCINADOR (quer seja pessoa física ou empresa) ou como participante da
-                                ORGANIZAÇÃO DO EVENTO. Entre em contato com a organização pelo e-mail: <a
+                                        FLISOL-DF 2019</a>.
+                                </li>
+                                <li>Como PATROCINADOR (quer seja pessoa física ou empresa) ou como participante da
+                                    ORGANIZAÇÃO DO EVENTO. Entre em contato com a organização pelo e-mail: <a
                                         href="mailto:organizacao@flisoldf.blog.br">organizacao@flisoldf.blog.br</a>.
-                            </li>
-                        </ul>
-                        <p>A participação no FLISOL 2019 em Brasília é totalmente gratuita e será certificada. Para
-                            participar basta se dirigir até o local do evento no dia 27 de Abril, a partir das 08h até
-                            as 18h. Se desejar, com seu computador para instalarmos software livre durante todo o dia do
-                            evento.</p>
-                        <p>Se não quiser levar seu computador para instalar software livre, mesmo assim poderá
-                            participar assistindo a palestras, mini-cursos e interagindo com outros visitantes e
-                            usuários de software livre.</p>
-                        <p>Traga sua família e amigos tanto para conhecer melhor a respeito do software livre quanto
-                            para trocar experiências do mundo livre, seja você um usuário com qualquer nível de
-                            conhecimento.</p>
-                        <h3>InstallFest – Festa?</h3>
-                        <p>Um <strong>InstallFest</strong> é um evento, geralmente patrocinado por um grupo de usuários
-                            Linux, em que pessoas se reúnem para realizar instalações em massa de sistemas operacionais
-                            de computador ou software livre, principalmente o sistema operacional Linux e outros
-                            softwares de código aberto.</p>
-                        <p>Com esta finalidade, diversas comunidades locais de software livre (em cada país, em cada
-                            cidade/localidade), organizam simultaneamente eventos em que se instala gratuitamente e
-                            totalmente legal, software livre nos computadores levados pelos participantes, onde
-                            iniciantes trazem seus computadores, e usuários experientes os auxiliam a instalar e
-                            configurar o sistema. Muitas vezes mídias contendo alguma distribuição de Linux e
-                            informativos são distribuídos gratuitamente aos participantes. Este tipo de evento recebe
-                            bem todo nível de conhecimento, de iniciantes a usuários avançados.</p>
-                        <p>O InstallFest prioriza não só a instalação de Distribuições de GNU/Linux, mas também a
-                            instalação de Software Livres em geral, mesmo em plataforma proprietária, de forma que o
-                            usuário possa ter aí o seu primeiro contato com a filosofia do Software Livre e no futuro
-                            possa fazer a opção consciente por um Sistema Operacional Livre. A instalação pode ser feita
-                            de forma assistida*, ou seja, você mesmo poderá fazer a instalação do Sistema na sua máquina
-                            apenas com a supervisão de alguém com mais prática.</p>
+                                </li>
+                            </ul>
+                            <p>A participação no FLISOL 2019 em Brasília é totalmente gratuita e será certificada. Para
+                                participar basta se dirigir até o local do evento no dia 27 de Abril, a partir das 08h
+                                até
+                                as 18h. Se desejar, com seu computador para instalarmos software livre durante todo o
+                                dia do
+                                evento.</p>
+                            <p>Se não quiser levar seu computador para instalar software livre, mesmo assim poderá
+                                participar assistindo a palestras, mini-cursos e interagindo com outros visitantes e
+                                usuários de software livre.</p>
+                            <p>Traga sua família e amigos tanto para conhecer melhor a respeito do software livre quanto
+                                para trocar experiências do mundo livre, seja você um usuário com qualquer nível de
+                                conhecimento.</p>
+                            <h3>InstallFest – Festa?</h3>
+                            <p>Um <strong>InstallFest</strong> é um evento, geralmente patrocinado por um grupo de
+                                usuários
+                                Linux, em que pessoas se reúnem para realizar instalações em massa de sistemas
+                                operacionais
+                                de computador ou software livre, principalmente o sistema operacional Linux e outros
+                                softwares de código aberto.</p>
+                            <p>Com esta finalidade, diversas comunidades locais de software livre (em cada país, em cada
+                                cidade/localidade), organizam simultaneamente eventos em que se instala gratuitamente e
+                                totalmente legal, software livre nos computadores levados pelos participantes, onde
+                                iniciantes trazem seus computadores, e usuários experientes os auxiliam a instalar e
+                                configurar o sistema. Muitas vezes mídias contendo alguma distribuição de Linux e
+                                informativos são distribuídos gratuitamente aos participantes. Este tipo de evento
+                                recebe
+                                bem todo nível de conhecimento, de iniciantes a usuários avançados.</p>
+                            <p>O InstallFest prioriza não só a instalação de Distribuições de GNU/Linux, mas também a
+                                instalação de Software Livres em geral, mesmo em plataforma proprietária, de forma que o
+                                usuário possa ter aí o seu primeiro contato com a filosofia do Software Livre e no
+                                futuro
+                                possa fazer a opção consciente por um Sistema Operacional Livre. A instalação pode ser
+                                feita
+                                de forma assistida*, ou seja, você mesmo poderá fazer a instalação do Sistema na sua
+                                máquina
+                                apenas com a supervisão de alguém com mais prática.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<hr/>
+    <hr />
 
-<div class="team-4" id="talks">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 ml-auto mr-auto text-center">
-                <h2 class="title">Palestras e Oficinas</h2>
-                <h5 class="description">Conheça nossas palestras, escolhidas a dedo, pensando na melhor qualidade
-                    técnica para vocês</h5>
-                <br>
+    <div class="team-4" id="talks">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto text-center">
+                    <h2 class="title">Palestras e Oficinas</h2>
+                    <h5 class="description">Conheça nossas palestras, escolhidas a dedo, pensando na melhor qualidade
+                        técnica para vocês</h5>
+                    <br>
 
-                <div id="talks-kind-selector" style="display: none;">
-                    <button type="button" class="btn btn-secondary">Todos</button>
-                    <button type="button" class="btn btn-outline-secondary">Tecnologia</button>
-                    <button type="button" class="btn btn-outline-secondary">Experiência</button>
-                    <button type="button" class="btn btn-outline-secondary">Futuro</button>
-                    <button type="button" class="btn btn-outline-secondary">Planejamento</button>
+                    <div id="talks-kind-selector" style="display: none;">
+                        <button type="button" class="btn btn-secondary">Todos</button>
+                        <button type="button" class="btn btn-outline-secondary">Tecnologia</button>
+                        <button type="button" class="btn btn-outline-secondary">Experiência</button>
+                        <button type="button" class="btn btn-outline-secondary">Futuro</button>
+                        <button type="button" class="btn btn-outline-secondary">Planejamento</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-md-12 ml-auto mr-auto">
-                <div class="card page-carousel" style="box-shadow: 0 0 0 0;">
-                    <div id="guestSpeakers" class="carousel slide" data-ride="carousel">
+            <br>
+            <div class="row">
+                <div class="col-md-12 ml-auto mr-auto">
 
-                        <div class="carousel-inner" role="listbox">
+                    <div class="ritz grid-container" dir="ltr">
+                        <table class="waffle" cellspacing="0" cellpadding="0">
+                            <thead>
+                                <tr>
+                                    <!-- <th class="row-header freezebar-origin-ltr"></th> -->
+                                    <th id="1531553925C0" style="width:93px" class="column-headers-background"></th>
+                                    <th id="1531553925C1" style="width:118px" class="column-headers-background"></th>
+                                    <th id="1531553925C2" style="width:109px" class="column-headers-background"></th>
+                                    <th id="1531553925C3" style="width:314px" class="column-headers-background"></th>
+                                    <th id="1531553925C4" style="width:314px" class="column-headers-background"></th>
+                                    <th id="1531553925C5" style="width:295px" class="column-headers-background"></th>
+                                    <th id="1531553925C6" style="width:267px" class="column-headers-background"></th>
+                                    <th id="1531553925C7" style="width:267px" class="column-headers-background"></th>
+                                    <th id="1531553925C8" style="width:286px" class="column-headers-background"></th>
+                                    <th id="1531553925C9" style="width:288px" class="column-headers-background"></th>
+                                    <th id="1531553925C10" style="width:288px" class="column-headers-background"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style='height:20px;'>
+                                    <td class="s0" dir="ltr" rowspan="2">Local</td>
+                                    <td class="s0" dir="ltr" rowspan="2">Área</td>
+                                    <td class="s1" dir="ltr" colspan="9">HORÁRIO</td>
+                                </tr>
+                                <tr style='height:20px;'>
+                                    <td class="s2" dir="ltr">8h-9h</td>
+                                    <td class="s2" dir="ltr">9h-10h</td>
+                                    <td class="s2" dir="ltr">10h-11h</td>
+                                    <td class="s2" dir="ltr">11h-12h</td>
+                                    <td class="s2" dir="ltr">12h-14h</td>
+                                    <td class="s2" dir="ltr">14h-15h</td>
+                                    <td class="s2" dir="ltr">15h-16h</td>
+                                    <td class="s2" dir="ltr">16h-17h</td>
+                                    <td class="s2" dir="ltr">17h-18h</td>
+                                </tr>
+                                <tr style='height:20px;'>
+                                    <td class="s3" dir="ltr">Auditorio</td>
+                                    <td class="s4"></td>
+                                    <td class="s3" dir="ltr">Abertura</td>
+                                    <td class="s4"></td>
+                                    <td class="s4"></td>
+                                    <td class="s5" dir="ltr"></td>
+                                    <td class="s3" dir="ltr">Intervalo</td>
+                                    <td class="s4" dir="ltr"></td>
+                                    <td class="s4" dir="ltr"></td>
+                                    <td class="s6"></td>
+                                    <td class="s7" dir="ltr">Encerramento</td>
+                                </tr>
+                                <tr style='height:20px;'>
+                                    <td class="s8" dir="ltr">Sala Fedora</td>
+                                    <td class="s8" dir="ltr">Segurança</td>
+                                    <td class="s8" dir="ltr" rowspan="13"></td>
+                                    <td class="s9" dir="ltr">Elevando a segurança em sistemas linux com o SELinux
+                                        (Ricardo Neiva)</td>
+                                    <td class="s9" dir="ltr">Garantindo sua privacidade com OpenPGP (Jamil)</td>
+                                    <td class="s9" dir="ltr">The headway and tricks of Defensive Programming (Alcyon
+                                        Junior)</td>
+                                    <td class="s9" dir="ltr" rowspan="13"></td>
+                                    <td class="s9" dir="ltr">Encriptando e assinando documentos com PGP (Jamil Neto)
+                                    </td>
+                                    <td class="s9" dir="ltr">Anonimato na Deep WEB (Caio Lee)</td>
+                                    <td class="s10" dir="ltr"></td>
+                                    <td class="s11" dir="ltr" rowspan="13"></td>
+                                </tr>
+                                <tr style='height:20px;'>
+                                    <td class="s12" dir="ltr">Sala Debian</td>
+                                    <td class="s12" dir="ltr">Administração</td>
+                                    <td class="s13" dir="ltr">Começe a utilizar o Scrum em seus projetos (Leandro
+                                        Nogueira)</td>
+                                    <td class="s13" dir="ltr">A arte de potencializar resultados com aplicação de
+                                        métodos Ágeis como Scrum ou Kanban (Wisley Albuquerque)</td>
+                                    <td class="s13" dir="ltr">LibreOffice 6.2 (Henderson Matsuura Sanches)</td>
+                                    <td class="s13" dir="ltr"></td>
+                                    <td class="s13" dir="ltr">10 passos para começar o seu próprio negócio! (Jenifer
+                                        Teles)</td>
+                                    <td class="s13" dir="ltr"></td>
+                                </tr>
+                                <tr style='height:20px;'>
+                                    <td class="s14" dir="ltr">Sala Trisquel</td>
+                                    <td class="s14" dir="ltr">Desenvolvimento</td>
+                                    <td class="s15" dir="ltr">Licenças e direitos autorais em software: entenda como
+                                        isso funciona (João Eriberto Mota Filho)</td>
+                                    <td class="s15" dir="ltr">Lições que aprendi na minha caminhada de desenvolvedor
+                                        (Lucílvio Alves de Lima)</td>
+                                    <td class="s15" dir="ltr">A evolução do Hello World em Java (Leonardo Ribas Segala)
+                                    </td>
+                                    <td class="s15" dir="ltr">Conceitos e arquitetura da plataforma Java EE (Tadeu
+                                        Espíndola Palermo)</td>
+                                    <td class="s15" dir="ltr"></td>
+                                    <td class="s15" dir="ltr"></td>
+                                </tr>
+                                <tr style='height:20px;'>
+                                    <td class="s16" dir="ltr">Sala CentOS</td>
+                                    <td class="s16" dir="ltr">Redes</td>
+                                    <td class="s17" dir="ltr">Utilizando software livre em backbone (Gilmar dos Reis
+                                        Queiroz)</td>
+                                    <td class="s17" dir="ltr">Criando clusters K8s com Kubic Project (Vinicius Neuhauss
+                                        dos Santos)</td>
+                                    <td class="s17" dir="ltr">Bitcoin e a Aplicação da Blockchain (Richard Nixon)</td>
+                                    <td class="s17" dir="ltr">Zabbix 4.0, EveryZ e Avante (Adail Henrique Spinola Horst)
+                                    </td>
+                                    <td class="s17" dir="ltr">FOG Project - Administração Centralizada de Computadores
+                                        (José Wellington A. Ribeiro)</td>
+                                    <td class="s17" dir="ltr">Integração Simples Nagios com Grafana (Dalto Brito)</td>
+                                </tr>
+                                <tr style='height:20px;'>
+                                    <td class="s18" dir="ltr">Sala Ubuntu</td>
+                                    <td class="s18" dir="ltr">Educação</td>
+                                    <td class="s19" dir="ltr">Mídias Negras: Cultura Negra, Tecnologias e Inovações
+                                        (Denys Resende)</td>
+                                    <td class="s19" dir="ltr">CUIDADO: “Estou Conectado!” Os riscos de quem navega na
+                                        WEB (Marcelo Pinto de Assis)</td>
+                                    <td class="s19" dir="ltr">Software Livre o Instituto Federal de Brasília (Jocênio
+                                        Marquios Epaminondas)</td>
+                                    <td class="s19" dir="ltr"><br><br>Central de Informações - Telegram - Feeds<br>RSS -
+                                        Agregadores - Google Alertas (João Dinaldo Kzam Gama)<br></td>
+                                    <td class="s19" dir="ltr"></td>
+                                    <td class="s19" dir="ltr"></td>
+                                </tr>
+                                <tr style='height:20px;'>
+                                    <td class="s20" dir="ltr">Sala Linux Mint</td>
+                                    <td class="s20" dir="ltr">Automação</td>
+                                    <td class="s21" dir="ltr">Impressoras 3D - por onde começar? (Leandro Sampaio Naves)
+                                    </td>
+                                    <td class="s21" dir="ltr">Rastreamento de vôos em tempo real com Raspbian embarcado
+                                        em Raspberry (Janilson Pereira do Nascimento) </td>
+                                    <td class="s21" dir="ltr"></td>
+                                    <td class="s21" dir="ltr">Hardware também pode ser livre? (Otávio Carneiro)</td>
+                                    <td class="s21" dir="ltr"></td>
+                                    <td class="s21" dir="ltr"></td>
+                                </tr>
+                                <tr style='height:20px;'>
+                                    <td class="s14" dir="ltr">Sala DuZeru</td>
+                                    <td class="s14" dir="ltr">Sistemas Operacionais</td>
+                                    <td class="s15" dir="ltr">OpenSuse/Uyuni muito mais que um repositorio de pacotes
+                                        (Igor Marcel Abreu Ferreira)</td>
+                                    <td class="s15" dir="ltr">O que é o Debian? Como contribuir? (Lucas Kanashiro)</td>
+                                    <td class="s15" dir="ltr">Segurança em Redes de Computadores com Firewall Pfsense
+                                        (João Paulo Sousa da Conceição)</td>
+                                    <td class="s15" dir="ltr">Análise de Performance Usando o Sistema Operacional (Raul
+                                        Diego de Queiroz Oliveira)</td>
+                                    <td class="s15" dir="ltr"></td>
+                                    <td class="s15" dir="ltr"></td>
+                                </tr>
+                                <tr style='height:20px;'>
+                                    <td class="s22" dir="ltr">Sala Arch Linux</td>
+                                    <td class="s22" dir="ltr">Gestão de Dados</td>
+                                    <td class="s23" dir="ltr">Arquitetando Soluções de Dados com PostgreSQL (Raul
+                                        Oliveira)</td>
+                                    <td class="s23" dir="ltr">GNU-Health (Vinicius Neuhauss dos Santos)</td>
+                                    <td class="s23" dir="ltr"></td>
+                                    <td class="s23" dir="ltr"></td>
+                                    <td class="s23" dir="ltr"></td>
+                                    <td class="s23" dir="ltr"></td>
+                                </tr>
+                                <tr style='height:20px;'>
+                                    <td class="s24" dir="ltr">Sala OpenSuse</td>
+                                    <td class="s24" dir="ltr">Installfest</td>
+                                    <td class="s25" dir="ltr"></td>
+                                    <td class="s25" dir="ltr"></td>
+                                    <td class="s25" dir="ltr"></td>
+                                    <td class="s26" dir="ltr"></td>
+                                    <td class="s26" dir="ltr"></td>
+                                    <td class="s25" dir="ltr"></td>
+                                </tr>
+                                <tr style='height:20px;'>
+                                    <td class="s27" dir="ltr">Lab Fox</td>
+                                    <td class="s28" dir="ltr">Flisolzinho</td>
+                                    <td class="s29" dir="ltr" colspan="3">Oficina de Pensamento Computacional Desplugado
+                                        (Guilherme Carvalho Rodrigues)</td>
+                                    <td class="s29" dir="ltr" colspan="3">Algoritmos e lógica binária para crianças
+                                        (Luiza Maria Pereira Schaidt)</td>
+                                </tr>
+                                <tr style='height:20px;'>
+                                    <td class="s30" dir="ltr">Lab GNU</td>
+                                    <td class="s31" dir="ltr">Automação</td>
+                                    <td class="s32" dir="ltr" colspan="3">Modelagem e impressão 3D (Jailson Silva)</td>
+                                    <td class="s32" dir="ltr" colspan="3">Aprendendo a desenvolver um óculos de
+                                        Realidade Virtual - Sistemas Google CardBoard (Elias do Nascimento Melo Filho)
+                                    </td>
+                                </tr>
+                                <tr style='height:20px;'>
+                                    <td class="s33" dir="ltr">Lab Tux</td>
+                                    <td class="s12" dir="ltr">Segurança</td>
+                                    <td class="s13" dir="ltr" colspan="3">Criação de aplicativo educacional com
+                                        integração ao Google Drive (Nayara Santos de Matos e Hugo Gonçalves do
+                                        Nascimento)</td>
+                                    <td class="s13" dir="ltr" colspan="3"></td>
+                                </tr>
+                                <tr style='height:20px;'>
+                                    <td class="s34" dir="ltr">Lab Konqi</td>
+                                    <td class="s18" dir="ltr">Educação</td>
+                                    <td class="s19" dir="ltr" colspan="3">Construção de jogo pedagógico na formação de
+                                        professores (Cláudia Vieira Barboza Sumikawa)</td>
+                                    <td class="s19" dir="ltr" colspan="3">Mapeando Processos de Negocio com BPM (Leandro
+                                        Nogueira)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
-                            <div class="carousel-item active">
-                                <div class="row">
-                                    <div class="col-1"></div>
-                                    <div class="col-5">
-                                        <div class="card card-profile" data-background="color" data-color="dark">
-                                            <div class="row">
-                                                <div class="col-md-8">
-                                                    <div class="card-img-top">
-                                                        <a href="#">
-                                                            <img class="img card-speaker-avatar"
-                                                                 src="assets/img/speakers/5.jpg">
-                                                        </a>
-                                                        <br>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row" style="margin-top: 170px">
-                                                <div class="col-md-12">
-                                                    <div class="card-body text-center">
-                                                        <h3 class="card-title">CUIDADO: "Estou Conectado!"</h3> <em>(Marcelo
-                                                        Pinto de Assis)</em>
-                                                        <div class="card-description text-center">
-                                                            <p>O Infância Digital busca orientar pais, responsáveis,
-                                                                professores e outros interessados sobre o crescimento de
-                                                                nossas crianças e jovens em meio ao mundo digital.
-                                                                Queremos mostrar que a utilização de computadores,
-                                                                internet, dispositivos móveis, vídeo games e outras
-                                                                tecnologias, pelas crianças e adolescentes (e porque não
-                                                                pelos adultos?), precisa ser acompanhada com atenção e
-                                                                cuidado. Vantagens existem, mas o uso excessivo e sem
-                                                                orientação pode trazer riscos à saúde física e mental.
-                                                            </p>
+                    <div class="card page-carousel" style="box-shadow: 0 0 0 0;display: none;">
+                        <div id="guestSpeakers" class="carousel slide" data-ride="carousel">
+
+                            <div class="carousel-inner" role="listbox">
+
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-1"></div>
+                                        <div class="col-5">
+                                            <div class="card card-profile" data-background="color" data-color="dark">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <div class="card-img-top">
+                                                            <a href="#">
+                                                                <img class="img card-speaker-avatar"
+                                                                    src="assets/img/speakers/5.jpg">
+                                                            </a>
+                                                            <br>
                                                         </div>
                                                     </div>
-                                                    <!--
+                                                </div>
+                                                <div class="row" style="margin-top: 170px">
+                                                    <div class="col-md-12">
+                                                        <div class="card-body text-center">
+                                                            <h3 class="card-title">CUIDADO: "Estou Conectado!"</h3>
+                                                            <em>(Marcelo
+                                                                Pinto de Assis)</em>
+                                                            <div class="card-description text-center">
+                                                                <p>O Infância Digital busca orientar pais, responsáveis,
+                                                                    professores e outros interessados sobre o
+                                                                    crescimento de
+                                                                    nossas crianças e jovens em meio ao mundo digital.
+                                                                    Queremos mostrar que a utilização de computadores,
+                                                                    internet, dispositivos móveis, vídeo games e outras
+                                                                    tecnologias, pelas crianças e adolescentes (e porque
+                                                                    não
+                                                                    pelos adultos?), precisa ser acompanhada com atenção
+                                                                    e
+                                                                    cuidado. Vantagens existem, mas o uso excessivo e
+                                                                    sem
+                                                                    orientação pode trazer riscos à saúde física e
+                                                                    mental.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <!--
                                                     <div class="card-footer">
                                                         <a href="https://www.linkedin.com/in/tdutrion/" target="_blank"
                                                             class="btn btn-just-icon btn-linkedin a-link"><i class="fa fa-linkedin"></i></a>
@@ -392,36 +1196,40 @@
                                                             class="btn btn-just-icon btn-github a-link"><i class="fa fa-github"></i></a>
                                                     </div>
                                                     -->
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-5">
-                                        <div class="card card-profile" data-background="color" data-color="dark">
-                                            <div class="row">
-                                                <div class="col-md-8">
-                                                    <div class="card-img-top">
-                                                        <a href="#">
-                                                            <img class="img card-speaker-avatar"
-                                                                 src="assets/img/speakers/6.jpg">
-                                                        </a>
-                                                        <br>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row" style="margin-top: 170px">
-                                                <div class="col-md-12">
-                                                    <div class="card-body text-center">
-                                                        <h3 class="card-title">Rastreamento de vôos em tempo real com
-                                                            Raspbian embarcado em Raspberry</h3> <em>(Janilson Pereira
-                                                        do Nascimento)</em>
-                                                        <div class="card-description text-center">
-                                                            <p>Um modelo de negócio no qual usuários espalhados no mundo
-                                                                inteiro alimentam um site rastreamento de vôos em tempo
-                                                                real!</p>
+                                        <div class="col-5">
+                                            <div class="card card-profile" data-background="color" data-color="dark">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <div class="card-img-top">
+                                                            <a href="#">
+                                                                <img class="img card-speaker-avatar"
+                                                                    src="assets/img/speakers/6.jpg">
+                                                            </a>
+                                                            <br>
                                                         </div>
                                                     </div>
-                                                    <!--
+                                                </div>
+                                                <div class="row" style="margin-top: 170px">
+                                                    <div class="col-md-12">
+                                                        <div class="card-body text-center">
+                                                            <h3 class="card-title">Rastreamento de vôos em tempo real
+                                                                com
+                                                                Raspbian embarcado em Raspberry</h3> <em>(Janilson
+                                                                Pereira
+                                                                do Nascimento)</em>
+                                                            <div class="card-description text-center">
+                                                                <p>Um modelo de negócio no qual usuários espalhados no
+                                                                    mundo
+                                                                    inteiro alimentam um site rastreamento de vôos em
+                                                                    tempo
+                                                                    real!</p>
+                                                            </div>
+                                                        </div>
+                                                        <!--
                                                     <div class="card-footer">
                                                         <a href="https://www.linkedin.com/in/tdutrion/" target="_blank"
                                                             class="btn btn-just-icon btn-linkedin a-link"><i class="fa fa-linkedin"></i></a>
@@ -431,43 +1239,46 @@
                                                             class="btn btn-just-icon btn-github a-link"><i class="fa fa-github"></i></a>
                                                     </div>
                                                     -->
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-1"></div>
-                                    <div class="col-5">
-                                        <div class="card card-profile" data-background="color" data-color="dark">
-                                            <div class="row">
-                                                <div class="col-md-8">
-                                                    <div class="card-img-top">
-                                                        <a href="#">
-                                                            <img class="img card-speaker-avatar"
-                                                                 src="assets/img/speakers/1.jpg">
-                                                        </a>
-                                                        <br>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row" style="margin-top: 170px">
-                                                <div class="col-md-12">
-                                                    <div class="card-body text-center">
-                                                        <h3 class="card-title">Modelagem e impressão 3D</h3> <em>(Jailson
-                                                        Silva)</em>
-                                                        <div class="card-description text-center">
-                                                            <p>Jailson Silva, aluno do curso de Licenciatura em
-                                                                Computação e doutorando também em Computação, vem nos
-                                                                presentear com uma <strong>oficina de 2 horas
-                                                                    (!!!)</strong> com uma introdução à modelagem 3D.
-                                                            </p>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-1"></div>
+                                        <div class="col-5">
+                                            <div class="card card-profile" data-background="color" data-color="dark">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <div class="card-img-top">
+                                                            <a href="#">
+                                                                <img class="img card-speaker-avatar"
+                                                                    src="assets/img/speakers/1.jpg">
+                                                            </a>
+                                                            <br>
                                                         </div>
                                                     </div>
-                                                    <!--
+                                                </div>
+                                                <div class="row" style="margin-top: 170px">
+                                                    <div class="col-md-12">
+                                                        <div class="card-body text-center">
+                                                            <h3 class="card-title">Modelagem e impressão 3D</h3>
+                                                            <em>(Jailson
+                                                                Silva)</em>
+                                                            <div class="card-description text-center">
+                                                                <p>Jailson Silva, aluno do curso de Licenciatura em
+                                                                    Computação e doutorando também em Computação, vem
+                                                                    nos
+                                                                    presentear com uma <strong>oficina de 2 horas
+                                                                        (!!!)</strong> com uma introdução à modelagem
+                                                                    3D.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <!--
                                                     <div class="card-footer">
                                                         <a href="https://www.linkedin.com/in/tdutrion/" target="_blank"
                                                             class="btn btn-just-icon btn-linkedin a-link"><i class="fa fa-linkedin"></i></a>
@@ -477,37 +1288,41 @@
                                                             class="btn btn-just-icon btn-github a-link"><i class="fa fa-github"></i></a>
                                                     </div>
                                                     -->
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-5">
-                                        <div class="card card-profile" data-background="color" data-color="dark">
-                                            <div class="row">
-                                                <div class="col-md-8">
-                                                    <div class="card-img-top">
-                                                        <a href="#">
-                                                            <img class="img card-speaker-avatar"
-                                                                 src="assets/img/speakers/2.jpg">
-                                                        </a>
-                                                        <br>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row" style="margin-top: 170px">
-                                                <div class="col-md-12">
-                                                    <div class="card-body text-center">
-                                                        <h3 class="card-title">Flisolzinho</h3> <em>(Guilherme Carvalho
-                                                        Rodrigues)</em>
-                                                        <div class="card-description text-center">
-                                                            <p>Como não curtir quem gosta de Star Wars?!<br/><em>Luke,
-                                                                eu sou seu pai.</em><br/><br/>O tio Guilherme, que é
-                                                                professor e coordenador do Curso de Pensamento
-                                                                Computacional no LabKids, nos apresenta uma divertida
-                                                                Oficina de Pensamento Computacional Desplugado.</p>
+                                        <div class="col-5">
+                                            <div class="card card-profile" data-background="color" data-color="dark">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <div class="card-img-top">
+                                                            <a href="#">
+                                                                <img class="img card-speaker-avatar"
+                                                                    src="assets/img/speakers/2.jpg">
+                                                            </a>
+                                                            <br>
                                                         </div>
                                                     </div>
-                                                    <!--
+                                                </div>
+                                                <div class="row" style="margin-top: 170px">
+                                                    <div class="col-md-12">
+                                                        <div class="card-body text-center">
+                                                            <h3 class="card-title">Flisolzinho</h3> <em>(Guilherme
+                                                                Carvalho
+                                                                Rodrigues)</em>
+                                                            <div class="card-description text-center">
+                                                                <p>Como não curtir quem gosta de Star
+                                                                    Wars?!<br /><em>Luke,
+                                                                        eu sou seu pai.</em><br /><br />O tio Guilherme,
+                                                                    que é
+                                                                    professor e coordenador do Curso de Pensamento
+                                                                    Computacional no LabKids, nos apresenta uma
+                                                                    divertida
+                                                                    Oficina de Pensamento Computacional Desplugado.</p>
+                                                            </div>
+                                                        </div>
+                                                        <!--
                                                     <div class="card-footer">
                                                         <a href="https://www.linkedin.com/in/wfsilva/" target="_blank"
                                                             class="btn btn-just-icon btn-linkedin a-link"><i class="fa fa-linkedin"></i></a>
@@ -517,44 +1332,47 @@
                                                             class="btn btn-just-icon btn-github a-link"><i class="fa fa-github"></i></a>
                                                     </div>
                                                     -->
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-1"></div>
-                                    <div class="col-5">
-                                        <div class="card card-profile" data-background="color" data-color="dark">
-                                            <div class="row">
-                                                <div class="col-md-8">
-                                                    <div class="card-img-top">
-                                                        <a href="#">
-                                                            <img class="img card-speaker-avatar"
-                                                                 src="assets/img/speakers/3.jpg">
-                                                        </a>
-                                                        <br>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row" style="margin-top: 170px">
-                                                <div class="col-md-12">
-                                                    <div class="card-body text-center">
-                                                        <h3 class="card-title">Conceitos e arquitetura da plataforma
-                                                            Java EE</h3> <em>(Tadeu Espíndola Palermo)</em>
-                                                        <div class="card-description text-center">
-                                                            <p>Java não é um bicho de 7 cabeças! De forma simples,
-                                                                intuitiva e objetiva o Tadeu irá demonstrar os conceitos
-                                                                e arquitetura da plataforma Java EE.<br/><br/>Alguns
-                                                                assuntos polêmicos do Java serão desmitificados: suas
-                                                                ramificações, o que possui de componentes, camadas,
-                                                                containers e como fazer suas entregas!</p>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-1"></div>
+                                        <div class="col-5">
+                                            <div class="card card-profile" data-background="color" data-color="dark">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <div class="card-img-top">
+                                                            <a href="#">
+                                                                <img class="img card-speaker-avatar"
+                                                                    src="assets/img/speakers/3.jpg">
+                                                            </a>
+                                                            <br>
                                                         </div>
                                                     </div>
-                                                    <!--
+                                                </div>
+                                                <div class="row" style="margin-top: 170px">
+                                                    <div class="col-md-12">
+                                                        <div class="card-body text-center">
+                                                            <h3 class="card-title">Conceitos e arquitetura da plataforma
+                                                                Java EE</h3> <em>(Tadeu Espíndola Palermo)</em>
+                                                            <div class="card-description text-center">
+                                                                <p>Java não é um bicho de 7 cabeças! De forma simples,
+                                                                    intuitiva e objetiva o Tadeu irá demonstrar os
+                                                                    conceitos
+                                                                    e arquitetura da plataforma Java
+                                                                    EE.<br /><br />Alguns
+                                                                    assuntos polêmicos do Java serão desmitificados:
+                                                                    suas
+                                                                    ramificações, o que possui de componentes, camadas,
+                                                                    containers e como fazer suas entregas!</p>
+                                                            </div>
+                                                        </div>
+                                                        <!--
                                                     <div class="card-footer">
                                                         <a href="https://github.com/EvandroMohr" target="_blank"
                                                             class="btn btn-just-icon btn-github a-link"><i class="fa fa-github"></i></a>
@@ -562,41 +1380,46 @@
                                                             class="btn btn-just-icon btn-linkedin a-link"><i class="fa fa-linkedin"></i></a>
                                                     </div>
                                                     -->
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-5">
-                                        <div class="card card-profile" data-background="color" data-color="dark">
-                                            <div class="row">
-                                                <div class="col-md-8">
-                                                    <div class="card-img-top">
-                                                        <a href="#">
-                                                            <img class="img card-speaker-avatar"
-                                                                 src="assets/img/speakers/4.jpg">
-                                                        </a>
-                                                        <br>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row" style="margin-top: 170px">
-                                                <div class="col-md-12">
-                                                    <div class="card-body text-center">
-                                                        <h3 class="card-title">Mídias Negras: Cultura Negra,
-                                                            Tecnologias e Inovações</h3> <em>(Denys Resende)</em>
-                                                        <div class="card-description text-center">
-                                                            <p>O <strong>comNEGRA</strong> é um movimento de busca para
-                                                                uma representação articulada e consciente, consiste na
-                                                                auto organização coletiva de comunicadores sociais
-                                                                negros, que em diversas formas de expressão e meios de
-                                                                comunicação, com maior intensidade no uso de plataformas
-                                                                virtuais e Tecnologias da Informação, se estruturando
-                                                                como formadores de opinião pública, buscando
-                                                                principalmente desmitificar os aspectos da cultura
-                                                                negra.</p>
+                                        <div class="col-5">
+                                            <div class="card card-profile" data-background="color" data-color="dark">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <div class="card-img-top">
+                                                            <a href="#">
+                                                                <img class="img card-speaker-avatar"
+                                                                    src="assets/img/speakers/4.jpg">
+                                                            </a>
+                                                            <br>
                                                         </div>
                                                     </div>
-                                                    <!--
+                                                </div>
+                                                <div class="row" style="margin-top: 170px">
+                                                    <div class="col-md-12">
+                                                        <div class="card-body text-center">
+                                                            <h3 class="card-title">Mídias Negras: Cultura Negra,
+                                                                Tecnologias e Inovações</h3> <em>(Denys Resende)</em>
+                                                            <div class="card-description text-center">
+                                                                <p>O <strong>comNEGRA</strong> é um movimento de busca
+                                                                    para
+                                                                    uma representação articulada e consciente, consiste
+                                                                    na
+                                                                    auto organização coletiva de comunicadores sociais
+                                                                    negros, que em diversas formas de expressão e meios
+                                                                    de
+                                                                    comunicação, com maior intensidade no uso de
+                                                                    plataformas
+                                                                    virtuais e Tecnologias da Informação, se
+                                                                    estruturando
+                                                                    como formadores de opinião pública, buscando
+                                                                    principalmente desmitificar os aspectos da cultura
+                                                                    negra.</p>
+                                                            </div>
+                                                        </div>
+                                                        <!--
                                                     <div class="card-footer">
                                                         <a href="https://www.linkedin.com/in/gabidavila/" target="_blank"
                                                             class="btn btn-just-icon btn-linkedin a-link"><i class="fa fa-linkedin"></i></a>
@@ -606,152 +1429,150 @@
                                                             class="btn btn-just-icon btn-github a-link"><i class="fa fa-github"></i></a>
                                                     </div>
                                                     -->
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <ol class="carousel-indicators" style="margin-bottom: -20px;">
+                                <li data-target="#guestSpeakers" data-slide-to="0" class="active"></li>
+                                <li data-target="#guestSpeakers" data-slide-to="1" class=""></li>
+                                <li data-target="#guestSpeakers" data-slide-to="2" class=""></li>
+                            </ol>
+
+                            <a style="opacity: 1;" class="left carousel-control carousel-control-prev"
+                                href="#guestSpeakers" role="button" data-slide="prev">
+                                <span class="fa fa-angle-left"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a style="opacity: 1;" class="right carousel-control carousel-control-next"
+                                href="#guestSpeakers" role="button" data-slide="next">
+                                <span class="fa fa-angle-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
                         </div>
-
-                        <ol class="carousel-indicators" style="margin-bottom: -20px;">
-                            <li data-target="#guestSpeakers" data-slide-to="0" class="active"></li>
-                            <li data-target="#guestSpeakers" data-slide-to="1" class=""></li>
-                            <li data-target="#guestSpeakers" data-slide-to="2" class=""></li>
-                        </ol>
-
-                        <a style="opacity: 1;" class="left carousel-control carousel-control-prev" href="#guestSpeakers"
-                           role="button" data-slide="prev">
-                            <span class="fa fa-angle-left"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a style="opacity: 1;" class="right carousel-control carousel-control-next"
-                           href="#guestSpeakers" role="button" data-slide="next">
-                            <span class="fa fa-angle-right"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="cd-section section-white" id="talk-submission">
-    <div class="wrapper">
-        <div class="section landing-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 ml-auto mr-auto text-center">
-                        <h2 class="title">Submissão de palestras</h2>
+    <div class="cd-section section-white" id="talk-submission">
+        <div class="wrapper">
+            <div class="section landing-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 ml-auto mr-auto text-center">
+                            <h2 class="title">Submissão de palestras</h2>
+                        </div>
                     </div>
-                </div>
-                <div class="space-top"></div>
-                <div class="row" id="pl-success" style="display:none;">
-                    <div class="col-md-12 text-center">
-                        <h5>Palestra submetida. Muito obrigado!</h5>
-                        <p><a href="#">Enviar nova palestra</a></p>
+                    <div class="space-top"></div>
+                    <div class="row" id="pl-success" style="display:none;">
+                        <div class="col-md-12 text-center">
+                            <h5>Palestra submetida. Muito obrigado!</h5>
+                            <p><a href="#">Enviar nova palestra</a></p>
+                        </div>
                     </div>
-                </div>
-                <div class="row" id="pl-area">
-                    <div class="col-md-12">
-                        <form id="pl-form" method="post" enctype="multipart/form-data" novalidate="novalidate">
-                            <fieldset>
-                                <legend>Dados do Palestrante</legend>
-                                <div class="row">
-                                    <div class="col-md-6 form-group">
-                                        <label>Nome <span style="color:tomato">*</span></label><br>
-                                        <span class="pl-nome"><input type="text" name="pl-nome" value="" size="80"
-                                                                     class="form-control" aria-required="true"
-                                                                     aria-invalid="false"></span>
+                    <div class="row" id="pl-area">
+                        <div class="col-md-12">
+                            <form id="pl-form" method="post" enctype="multipart/form-data" novalidate="novalidate">
+                                <fieldset>
+                                    <legend>Dados do Palestrante</legend>
+                                    <div class="row">
+                                        <div class="col-md-6 form-group">
+                                            <label>Nome <span style="color:tomato">*</span></label><br>
+                                            <span class="pl-nome"><input type="text" name="pl-nome" value="" size="80"
+                                                    class="form-control" aria-required="true"
+                                                    aria-invalid="false"></span>
+                                        </div>
+                                        <div class="col-md-6 form-group">
+                                            <label>E-mail <span style="color:tomato">*</span></label><br>
+                                            <span class="pl-email"><input type="email" name="pl-email" value=""
+                                                    size="40" class="form-control" aria-required="true"
+                                                    aria-invalid="false"></span>
+                                        </div>
+                                        <div class="col-md-6 form-group">
+                                            <label>Telefone <span style="color:tomato">*</span></label><br>
+                                            <span class="pl-telefone"><input type="tel" name="pl-telefone" value=""
+                                                    size="40" class="form-control" aria-required="true"
+                                                    aria-invalid="false"></span>
+                                        </div>
+                                        <div class="col-md-6 form-group">
+                                            <label for="entradaFoto">Foto <span
+                                                    style="color:tomato">*</span></label><br>
+                                            <span class="pl-foto"><input type="file" name="pl-foto" size="40"
+                                                    class="form-control" id="entradaFoto" accept=".png,.jpg"
+                                                    aria-required="true" aria-invalid="false"></span>
+                                            <p class="help-block">Formatos permitidos: PNG ou JPG.</p>
+                                        </div>
+                                        <div class="col-md-12 form-group">
+                                            <label>Minicurrículo <span style="color:tomato">*</span></label><br>
+                                            <span class="pl-minicurriculo"><textarea name="pl-minicurriculo" cols="40"
+                                                    rows="10" class="form-control" aria-required="true"
+                                                    aria-invalid="false"></textarea></span>
+                                        </div>
+                                        <div class="col-md-12 form-group">
+                                            <label>Site (ou endereço do Currículo Lattes)</label><br>
+                                            <span class="pl-site"><input type="url" name="pl-site" value="" size="100"
+                                                    class="form-control" aria-invalid="false"
+                                                    placeholder="http://"></span>
+                                        </div>
                                     </div>
-                                    <div class="col-md-6 form-group">
-                                        <label>E-mail <span style="color:tomato">*</span></label><br>
-                                        <span class="pl-email"><input type="email" name="pl-email" value="" size="40"
-                                                                      class="form-control" aria-required="true"
-                                                                      aria-invalid="false"></span>
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                        <label>Telefone <span style="color:tomato">*</span></label><br>
-                                        <span class="pl-telefone"><input type="tel" name="pl-telefone" value=""
-                                                                         size="40" class="form-control"
-                                                                         aria-required="true"
-                                                                         aria-invalid="false"></span>
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                        <label for="entradaFoto">Foto <span style="color:tomato">*</span></label><br>
-                                        <span class="pl-foto"><input type="file" name="pl-foto" size="40"
-                                                                     class="form-control" id="entradaFoto"
-                                                                     accept=".png,.jpg" aria-required="true"
-                                                                     aria-invalid="false"></span>
-                                        <p class="help-block">Formatos permitidos: PNG ou JPG.</p>
-                                    </div>
-                                    <div class="col-md-12 form-group">
-                                        <label>Minicurrículo <span style="color:tomato">*</span></label><br>
-                                        <span class="pl-minicurriculo"><textarea name="pl-minicurriculo" cols="40"
-                                                                                 rows="10" class="form-control"
-                                                                                 aria-required="true"
-                                                                                 aria-invalid="false"></textarea></span>
-                                    </div>
-                                    <div class="col-md-12 form-group">
-                                        <label>Site (ou endereço do Currículo Lattes)</label><br>
-                                        <span class="pl-site"><input type="url" name="pl-site" value="" size="100"
-                                                                     class="form-control" aria-invalid="false"
-                                                                     placeholder="http://"></span>
-                                    </div>
-                                </div>
-                            </fieldset>
-                            <fieldset>
-                                <legend>Dados da Palestra/Oficina</legend>
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <label>Título <span style="color:tomato">*</span></label><br>
-                                        <span class="pl-titulo"><input type="text" name="pl-titulo" value="" size="80"
-                                                                       class="form-control" aria-required="true"
-                                                                       aria-invalid="false"></span>
-                                    </div>
-                                    <div class="col-md-12 form-group">
-                                        <label>Descrição <span style="color:tomato">*</span></label><br>
-                                        <span class="pl-descricao"><textarea name="pl-descricao" cols="40" rows="10"
-                                                                             class="form-control" aria-required="true"
-                                                                             aria-invalid="false"></textarea></span>
-                                    </div>
-                                    <div class="col-md-4 form-group">
-                                        <label>Preferência de turno <span style="color:tomato">*</span></label><br>
-                                        <span class="pl-turno">
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Dados da Palestra/Oficina</legend>
+                                    <div class="row">
+                                        <div class="col-md-12 form-group">
+                                            <label>Título <span style="color:tomato">*</span></label><br>
+                                            <span class="pl-titulo"><input type="text" name="pl-titulo" value=""
+                                                    size="80" class="form-control" aria-required="true"
+                                                    aria-invalid="false"></span>
+                                        </div>
+                                        <div class="col-md-12 form-group">
+                                            <label>Descrição <span style="color:tomato">*</span></label><br>
+                                            <span class="pl-descricao"><textarea name="pl-descricao" cols="40" rows="10"
+                                                    class="form-control" aria-required="true"
+                                                    aria-invalid="false"></textarea></span>
+                                        </div>
+                                        <div class="col-md-4 form-group">
+                                            <label>Preferência de turno <span style="color:tomato">*</span></label><br>
+                                            <span class="pl-turno">
                                                 <select select name="pl-turno" class="form-control selectpicker"
-                                                        aria-required="true" aria-invalid="false"
-                                                        data-live-search="true">
+                                                    aria-required="true" aria-invalid="false" data-live-search="true">
                                                     <option value="">---</option>
                                                     <option value="M">Manhã</option>
                                                     <option value="A">Tarde</option>
                                                 </select></span>
-                                    </div>
-                                    <div class="col-md-4 form-group">
-                                        <label>Tipo de atividade <span style="color:tomato">*</span></label><br>
-                                        <span class="pl-tipo">
+                                        </div>
+                                        <div class="col-md-4 form-group">
+                                            <label>Tipo de atividade <span style="color:tomato">*</span></label><br>
+                                            <span class="pl-tipo">
                                                 <select select name="pl-tipo" class="form-control selectpicker"
-                                                        aria-required="true" aria-invalid="false"
-                                                        data-live-search="true">
+                                                    aria-required="true" aria-invalid="false" data-live-search="true">
                                                     <option value="">---</option>
                                                     <option value="T">Palestra (1 hora)</option>
                                                     <option value="O">Oficina (2 horas)</option>
                                                 </select></span>
-                                    </div>
-                                    <div class="col-md-4 form-group">
-                                        <label>Assunto (Tema) <span style="color:tomato">*</span></label><br>
-                                        <span class="pl-assunto">
+                                        </div>
+                                        <div class="col-md-4 form-group">
+                                            <label>Assunto (Tema) <span style="color:tomato">*</span></label><br>
+                                            <span class="pl-assunto">
                                                 <select select name="pl-assunto" class="form-control selectpicker"
-                                                        aria-required="true" aria-invalid="false"
-                                                        data-live-search="true">
+                                                    aria-required="true" aria-invalid="false" data-live-search="true">
                                                     <option value="">---</option>
-                                                    <option value="1">Acessibilidade Livre (Aplicativos para portadores de necessidades física)</option>
+                                                    <option value="1">Acessibilidade Livre (Aplicativos para portadores
+                                                        de necessidades física)</option>
                                                     <option value="2">Criptotecnologias</option>
                                                     <option value="3">Desenvolvimento (Programação)</option>
-                                                    <option value="4">Design de Imagens, Animações, Áudio e Vídeo</option>
+                                                    <option value="4">Design de Imagens, Animações, Áudio e Vídeo
+                                                    </option>
                                                     <option value="5">Ecossistema de Software Livre</option>
                                                     <option value="6">Educação</option>
-                                                    <option value="7">Flisolzinho (Oficina voltada para crianças)</option>
+                                                    <option value="7">Flisolzinho (Oficina voltada para crianças)
+                                                    </option>
                                                     <option value="8">Games</option>
                                                     <option value="9">Gestão de Projetos</option>
                                                     <option value="10">Governança de Dados</option>
@@ -765,99 +1586,95 @@
                                                     <option value="18">TI Verde (Sustentabilidade)</option>
                                                     <option value="19">Web</option>
                                                 </select></span>
+                                        </div>
+                                        <div class="col-md-6 form-group">
+                                            <label for="entradaSlide">Anexar slide</label><br>
+                                            <span class="pl-slide"><input type="file" name="pl-slide" size="40"
+                                                    class="form-control" id="entradaSlide" accept=".pdf,.odp,.ppt,.pptx"
+                                                    aria-invalid="false"></span>
+                                            <p class="help-block">Formatos permitidos: PDF, ODP ou PPT/X.</p>
+                                        </div>
+                                        <div class="col-md-6 form-group">
+                                            <label>Endereço do Slide</label><br>
+                                            <span class="pl-slide-url"><input type="url" name="pl-slide-url" value=""
+                                                    size="100" class="form-control" aria-invalid="false"
+                                                    placeholder="http://"></span>
+                                        </div>
                                     </div>
-                                    <div class="col-md-6 form-group">
-                                        <label for="entradaSlide">Anexar slide</label><br>
-                                        <span class="pl-slide"><input type="file" name="pl-slide" size="40"
-                                                                      class="form-control" id="entradaSlide"
-                                                                      accept=".pdf,.odp,.ppt,.pptx"
-                                                                      aria-invalid="false"></span>
-                                        <p class="help-block">Formatos permitidos: PDF, ODP ou PPT/X.</p>
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                        <label>Endereço do Slide</label><br>
-                                        <span class="pl-slide-url"><input type="url" name="pl-slide-url" value=""
-                                                                          size="100" class="form-control"
-                                                                          aria-invalid="false"
-                                                                          placeholder="http://"></span>
-                                    </div>
-                                </div>
-                            </fieldset>
-                            <p class="text-right">
-                                <input type="submit" value="Submeter Palestra" class="btn btn-primary btn-lg">
-                            </p>
-                        </form>
+                                </fieldset>
+                                <p class="text-right">
+                                    <input type="submit" value="Submeter Palestra" class="btn btn-primary btn-lg">
+                                </p>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<hr/>
+    <hr />
 
-<div class="cd-section section-white" id="want-to-collaborate">
-    <div class="wrapper">
-        <div class="section landing-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 ml-auto mr-auto text-center">
-                        <h2 class="title">Quero colaborar</h2>
+    <div class="cd-section section-white" id="want-to-collaborate">
+        <div class="wrapper">
+            <div class="section landing-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 ml-auto mr-auto text-center">
+                            <h2 class="title">Quero colaborar</h2>
+                        </div>
                     </div>
-                </div>
-                <div class="row" id="cpc-success" style="display:none;">
-                    <div class="col-md-12 text-center">
-                        <h5>Pedido enviado. Muito obrigado!</h5>
-                        <p><a href="#">Enviar novo pedido</a></p>
+                    <div class="row" id="cpc-success" style="display:none;">
+                        <div class="col-md-12 text-center">
+                            <h5>Pedido enviado. Muito obrigado!</h5>
+                            <p><a href="#">Enviar novo pedido</a></p>
+                        </div>
                     </div>
-                </div>
-                <div class="row" id="cpc-area">
-                    <div class="col-md-12">
-                        <p>A Coordenação do FLISOL-DF gostaria de contar com seu apoio na organização do evento para
-                            este ano. Responda o questionário abaixo para que possamos dar início ao processo de
-                            organização e marcação de reuniões.</p>
-                        <p>Lembre-se que os colaboradores (equipe de organização) recebem certificado de 30 horas de
-                            organização do evento. A falta em 2 reuniões consecutivas descredenciam o colaborador da
-                            equipe de organização.</p>
-                        <br/>
-                        <form id="cpc-form" method="post" enctype="multipart/form-data" novalidate="novalidate">
-                            <div class="row">
-                                <div class="col-md-6 form-group">
-                                    <label>Nome <span style="color:tomato">*</span></label><br>
-                                    <span class="cpc-nome"><input type="text" name="cpc-nome" value="" size="80"
-                                                                  class="form-control" aria-required="true"
-                                                                  aria-invalid="false"></span>
-                                </div>
-                                <div class="col-md-6 form-group">
-                                    <label>E-mail <span style="color:tomato">*</span></label><br>
-                                    <span class="cpc-email"><input type="email" name="cpc-email" value="" size="40"
-                                                                   class="form-control" aria-required="true"
-                                                                   aria-invalid="false"></span>
-                                </div>
-                                <div class="col-md-2 form-group">
-                                    <label>Telefone <span style="color:tomato">*</span></label><br>
-                                    <span class="cpc-telefone"><input type="tel" name="cpc-telefone" value="" size="40"
-                                                                      class="form-control" aria-required="true"
-                                                                      aria-invalid="false"></span>
-                                </div>
-                                <div class="col-md-2 form-group">
-                                    <label>Usa Software Livre? <span style="color:tomato">*</span></label><br>
-                                    <span class="cpc-usa-software-livre">
+                    <div class="row" id="cpc-area">
+                        <div class="col-md-12">
+                            <p>A Coordenação do FLISOL-DF gostaria de contar com seu apoio na organização do evento para
+                                este ano. Responda o questionário abaixo para que possamos dar início ao processo de
+                                organização e marcação de reuniões.</p>
+                            <p>Lembre-se que os colaboradores (equipe de organização) recebem certificado de 30 horas de
+                                organização do evento. A falta em 2 reuniões consecutivas descredenciam o colaborador da
+                                equipe de organização.</p>
+                            <br />
+                            <form id="cpc-form" method="post" enctype="multipart/form-data" novalidate="novalidate">
+                                <div class="row">
+                                    <div class="col-md-6 form-group">
+                                        <label>Nome <span style="color:tomato">*</span></label><br>
+                                        <span class="cpc-nome"><input type="text" name="cpc-nome" value="" size="80"
+                                                class="form-control" aria-required="true" aria-invalid="false"></span>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <label>E-mail <span style="color:tomato">*</span></label><br>
+                                        <span class="cpc-email"><input type="email" name="cpc-email" value="" size="40"
+                                                class="form-control" aria-required="true" aria-invalid="false"></span>
+                                    </div>
+                                    <div class="col-md-2 form-group">
+                                        <label>Telefone <span style="color:tomato">*</span></label><br>
+                                        <span class="cpc-telefone"><input type="tel" name="cpc-telefone" value=""
+                                                size="40" class="form-control" aria-required="true"
+                                                aria-invalid="false"></span>
+                                    </div>
+                                    <div class="col-md-2 form-group">
+                                        <label>Usa Software Livre? <span style="color:tomato">*</span></label><br>
+                                        <span class="cpc-usa-software-livre">
                                             <select select name="cpc-usa-software-livre"
-                                                    class="form-control selectpicker"
-                                                    aria-required="true" aria-invalid="false">
+                                                class="form-control selectpicker" aria-required="true"
+                                                aria-invalid="false">
                                                 <option value="">---</option>
                                                 <option value="1">Sim</option>
                                                 <option value="0">Não</option>
                                             </select>
                                         </span>
-                                </div>
-                                <div class="col-md-6 form-group">
-                                    <label>Qual distribuição GNU/Linux você usa? <span
-                                            style="color:tomato">*</span></label><br>
-                                    <span class="cpc-distribuicao">
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <label>Qual distribuição GNU/Linux você usa? <span
+                                                style="color:tomato">*</span></label><br>
+                                        <span class="cpc-distribuicao">
                                             <select select name="cpc-distribuicao" class="form-control selectpicker"
-                                                    aria-required="true" aria-invalid="false" data-live-search="true">
+                                                aria-required="true" aria-invalid="false" data-live-search="true">
                                                 <option value="">---</option>
                                                 <option value="1">Não utilizo Linux</option>
                                                 <option value="2">BigLinux</option>
@@ -878,14 +1695,14 @@
                                                 <option value="17">Outra</option>
                                             </select>
                                         </span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4 form-group">
-                                    <label>Você é estudante? <span style="color:tomato">*</span></label><br>
-                                    <span class="cpc-estudante">
+                                <div class="row">
+                                    <div class="col-md-4 form-group">
+                                        <label>Você é estudante? <span style="color:tomato">*</span></label><br>
+                                        <span class="cpc-estudante">
                                             <select select name="cpc-estudante" class="form-control selectpicker"
-                                                    aria-required="true" aria-invalid="false" data-live-search="true">
+                                                aria-required="true" aria-invalid="false" data-live-search="true">
                                                 <option value="">---</option>
                                                 <option value="1">Sim, no ensino médio</option>
                                                 <option value="2">Sim, no ensino médio técnico</option>
@@ -896,26 +1713,23 @@
                                                 <option value="7">Não, sou professor</option>
                                             </select>
                                         </span>
+                                    </div>
+                                    <div class="col-md-8 form-group">
+                                        <label>Onde você estuda ou trabalha? <span
+                                                style="color:tomato">*</span></label><br>
+                                        <span class="cpc-local-estudo-trabalho"><input type="text"
+                                                name="cpc-local-estudo-trabalho" value="" size="100"
+                                                class="form-control" aria-required="true" aria-invalid="false"></span>
+                                    </div>
                                 </div>
-                                <div class="col-md-8 form-group">
-                                    <label>Onde você estuda ou trabalha? <span style="color:tomato">*</span></label><br>
-                                    <span class="cpc-local-estudo-trabalho"><input type="text"
-                                                                                   name="cpc-local-estudo-trabalho"
-                                                                                   value="" size="100"
-                                                                                   class="form-control"
-                                                                                   aria-required="true"
-                                                                                   aria-invalid="false"></span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4 form-group">
-                                    <label>Qual a sua disponibilidade de tempo? <span
-                                            style="color:tomato">*</span></label><br>
-                                    <span class="cpc-disponibilidade">
+                                <div class="row">
+                                    <div class="col-md-4 form-group">
+                                        <label>Qual a sua disponibilidade de tempo? <span
+                                                style="color:tomato">*</span></label><br>
+                                        <span class="cpc-disponibilidade">
                                             <select select name="cpc-disponibilidade[]"
-                                                    class="form-control selectpicker"
-                                                    aria-required="true" aria-invalid="false" data-live-search="true"
-                                                    multiple>
+                                                class="form-control selectpicker" aria-required="true"
+                                                aria-invalid="false" data-live-search="true" multiple>
                                                 <option value="">---</option>
                                                 <option value="1">Manhã - Todos os dias</option>
                                                 <option value="2">Tarde - Todos os dias</option>
@@ -924,135 +1738,142 @@
                                                 <option value="5">Sábado pela tarde</option>
                                             </select>
                                         </span>
-                                </div>
-                                <div class="col-md-8 form-group">
-                                    <label>Onde deseja colaborar? <span style="color:tomato">*</span></label><br>
-                                    <span class="cpc-area-colaboracao">
+                                    </div>
+                                    <div class="col-md-8 form-group">
+                                        <label>Onde deseja colaborar? <span style="color:tomato">*</span></label><br>
+                                        <span class="cpc-area-colaboracao">
                                             <select select name="cpc-area-colaboracao[]"
-                                                    class="form-control selectpicker"
-                                                    aria-required="true" aria-invalid="false" data-live-search="true"
-                                                    multiple>
+                                                class="form-control selectpicker" aria-required="true"
+                                                aria-invalid="false" data-live-search="true" multiple>
                                                 <option value="1">Grupo 1 – Na busca por patrocínio e apoio</option>
-                                                <option value="2">Grupo 2 – Na publicidade e divulgação (redes sociais)</option>
+                                                <option value="2">Grupo 2 – Na publicidade e divulgação (redes sociais)
+                                                </option>
                                                 <option value="3">Grupo 3 – Na organização do blog</option>
-                                                <option value="4">Grupo 4 – No controle de inscrição (participantes e palestrantes), certificados e controle das atividades</option>
-                                                <option value="5">Grupo 5 – Na infra-estrutura tecnológica (rede local e wifi, servidores e repositórios)</option>
-                                                <option value="6">Grupo 6 – Na oficina de instalação (InstallFest) e gravação de imagens em mídias</option>
-                                                <option value="7">Grupo 7 – Temário (Outras palestras, Oficinas e Mini-cursos)</option>
+                                                <option value="4">Grupo 4 – No controle de inscrição (participantes e
+                                                    palestrantes), certificados e controle das atividades</option>
+                                                <option value="5">Grupo 5 – Na infra-estrutura tecnológica (rede local e
+                                                    wifi, servidores e repositórios)</option>
+                                                <option value="6">Grupo 6 – Na oficina de instalação (InstallFest) e
+                                                    gravação de imagens em mídias</option>
+                                                <option value="7">Grupo 7 – Temário (Outras palestras, Oficinas e
+                                                    Mini-cursos)</option>
                                                 <option value="8">Grupo 8 - Sistema de inscrição</option>
                                                 <option value="9">Grupo 9 - Organização de salas</option>
-                                                <option value="10">Grupo 10 - Visita e divulgação em outras IES e escolas</option>
-                                                <option value="11">Grupo 11 - Filmagem, fotografia e documentário do evento</option>
+                                                <option value="10">Grupo 10 - Visita e divulgação em outras IES e
+                                                    escolas</option>
+                                                <option value="11">Grupo 11 - Filmagem, fotografia e documentário do
+                                                    evento</option>
                                                 <option value="12">Grupo 12 - Arte Gráfica e material gráfico</option>
-                                                <option value="13">Grupo 13 - Comunicação colaborativa (divulgação em tempo real nas redes sociais)</option>
+                                                <option value="13">Grupo 13 - Comunicação colaborativa (divulgação em
+                                                    tempo real nas redes sociais)</option>
                                             </select></span>
+                                    </div>
+                                </div>
+                                <p class="text-right">
+                                    <input type="submit" value="Quero colaborar!" class="btn btn-primary btn-lg">
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cd-section" id="contact-us">
+        <div class="contactus-2" id="onde" style="padding:0; height:500px;">
+            <div id="contactUsMap2" class="big-map"></div>
+            <div class="container">
+                <div class="col-md-6">
+                    <div class="card card-contact card-raised">
+                        <div class="card-header header-raised header-primary text-center">
+                            <h4 class="card-title">Data e local do evento</h4>
+                        </div>
+                        <form role="form" id="contact-form" method="post">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="info info-horizontal">
+                                            <div class="icon icon-danger">
+                                                <i class="nc-icon nc-pin-3" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="description">
+                                                <h5 class="info-title"><strong>IFB Campus Ceilândia</strong></h5>
+                                                <p>72220-260, Quadra QNN 26 Área Especial, Ceilândia Sul - Brasília/DF,
+                                                    Brasil</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="info info-horizontal">
+                                            <div class="icon icon-success">
+                                                <i class="nc-icon nc-time-alarm" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="description">
+                                                <h5 class="info-title"><strong>27 de Abril 2019</strong></h5>
+                                                <p><strong>Sábado 8:00 até 18:00</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <p class="text-right">
-                                <input type="submit" value="Quero colaborar!" class="btn btn-primary btn-lg">
-                            </p>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="cd-section" id="contact-us">
-    <div class="contactus-2" id="onde" style="padding:0; height:500px;">
-        <div id="contactUsMap2" class="big-map"></div>
-        <div class="container">
-            <div class="col-md-6">
-                <div class="card card-contact card-raised">
-                    <div class="card-header header-raised header-primary text-center">
-                        <h4 class="card-title">Data e local do evento</h4>
+    <div class="cd-section" id="sociais">
+        <div class="section section-dark text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto">
+                        <h2 class="title">Siga nos e compartilhe com o <a class="text-info"
+                                href="https://twitter.com/search?q=%23FlisolDF&src=typd" target="_blank">#FlisolDF</a>
+                        </h2>
                     </div>
-                    <form role="form" id="contact-form" method="post">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="info info-horizontal">
-                                        <div class="icon icon-danger">
-                                            <i class="nc-icon nc-pin-3" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="description">
-                                            <h5 class="info-title"><strong>IFB Campus Ceilândia</strong></h5>
-                                            <p>72220-260, Quadra QNN 26 Área Especial, Ceilândia Sul - Brasília/DF,
-                                                Brasil</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="info info-horizontal">
-                                        <div class="icon icon-success">
-                                            <i class="nc-icon nc-time-alarm" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="description">
-                                            <h5 class="info-title"><strong>27 de Abril 2019</strong></h5>
-                                            <p><strong>Sábado 8:00 até 18:00</strong></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                    <br />
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>
+                            <a href="https://twitter.com/flisoldf/" target="_blank"
+                                class="btn btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/flisoldf/" target="_blank"
+                                class="btn btn-just-icon btn-facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/flisol.df/" target="_blank"
+                                class="btn btn-just-icon btn-instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/groups/12211146/" target="_blank"
+                                class="btn btn-just-icon btn-linkedin"><i class="fa fa-linkedin"></i></a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="cd-section" id="sociais">
-    <div class="section section-dark text-center">
+    <footer class="footer section-dark">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 ml-auto mr-auto">
-                    <h2 class="title">Siga nos e compartilhe com o <a class="text-info"
-                                                                      href="https://twitter.com/search?q=%23FlisolDF&src=typd"
-                                                                      target="_blank">#FlisolDF</a></h2>
-                </div>
-                <br/>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <p>
-                        <a href="https://twitter.com/flisoldf/" target="_blank" class="btn btn-just-icon btn-twitter"><i
-                                class="fa fa-twitter"></i></a>
-                        <a href="https://www.facebook.com/flisoldf/" target="_blank"
-                           class="btn btn-just-icon btn-facebook"><i class="fa fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/flisol.df/" target="_blank"
-                           class="btn btn-just-icon btn-instagram"><i class="fa fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/groups/12211146/" target="_blank"
-                           class="btn btn-just-icon btn-linkedin"><i class="fa fa-linkedin"></i></a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<footer class="footer section-dark">
-    <div class="container">
-        <div class="row">
-            <nav class="footer-nav">
-                <ul>
-                    <li><a href="index.html">FLISOL DF 2019</a></li>
-                </ul>
-            </nav>
-            <div class="credits ml-auto">
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="index.html">FLISOL DF 2019</a></li>
+                    </ul>
+                </nav>
+                <div class="credits ml-auto">
                     <span class="copyright">
                         Made with <i class="fa fa-heart heart"></i> with Paper Kit 2 Pro
                     </span>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-<!-- material-scrolltop button -->
-<button class="material-scrolltop" type="button"></button>
+    <!-- material-scrolltop button -->
+    <button class="material-scrolltop" type="button"></button>
 
 </body>
 
@@ -1073,7 +1894,7 @@
 
 <!--  Plugins for Map -->
 <script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfQnvmEyR79sLYapgptpme-I2c9n-vf1Q&language=pt-br"></script>
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfQnvmEyR79sLYapgptpme-I2c9n-vf1Q&language=pt-br"></script>
 
 <!-- material-scrolltop plugin -->
 <script src="assets/js/material-scrolltop.js"></script>
